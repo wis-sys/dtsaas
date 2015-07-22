@@ -1,0 +1,312 @@
+---
+title: Dashboard boxes
+
+categories: Framework
+tags: Elements
+---
+    <h2 class="title-hero">
+        Dashboard boxes
+    </h2>
+    <p class="title-lead">Use the markups below to create dashboard boxes.</p>
+
+    <div class="divider"></div>
+
+    {{> theming  }}
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Sparklines charts - <b>/assets/widgets/charts/sparklines/sparklines.js</b>
+                        </li>
+                        <li>
+                            Sparklines charts demos - <b>/assets/widgets/charts/sparklines/sparklines-demo.js</b>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/elements/dashboard-box.css - Contains the CSS needed for the dashboard boxes structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Line charts
+    </h3>
+    <p class="title-lead">Use the sparklines chart plugin to show line charts inside dashboard boxes.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dashboard-box bg-blue-alt">
+                    <div class="content-wrapper">
+                        <div class="header">
+                            Monthly evolution
+                            <span>July - December 2013</span>
+                        </div>
+                        <div class="sparkline-big">183,579,180,311,405,342,579,405,450,311,180,311,450,302,370,210</div>
+                    </div>
+                    <div class="button-pane">
+                        <div class="size-md float-left heading">
+                            Overdue orders
+                        </div>
+                        <a href="#" class="btn btn-info float-right tooltip-button" data-placement="top" title="Remove comment">
+                            <i class="glyph-icon icon-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dashboard-box bg-green">
+                    <div class="content-wrapper">
+                        <div class="header">
+                            Weekly forecast
+                            <span>November 2013 - December 2013</span>
+                        </div>
+                        <div class="sparkline-big">183,579,180,311,240,180,311,450,302,370,210,610</div>
+                    </div>
+                    <div class="button-pane">
+                        <div class="size-md float-left heading">
+                            Exchange rate
+                        </div>
+                        <a href="#" class="btn btn-success float-right tooltip-button" data-placement="top" title="Remove comment">
+                            <i class="glyph-icon icon-reply"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dashboard-box bg-orange">
+                    <div class="content-wrapper">
+                        <div class="header">
+                            Yearly forecast
+                            <span>2013 - 2014</span>
+                        </div>
+                        <div class="sparkline-big">183,579,180,311,240,180,311,450,302,370,210,610</div>
+                    </div>
+                    <div class="button-pane">
+                        <div class="size-md float-left heading">
+                            New visitors
+                        </div>
+                        <a href="#" class="btn btn-black float-right tooltip-button" data-placement="left" title="Remove comment">
+                            <i class="glyph-icon icon-cog"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="dashboard-box bg-blue-alt">
+                                <div class="content-wrapper">
+                                    <div class="header">
+                                        Monthly evolution
+                                        <span>July - December 2013</span>
+                                    </div>
+                                    <div class="sparkline-big">183,579,180,311,405,342,579,405,450,311,180,311,450,302,370,210</div>
+                                </div>
+                                <div class="button-pane">
+                                    <div class="size-md float-left heading">
+                                        Overdue orders
+                                    </div>
+                                    <a href="#" class="btn btn-info float-right tooltip-button" data-placement="top" title="Remove comment">
+                                        <i class="glyph-icon icon-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dashboard-box bg-green">
+                                <div class="content-wrapper">
+                                    <div class="header">
+                                        Weekly forecast
+                                        <span>November 2013 - December 2013</span>
+                                    </div>
+                                    <div class="sparkline-big">183,579,180,311,240,180,311,450,302,370,210,610</div>
+                                </div>
+                                <div class="button-pane">
+                                    <div class="size-md float-left heading">
+                                        Exchange rate
+                                    </div>
+                                    <a href="#" class="btn btn-success float-right tooltip-button" data-placement="top" title="Remove comment">
+                                        <i class="glyph-icon icon-reply"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dashboard-box bg-orange">
+                                <div class="content-wrapper">
+                                    <div class="header">
+                                        Yearly forecast
+                                        <span>2013 - 2014</span>
+                                    </div>
+                                    <div class="sparkline-big">183,579,180,311,240,180,311,450,302,370,210,610</div>
+                                </div>
+                                <div class="button-pane">
+                                    <div class="size-md float-left heading">
+                                        New visitors
+                                    </div>
+                                    <a href="#" class="btn btn-black float-right tooltip-button" data-placement="left" title="Remove comment">
+                                        <i class="glyph-icon icon-cog"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Bar charts
+    </h3>
+    <p class="title-lead">Use the sparklines chart plugin to show bar charts inside dashboard boxes.</p>
+
+    <div class="example-box-wrapper">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dashboard-box bg-white content-box">
+                    <div class="content-wrapper">
+                        <div class="header">
+                            Monthly evolution
+                            <span>July - December 2013</span>
+                        </div>
+                        <div class="center-div sparkline-bar-big-color">183,579,180,311,405,342,579,405,311,311,450,302,370,510,405,342,579,405,311,311,450,302,370,510</div>
+                    </div>
+                    <div class="button-pane">
+                        <div class="size-md float-left heading">
+                            Overdue orders
+                        </div>
+                        <a href="#" class="btn btn-info float-right tooltip-button" data-placement="top" title="Remove comment">
+                            <i class="glyph-icon icon-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dashboard-box bg-blue">
+                    <div class="content-wrapper">
+                        <div class="header">
+                            Weekly forecast
+                            <span>November 2013 - December 2013</span>
+                        </div>
+                        <div class="center-div sparkline-bar-big">579,180,311,405,342,579,405,311,311,450,302,370,510,405,342,579,405,311,311,450,302,370,510</div>
+                    </div>
+                    <div class="button-pane">
+                        <div class="size-md float-left heading">
+                            Exchange rate
+                        </div>
+                        <a href="#" class="btn btn-success float-right tooltip-button" data-placement="top" title="Remove comment">
+                            <i class="glyph-icon icon-reply"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dashboard-box bg-red">
+                    <div class="content-wrapper">
+                        <div class="header">
+                            Yearly forecast
+                            <span>2013 - 2014</span>
+                        </div>
+                        <div class="center-div sparkline-bar-big">183,579,180,311,230,311,405,342,230,302,405,230,405,342,579,405,311,405,342,230,302,405,230,405,342,579,405</div>
+                    </div>
+                    <div class="button-pane">
+                        <div class="size-md float-left heading">
+                            New visitors
+                        </div>
+                        <a href="#" class="btn btn-black float-right tooltip-button" data-placement="left" title="Remove comment">
+                            <i class="glyph-icon icon-cog"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="dashboard-box bg-white content-box">
+                                <div class="content-wrapper">
+                                    <div class="header">
+                                        Monthly evolution
+                                        <span>July - December 2013</span>
+                                    </div>
+                                    <div class="center-div sparkline-bar-big-color">183,579,180,311,405,342,579,405,311,311,450,302,370,510,405,342,579,405,311,311,450,302,370,510</div>
+                                </div>
+                                <div class="button-pane">
+                                    <div class="size-md float-left heading">
+                                        Overdue orders
+                                    </div>
+                                    <a href="#" class="btn btn-info float-right tooltip-button" data-placement="top" title="Remove comment">
+                                        <i class="glyph-icon icon-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dashboard-box bg-blue">
+                                <div class="content-wrapper">
+                                    <div class="header">
+                                        Weekly forecast
+                                        <span>November 2013 - December 2013</span>
+                                    </div>
+                                    <div class="center-div sparkline-bar-big">579,180,311,405,342,579,405,311,311,450,302,370,510,405,342,579,405,311,311,450,302,370,510</div>
+                                </div>
+                                <div class="button-pane">
+                                    <div class="size-md float-left heading">
+                                        Exchange rate
+                                    </div>
+                                    <a href="#" class="btn btn-success float-right tooltip-button" data-placement="top" title="Remove comment">
+                                        <i class="glyph-icon icon-reply"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dashboard-box bg-red">
+                                <div class="content-wrapper">
+                                    <div class="header">
+                                        Yearly forecast
+                                        <span>2013 - 2014</span>
+                                    </div>
+                                    <div class="center-div sparkline-bar-big">183,579,180,311,230,311,405,342,230,302,405,230,405,342,579,405,311,405,342,230,302,405,230,405,342,579,405</div>
+                                </div>
+                                <div class="button-pane">
+                                    <div class="size-md float-left heading">
+                                        New visitors
+                                    </div>
+                                    <a href="#" class="btn btn-black float-right tooltip-button" data-placement="left" title="Remove comment">
+                                        <i class="glyph-icon icon-cog"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

@@ -1,0 +1,1337 @@
+---
+title: Images
+
+categories: Framework
+tags: Elements
+---
+    <h2 class="title-hero">
+        Images
+    </h2>
+    <p class="title-lead">Use the markups below to add all kind of styles to images.</p>
+
+    <div class="divider"></div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Add the <code>.img-rounded</code> or <code>.img-circle</code> CSS classes to images to create rounded corners. You can use the <code>.img-responsive</code> CSS class to make an image inherit the width of its parent. To make an image inherit both the width and height, you need to use the <code>.img-full</code> CSS class.</p>
+
+    <div class="example-box-wrapper">
+
+        <img src="http://placehold.it/200x150" alt="" class="img-rounded">
+        <img src="http://placehold.it/150x150" alt="" class="img-circle">
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Add the <code>.img-bordered</code> CSS class to images to create bordered images. You can use the border color CSS helper classes to style the border color.</p>
+
+    <div class="example-box-wrapper">
+
+        <img src="http://placehold.it/80x80" alt="" class="img-bordered border-blue img-rounded">
+        <img src="http://placehold.it/80x80" alt="" class="img-bordered border-red img-circle">
+        <img src="http://placehold.it/80x80" alt="" class="img-bordered border-azure img-circle">
+        <img src="http://placehold.it/80x80" alt="" class="img-bordered border-green img-circle">
+        <img src="http://placehold.it/80x80" alt="" class="img-bordered border-primary radius-all-10">
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <img src="http://placehold.it/80x80" alt="" class="img-bordered border-blue img-rounded">
+                    <img src="http://placehold.it/80x80" alt="" class="img-bordered border-red img-circle">
+                    <img src="http://placehold.it/80x80" alt="" class="img-bordered border-azure img-circle">
+                    <img src="http://placehold.it/80x80" alt="" class="img-bordered border-green img-circle">
+                    <img src="http://placehold.it/80x80" alt="" class="img-bordered border-primary radius-all-10">
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Thumbnails
+    </h3>
+    <p class="title-lead">Add the <code>.img-thumbnail</code> to an image to add a small border to it. Use the <code>.thumbnail</code> CSS class on links that contain images to add an active hover class.</p>
+
+    <div class="example-box-wrapper">
+
+        <img src="http://placehold.it/200x135" style="height: 135px;" alt="" class="img-thumbnail">
+        <a href="#" class="thumbnail" title="">
+            <img src="http://placehold.it/200x150" alt="">
+        </a>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <img src="http://placehold.it/200x135" style="height: 135px;" alt="" class="img-thumbnail">
+                    <a href="#" class="thumbnail" title="">
+                        <img src="http://placehold.it/200x150" alt="">
+                    </a>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hover with text
+    </h3>
+    <p class="title-lead">Use the markup below to create image boxes with text visible only on hover. Use the CSS helper classes to style the hover content.</p>
+
+    {{> theming  }} 
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                            <span class="pad10A radius-all-4 bg-black opacity-80">
+                                Content here...
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                            <span class="pad10A radius-all-2 bg-primary">
+                                Content here...
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                            <span class="pad10A radius-all-4 bg-white opacity-100">
+                                Content here...
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                            <span class="pad10A radius-all-2 bg-white font-green font-bold text-transform-upr font-size-12">
+                                Content here...
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                            <span class="pad10A radius-all-4 bg-black opacity-80">
+                                Content here...
+                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                            <span class="pad10A radius-all-2 bg-primary">
+                                Content here...
+                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                            <span class="pad10A radius-all-4 bg-white opacity-100">
+                                Content here...
+                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                            <span class="pad10A radius-all-2 bg-white font-green font-bold text-transform-upr font-size-12">
+                                Content here...
+                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        /* Image hover */
+
+                        $(function() { "use strict";
+                            $('.thumbnail-box').hover(function(){
+                                $('.thumbnail-overlay', this).fadeIn('fast');
+                                $('.thumbnail-content', this).slideDown('fast');
+                            },
+                            function(){
+                                $('.thumbnail-overlay', this).fadeOut('fast');
+                                $('.thumbnail-content', this).slideUp('fast');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hover with overlay
+    </h3>
+    <p class="title-lead">Use the markup below to create image boxes with hover overlays and text.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content font-white">
+                                Content here...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-60 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                            <span class="pad10A radius-all-4 bg-white opacity-80">
+                                Content here...
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-green"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-overlay bg-primary opacity-30"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <span class="pad10A radius-all-8 bg-primary">
+                                    Content here...
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay bg-white opacity-30"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content font-white">
+                                            Content here...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-60 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                            <span class="pad10A radius-all-4 bg-white opacity-80">
+                                Content here...
+                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-green"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-overlay bg-primary opacity-30"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                <span class="pad10A radius-all-8 bg-primary">
+                                    Content here...
+                                </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay bg-white opacity-30"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <script type="text/javascript">
+                        /* Image hover */
+
+                        $(function() { "use strict";
+                            $('.thumbnail-box').hover(function(){
+                                $('.thumbnail-overlay', this).fadeIn('fast');
+                                $('.thumbnail-content', this).slideDown('fast');
+                            },
+                            function(){
+                                $('.thumbnail-overlay', this).fadeOut('fast');
+                                $('.thumbnail-content', this).slideUp('fast');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hover with buttons
+    </h3>
+    <p class="title-lead">Use the markup below to create image boxes with overlays and buttons visible only on hover.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-3">
+
+                <div class="thumbnail-box">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-success" title="">
+                                    View
+                                </a>
+                                <a href="#" class="btn btn-black" title="">
+                                    Details
+                                </a>
+                                <a href="#" class="btn btn-danger" title="">
+                                    <i class="glyph-icon icon-remove"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-60 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="thumbnail-box">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-lg btn-success radius-all-100" title="">
+                                    <i class="glyph-icon icon-check"></i>
+                                </a>
+                                <a href="#" class="btn btn-lg btn-danger radius-all-100" title="">
+                                    <i class="glyph-icon icon-remove"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-white"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="thumbnail-box">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-sm btn-primary text-transform-upr" title="">
+                                    Read more
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-30 bg-primary"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="thumbnail-box">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn bg-white text-transform-upr font-bold font-green font-size-12" title="">
+                                    View
+                                </a>
+                                <a href="#" class="btn bg-white text-transform-upr font-bold font-red font-size-12" title="">
+                                    Remove
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-60 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-success" title="">
+                                                View
+                                            </a>
+                                            <a href="#" class="btn btn-black" title="">
+                                                Details
+                                            </a>
+                                            <a href="#" class="btn btn-danger" title="">
+                                                <i class="glyph-icon icon-remove"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-60 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-lg btn-success radius-all-100" title="">
+                                                <i class="glyph-icon icon-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-lg btn-danger radius-all-100" title="">
+                                                <i class="glyph-icon icon-remove"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-white"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-sm btn-primary text-transform-upr" title="">
+                                                Read more
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-primary"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn bg-white text-transform-upr font-bold font-green font-size-12" title="">
+                                                View
+                                            </a>
+                                            <a href="#" class="btn bg-white text-transform-upr font-bold font-red font-size-12" title="">
+                                                Remove
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-60 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <script type="text/javascript">
+                        /* Image hover */
+
+                        $(function() { "use strict";
+                            $('.thumbnail-box').hover(function(){
+                                $('.thumbnail-overlay', this).fadeIn('fast');
+                                $('.thumbnail-content', this).slideDown('fast');
+                            },
+                            function(){
+                                $('.thumbnail-overlay', this).fadeOut('fast');
+                                $('.thumbnail-content', this).slideUp('fast');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hover with icons
+    </h3>
+    <p class="title-lead">Use the markup below to create image boxes with overlays and icons visible only on hover.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <i class="icon-helper bg-green glyph-icon icon-tr icon-plus"></i>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <i class="icon-helper bg-green glyph-icon icon-br icon-plus"></i>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <i class="icon-helper bg-green glyph-icon icon-tr icon-plus"></i>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <i class="icon-helper bg-green glyph-icon icon-br icon-plus"></i>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        /* Image hover */
+
+                        $(function() { "use strict";
+                            $('.thumbnail-box').hover(function(){
+                                $('.thumbnail-overlay', this).fadeIn('fast');
+                                $('.thumbnail-content', this).slideDown('fast');
+                            },
+                            function(){
+                                $('.thumbnail-overlay', this).fadeOut('fast');
+                                $('.thumbnail-content', this).slideUp('fast');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hover with content
+    </h3>
+    <p class="title-lead">Use the markup below to create image boxes with different content animations on hover.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="thumb-box thumb-box-1" title="">
+                    <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                    <div class="thumb-pane bg-black">
+                        <div class="thumbnail-text">
+                            <h4 class="clearfix">
+                                <a href="#" title="">Example title</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            <a href="#" class="btn btn-primary thumb-more">View details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="thumb-box thumb-box-2" title="">
+                    <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                    <div class="thumb-pane bg-black">
+                        <div class="thumbnail-text">
+                            <h4 class="clearfix">
+                                <a href="#" title="">Example title</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            <a href="#" class="btn btn-primary thumb-more">View details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="thumb-box thumb-box-3" title="">
+                    <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                    <div class="thumb-pane bg-black">
+                        <div class="thumbnail-text">
+                            <h4 class="clearfix">
+                                <a href="#" title="">Example title</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            <a href="#" class="btn btn-primary thumb-more">View details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="thumb-box thumb-box-4" title="">
+                    <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                    <div class="thumb-pane bg-black">
+                        <div class="thumbnail-text">
+                            <h4 class="clearfix">
+                                <a href="#" title="">Example title</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            <a href="#" class="btn btn-primary thumb-more">View details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <i class="icon-helper icon-tr animated flipInX bg-green glyph-icon icon-plus"></i>
+                    </div>
+                    <div class="thumbnail-overlay bg-black-opacity">
+                        <div class="center-vertical">
+                            <div class="center-content">
+                                <div class="text-center animated fadeInDown">
+                                    <h3 class="mrg0A">
+                                        Example title
+                                        <small class="display-block">This is the title description</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="http://placehold.it/300x200" class="img-responsive" alt="">
+                </a>
+
+            </div>
+            <div class="col-md-4">
+
+                <a href="#" class="thumbnail-box" title="">
+                    <div class="thumbnail-content">
+                        <i class="icon-helper icon-br animated rotateIn bg-orange glyph-icon icon-plus"></i>
+                    </div>
+                    <div class="thumbnail-overlay bg-black-opacity">
+                        <div class="center-vertical">
+                            <div class="center-content">
+                                <div class="text-center animated rollIn">
+                                    <h3 class="mrg0A">
+                                        Example title
+                                        <small class="display-block">This is the title description</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="http://placehold.it/300x200" class="img-responsive" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <div class="thumb-box thumb-box-1" title="">
+                                <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                                <div class="thumb-pane bg-black">
+                                    <div class="thumbnail-text">
+                                        <h4 class="clearfix">
+                                            <a href="#" title="">Example title</a>
+                                        </h4>
+                                        <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        <a href="#" class="btn btn-primary thumb-more">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="thumb-box thumb-box-2" title="">
+                                <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                                <div class="thumb-pane bg-black">
+                                    <div class="thumbnail-text">
+                                        <h4 class="clearfix">
+                                            <a href="#" title="">Example title</a>
+                                        </h4>
+                                        <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        <a href="#" class="btn btn-primary thumb-more">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="thumb-box thumb-box-3" title="">
+                                <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                                <div class="thumb-pane bg-black">
+                                    <div class="thumbnail-text">
+                                        <h4 class="clearfix">
+                                            <a href="#" title="">Example title</a>
+                                        </h4>
+                                        <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        <a href="#" class="btn btn-primary thumb-more">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="thumb-box thumb-box-4" title="">
+                                <img src="http://placehold.it/300x200" class="img-responsive" alt="" />
+                                <div class="thumb-pane bg-black">
+                                    <div class="thumbnail-text">
+                                        <h4 class="clearfix">
+                                            <a href="#" title="">Example title</a>
+                                        </h4>
+                                        <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        <a href="#" class="btn btn-primary thumb-more">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <i class="icon-helper icon-tr animated flipInX bg-green glyph-icon icon-plus"></i>
+                                </div>
+                                <div class="thumbnail-overlay bg-black-opacity">
+                                    <div class="center-vertical">
+                                        <div class="center-content">
+                                            <div class="text-center animated fadeInDown">
+                                                <h3 class="mrg0A">
+                                                    Example title
+                                                    <small class="display-block">This is the title description</small>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="http://placehold.it/300x200" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <i class="icon-helper icon-br animated rotateIn bg-orange glyph-icon icon-plus"></i>
+                                </div>
+                                <div class="thumbnail-overlay bg-black-opacity">
+                                    <div class="center-vertical">
+                                        <div class="center-content">
+                                            <div class="text-center animated rollIn">
+                                                <h3 class="mrg0A">
+                                                    Example title
+                                                    <small class="display-block">This is the title description</small>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="http://placehold.it/300x200" class="img-responsive" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hover with toolbar
+    </h3>
+    <p class="title-lead">Use the markup below to create image boxes with overlays and icons visible only on hover.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="thumbnail-box" title="">
+                    <div class="thumbnail-content thumbnail-pane">
+                        <a href="#" class="btn btn-sm btn-warning">
+                            <i class="glyph-icon icon-heart"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-info">
+                            <i class="glyph-icon icon-gear"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-yellow">
+                            <i class="glyph-icon icon-plus"></i>
+                        </a>
+                    </div>
+                    <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="thumbnail-box" title="">
+                    <div class="thumbnail-content thumbnail-pane bg-white-opacity">
+                        <a href="#" class="btn btn-xs btn-link opacity-hover">
+                            <i class="glyph-icon icon-heart font-red font-size-16"></i>
+                        </a>
+                        <a href="#" class="btn btn-xs btn-link opacity-hover">
+                            <i class="glyph-icon icon-gear font-black font-size-16"></i>
+                        </a>
+                        <a href="#" class="btn btn-xs btn-link opacity-hover">
+                            <i class="glyph-icon icon-plus font-green font-size-16"></i>
+                        </a>
+                    </div>
+                    <div class="thumbnail-overlay opacity-60 bg-white"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="thumbnail-box" title="">
+                    <div class="thumbnail-content thumbnail-pane pane-bottom">
+                        <a href="#" class="btn btn-sm btn-warning">
+                            <i class="glyph-icon icon-heart"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-info">
+                            <i class="glyph-icon icon-gear"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-yellow">
+                            <i class="glyph-icon icon-plus"></i>
+                        </a>
+                    </div>
+                    <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="thumbnail-box" title="">
+                    <div class="thumbnail-content thumbnail-pane pane-left">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-sm btn-warning display-block">
+                                    <i class="glyph-icon icon-heart"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info display-block">
+                                    <i class="glyph-icon icon-gear"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-yellow display-block">
+                                    <i class="glyph-icon icon-plus"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="thumbnail-box" title="">
+                    <div class="thumbnail-content thumbnail-pane pane-bottom pane-right">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-sm btn-warning display-block">
+                                    <i class="glyph-icon icon-heart"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info display-block">
+                                    <i class="glyph-icon icon-gear"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-yellow display-block">
+                                    <i class="glyph-icon icon-plus"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content thumbnail-pane">
+                                    <a href="#" class="btn btn-sm btn-warning">
+                                        <i class="glyph-icon icon-heart"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        <i class="glyph-icon icon-gear"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-yellow">
+                                        <i class="glyph-icon icon-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content thumbnail-pane bg-white-opacity">
+                                    <a href="#" class="btn btn-xs btn-link opacity-hover">
+                                        <i class="glyph-icon icon-heart font-red font-size-16"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-xs btn-link opacity-hover">
+                                        <i class="glyph-icon icon-gear font-black font-size-16"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-xs btn-link opacity-hover">
+                                        <i class="glyph-icon icon-plus font-green font-size-16"></i>
+                                    </a>
+                                </div>
+                                <div class="thumbnail-overlay opacity-60 bg-white"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content thumbnail-pane pane-bottom">
+                                    <a href="#" class="btn btn-sm btn-warning">
+                                        <i class="glyph-icon icon-heart"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        <i class="glyph-icon icon-gear"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-yellow">
+                                        <i class="glyph-icon icon-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content thumbnail-pane pane-left">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-sm btn-warning display-block">
+                                                <i class="glyph-icon icon-heart"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info display-block">
+                                                <i class="glyph-icon icon-gear"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-yellow display-block">
+                                                <i class="glyph-icon icon-plus"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content thumbnail-pane pane-bottom pane-right">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-sm btn-warning display-block">
+                                                <i class="glyph-icon icon-heart"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-info display-block">
+                                                <i class="glyph-icon icon-gear"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-yellow display-block">
+                                                <i class="glyph-icon icon-plus"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        /* Image hover */
+
+                        $(function() { "use strict";
+                            $('.thumbnail-box').hover(function(){
+                                $('.thumbnail-overlay', this).fadeIn('fast');
+                                $('.thumbnail-content', this).slideDown('fast');
+                            },
+                            function(){
+                                $('.thumbnail-overlay', this).fadeOut('fast');
+                                $('.thumbnail-content', this).slideUp('fast');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Rounded corners
+    </h3>
+    <p class="title-lead">Use the markup below to create rounded corners image boxes with overlays and icons visible only on hover.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-3">
+
+                <div class="thumbnail-box radius-all-100" title="">
+                    <div class="thumbnail-content radius-all-100">
+                        <div class="center-vertical radius-all-100">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-danger display-inline">
+                                    <i class="glyph-icon icon-remove"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-100 radius-all-100 bg-green"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive radius-all-100" alt="">
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="thumbnail-box radius-all-10" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <p class="center-content">
+                                <a href="#" class="btn btn-danger display-inline">
+                                    <i class="glyph-icon icon-remove"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                    <img src="http://placehold.it/200x150" class="img-responsive radius-all-10" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box radius-all-100" title="">
+                                <div class="thumbnail-content radius-all-100">
+                                    <div class="center-vertical radius-all-100">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-danger display-inline">
+                                                <i class="glyph-icon icon-remove"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-100 radius-all-100 bg-green"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive radius-all-100" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <div class="thumbnail-box radius-all-10" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-danger display-inline">
+                                                <i class="glyph-icon icon-remove"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="http://placehold.it/200x150" class="img-responsive radius-all-10" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        /* Image hover */
+
+                        $(function() { "use strict";
+                            $('.thumbnail-box').hover(function(){
+                                $('.thumbnail-overlay', this).fadeIn('fast');
+                                $('.thumbnail-content', this).slideDown('fast');
+                            },
+                            function(){
+                                $('.thumbnail-overlay', this).fadeOut('fast');
+                                $('.thumbnail-content', this).slideUp('fast');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

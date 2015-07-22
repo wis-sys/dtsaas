@@ -1,0 +1,260 @@
+---
+title: Modals
+categories: Framework
+tags: Widgets
+---
+
+<!-- Bootstrap Modal -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/modal/modal.css">-->
+<script type="text/javascript" src="assets-minified/widgets/modal/modal.js"></script>
+
+    <h2 class="title-hero">
+        Modals
+    </h2>
+    <p class="title-lead">Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Bootstrap Modal - <b>/assets/widgets/modal/modal.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/modal/modal.css - Contains the CSS needed for the modal structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://getbootstrap.com/javascript/#modals" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Inline
+    </h3>
+    <p class="title-lead">Use the markup below to create an inline modal box with title, content and button actions toolbar. To create an inline modal add the <code>.display-block</code> CSS class to the <code>.modal</code> element.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="modal fade display-block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal content here ...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+
+            <pre>
+                <code class="language-markup">
+                    <div class="modal fade display-block">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Triggers
+    </h3>
+    <p class="title-lead">You can open a modal box via Javascript or by adding the <code>data-toggle="modal"</code> attribute to links or buttons. Use the <code>data-target="#div_id_here"</code> attribute to target the element from which the modal content will be shown.</p>
+
+    <div class="example-box-wrapper">
+
+        <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">
+            Launch demo modal
+        </button>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal content here ...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">
+                        Launch demo modal
+                    </button>
+
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Size
+    </h3>
+    <p class="title-lead">
+        To change the width of modal windows, you need to add one of the following CSS class to the <code>.modal-dialog</code> wrapper: <code>.modal-sm</code>, <code>.modal-lg</code>.
+    </p>
+
+    <div class="example-box-wrapper">
+
+        <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Large modal content here ...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Small modal content here ...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Large modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Small modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

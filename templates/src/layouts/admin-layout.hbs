@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang ="en">
+<head> 
+
+    {{> head  }}
+
+{{#if production}}
+
+    {{> assets-css  }}
+
+{{else}}
+
+    {{> assets-css-development  }}
+
+{{/if}}
+
+</head> 
+    <body>
+        <div id="loading"><img src="../assets/images/spinner/loader-dark.gif" alt="Loading..."></div>
+
+        {{> body  }}
+
+{{#if production}}
+
+    {{> assets-js  }}
+
+{{else}}
+
+    {{> assets-js-development  }}
+
+{{/if}}
+        
+    </body>
+</html>

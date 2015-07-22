@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang ="en">
+<head>
+
+    {{> head  }}
+
+{{#if production}}
+
+    {{> assets-css  }}
+
+{{else}}
+
+    {{> assets-css-development  }}
+
+{{/if}}
+
+    <!-- Admin Theme -->
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/themes/bratilius/default/framework-color.css">
+    <link rel="stylesheet" type="text/css" href="assets-minified/themes/bratilius/border-radius.css">
+
+    <!-- Frontend Theme -->
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/themes/bratilius/frontend/color.css">
+
+    <!-- Color Helpers CSS -->
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/helpers/colors.css">
+
+</head> 
+<body class="frontend-layout">
+
+    <div id="featured-slide-example" class="featured-area dummy-dark-bg title-box medium-padding"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -200px;"
+        data-anchor-target="#featured-slide-example"
+    >
+
+        {{> frontend-navigation }}
+        
+        <div class="wow bounceInDown">
+            <div class="container featured-box" data-0="transform:translateY(0px); opacity: 1" data-250="transform:translateY(80px); opacity: 0">
+                <h1 class="title-heading">{{title}}</h1>
+                <h3 class="title-content">Checkout the <span class="text-transform-low">{{title}}</span> examples below.</h3>
+            </div>
+        </div>
+    </div>
+
+  {{> body  }}
+
+{{#if production}}
+
+    {{> assets-js  }}
+
+{{else}}
+
+    {{> assets-js-development  }}
+
+{{/if}}
+    {{> assets-frontend  }}
+
+    <script type="text/javascript">
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+            skrollr.init({
+                forceHeight: false,
+                smoothScrolling: true
+            });
+        }
+    </script>
+
+    </body>
+</html>

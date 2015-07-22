@@ -1,0 +1,565 @@
+---
+title: Wizard
+categories: Framework
+tags: Widgets
+---
+    <h2 class="title-hero">
+        Wizard
+    </h2>
+    <p class="title-lead">Wizards allow you to go through different steps of content using a navigation or pager menu.</p>
+    <div class="divider"></div>
+
+<!-- Bootstrap Wizard -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/wizard/wizard.css">-->
+<script type="text/javascript" src="assets-minified/widgets/wizard/wizard.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/wizard/wizard-demo.js"></script>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Wizard - <b>/assets/widgets/wizard/wizard.js</b>
+                        </li>
+                        <li>
+                            Wizard demo - <b>/assets/widgets/wizard/wizard-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/wizard/wizard.css - Contains the CSS needed for the Wizard structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://github.com/VinceG/twitter-bootstrap-wizard" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markup below to create a basic wizard example.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="form-wizard-1">
+            <ul>
+                <li><a href="#tab1" data-toggle="tab">First</a></li>
+                <li><a href="#tab2" data-toggle="tab">Second</a></li>
+                <li><a href="#tab3" data-toggle="tab">Third</a></li>
+                <li><a href="#tab4" data-toggle="tab">Forth</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="tab1">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            First
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-black">
+                            Second
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-green">
+                            Third
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-blue-alt">
+                            Forth
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <ul class="pager wizard">
+                    <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                    <li class="previous"><a href="#">Previous</a></li>
+                    <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                    <li class="next"><a href="#">Next</a></li>
+                </ul>
+            </div>  
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div id="form-wizard-1">
+                        <ul>
+                            <li><a href="#tab1" data-toggle="tab">First</a></li>
+                            <li><a href="#tab2" data-toggle="tab">Second</a></li>
+                            <li><a href="#tab3" data-toggle="tab">Third</a></li>
+                            <li><a href="#tab4" data-toggle="tab">Forth</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="tab1">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-default">
+                                        First
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-black">
+                                        Second
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-green">
+                                        Third
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-blue-alt">
+                                        Forth
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pager wizard">
+                                <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                                <li class="previous"><a href="#">Previous</a></li>
+                                <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                                <li class="next"><a href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('#form-wizard-1').bootstrapWizard({'tabClass': 'nav nav-pills'});
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markup below to create a basic wizard example.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="form-wizard-2">
+            <ul class="list-group list-group-separator row list-group-icons">
+                <li class="col-md-3 active">
+                    <a href="#custom-step-1" data-toggle="tab" class="list-group-item">
+                        <i class="glyph-icon icon-dashboard"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="col-md-3">
+                    <a href="#custom-step-2" data-toggle="tab" class="list-group-item">
+                        <i class="glyph-icon font-red icon-bullhorn"></i>
+                        Profile
+                    </a>
+                </li>
+                <li class="col-md-3">
+                    <a href="#custom-step-3" data-toggle="tab" class="list-group-item">
+                        <i class="glyph-icon font-primary icon-camera"></i>
+                        Messages
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="custom-step-1">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            First
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="custom-step-2">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-black">
+                            Second
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="custom-step-3">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-green">
+                            Third
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="custom-step-4">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-blue">
+                            Forth
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="pager">
+                    <div class="pull-right">
+                        <button class="btn btn-default button-next">
+                            <i class="glyph-icon icon-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-default button-last">
+                            <i class="glyph-icon icon-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="pull-left">
+                        <button class="btn btn-default button-first">
+                            <i class="glyph-icon icon-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-default button-previous">
+                            <i class="glyph-icon icon-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div id="form-wizard-2">
+                        <ul class="list-group list-group-separator row list-group-icons">
+                            <li class="col-md-3 active">
+                                <a href="#custom-step-1" data-toggle="tab" class="list-group-item">
+                                    <i class="glyph-icon icon-dashboard"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="col-md-3">
+                                <a href="#custom-step-2" data-toggle="tab" class="list-group-item">
+                                    <i class="glyph-icon font-red icon-bullhorn"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li class="col-md-3">
+                                <a href="#custom-step-3" data-toggle="tab" class="list-group-item">
+                                    <i class="glyph-icon font-primary icon-camera"></i>
+                                    Messages
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="custom-step-1">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-default">
+                                        First
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="custom-step-2">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-black">
+                                        Second
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="custom-step-3">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-green">
+                                        Third
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="custom-step-4">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-blue">
+                                        Forth
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pager">
+                                <div class="pull-right">
+                                    <button class="btn btn-default button-next">
+                                        <i class="glyph-icon icon-arrow-right"></i>
+                                    </button>
+                                    <button class="btn btn-default button-last">
+                                        <i class="glyph-icon icon-chevron-right"></i>
+                                    </button>
+                                </div>
+                                <div class="pull-left">
+                                    <button class="btn btn-default button-first">
+                                        <i class="glyph-icon icon-chevron-left"></i>
+                                    </button>
+                                    <button class="btn btn-default button-previous">
+                                        <i class="glyph-icon icon-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('#form-wizard-2').bootstrapWizard({'tabClass': 'list-group list-group-separator row list-group-icons list-group-centered', 'nextSelector': '.button-next', 'previousSelector': '.button-previous', 'firstSelector': '.button-first', 'lastSelector': '.button-last'});
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Alternate style
+    </h3>
+    <p class="title-lead">To use the alternate wizard style add the <code>.wizard-alternate</code> CSS class to the wizard wrapper (<code>#form-wizard</code> - in our case).</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="form-wizard-3" class="form-wizard">
+            <ul>
+                <li>
+                    <a href="#step-1" data-toggle="tab">
+                      <label class="wizard-step">1</label>
+                      <span class="wizard-description">
+                         User details
+                         <small>Gather the user details</small>
+                      </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#step-2" data-toggle="tab">
+                      <label class="wizard-step">2</label>
+                      <span class="wizard-description">
+                         Contact information
+                         <small>Confirm contact details</small>
+                      </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#step-3" data-toggle="tab">
+                      <label class="wizard-step">3</label>
+                      <span class="wizard-description">
+                         Business support
+                         <small>Establish business description</small>
+                      </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#step-4" data-toggle="tab">
+                      <label class="wizard-step">4</label>
+                      <span class="wizard-description">
+                         Final steps
+                         <small>Finish and send the email</small>
+                      </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="step-1">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            First
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="step-2">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-black">
+                            Second
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="step-3">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-green">
+                            Third
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="step-4">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-blue">
+                            Forth
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Lorem ipsum dolor sic amet dixit tu.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div id="form-wizard-3" class="form-wizard">
+                        <ul>
+                            <li>
+                                <a href="#step-1" data-toggle="tab">
+                                    <label class="wizard-step">1</label>
+                      <span class="wizard-description">
+                         User details
+                         <small>Gather the user details</small>
+                      </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step-2" data-toggle="tab">
+                                    <label class="wizard-step">2</label>
+                      <span class="wizard-description">
+                         Contact information
+                         <small>Confirm contact details</small>
+                      </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step-3" data-toggle="tab">
+                                    <label class="wizard-step">3</label>
+                      <span class="wizard-description">
+                         Business support
+                         <small>Establish business description</small>
+                      </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step-4" data-toggle="tab">
+                                    <label class="wizard-step">4</label>
+                      <span class="wizard-description">
+                         Final steps
+                         <small>Finish and send the email</small>
+                      </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="step-1">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-default">
+                                        First
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="step-2">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-black">
+                                        Second
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="step-3">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-green">
+                                        Third
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="step-4">
+                                <div class="content-box">
+                                    <h3 class="content-box-header bg-blue">
+                                        Forth
+                                    </h3>
+                                    <div class="content-box-wrapper">
+                                        Lorem ipsum dolor sic amet dixit tu.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('#form-wizard-3').bootstrapWizard({'tabClass': ''});
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

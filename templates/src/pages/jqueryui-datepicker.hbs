@@ -1,0 +1,169 @@
+---
+title: jQueryUI Datepicker
+
+categories: Framework
+tags: Widgets
+---
+
+<!-- jQueryUI Datepicker -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/datepicker-ui/datepicker.css">-->
+<script type="text/javascript" src="assets-minified/widgets/datepicker-ui/datepicker.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/datepicker-ui/datepicker-demo.js"></script>
+
+    <h2 class="title-hero">
+        jQuery UI datepicker
+    </h2>
+    <p class="title-lead">Use the markups below to create jQuery UI datepicker elements.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            Datepicker Core - <b>/assets/widgets/datepicker-ui/datepicker.js</b>
+                        </li>
+                        <li>
+                            Datepicker Demo - <b>/assets/widgets/datepicker-ui/datepicker-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/datepicker-ui/datepicker.css - Contains the CSS needed for the datepicker structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/datepicker/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Inline
+    </h3>
+    <p class="title-lead">Use the markup below to create a jQuery UI datepicker inline.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="datepicker" style="width: 300px;"></div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="datepicker" style="width: 300px;"></div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".datepicker" ).datepicker();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Multiple months
+    </h3>
+    <p class="title-lead">Use the markup below to create a jQuery UI datepicker with multiple months visible at once.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="input-prepend input-group demo-margin">
+            <span class="add-on input-group-addon">
+                <i class="glyph-icon icon-calendar"></i>
+            </span>
+            <input type="text" style="width: 200px" name="datepicker_multiple_months" id="datepicker_multiple_months" class="form-control"> 
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon">
+                            <i class="glyph-icon icon-calendar"></i>
+                        </span>
+                        <input type="text" style="width: 200px" name="datepicker_multiple_months" id="datepicker_multiple_months" class="form-control">
+                    </div>
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#datepicker_multiple_months" ).datepicker({
+                                numberOfMonths: 3,
+                                showButtonPanel: true
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Range selector
+    </h3>
+    <p class="title-lead">Use the markup below to create a jQuery UI datepicker with range selector.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="clearfix demo-margin">
+            <input type="text" style="width: 200px" name="" id="fromDate" placeholder="From date..." class="float-left mrg10R form-control"> 
+            <input type="text" style="width: 200px" name="" id="toDate" placeholder="To date..." class="float-left form-control"> 
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="clearfix">
+                        <input type="text" style="width: 200px" name="" id="fromDate" placeholder="From date..." class="float-left mrg10R form-control">
+                        <input type="text" style="width: 200px" name="" id="toDate" placeholder="To date..." class="float-left form-control">
+                    </div>
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#fromDate" ).datepicker({
+                                defaultDate: "+1w",
+                                changeMonth: true,
+                                numberOfMonths: 3,
+                                onClose: function( selectedDate ) {
+                                    $( "#toDate" ).datepicker( "option", "minDate", selectedDate );
+                                }
+                            });
+                            $( "#toDate" ).datepicker({
+                                defaultDate: "+1w",
+                                changeMonth: true,
+                                numberOfMonths: 3,
+                                onClose: function( selectedDate ) {
+                                    $( "#fromDate" ).datepicker( "option", "maxDate", selectedDate );
+                                }
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

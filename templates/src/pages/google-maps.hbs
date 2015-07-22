@@ -1,0 +1,355 @@
+---
+title: Google maps
+
+categories: Framework
+tags: Maps
+---
+
+    <!-- GMaps -->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&sensor=true"></script>
+    <script type="text/javascript" src="assets-minified/widgets/maps/gmaps/gmaps.js"></script>
+    <script type="text/javascript" src="assets-minified/widgets/maps/gmaps/gmaps-demo.js"></script>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            gMaps core - <b>/assets/widgets/maps/gmaps/gmaps.js</b>
+                        </li>
+                        <li>
+                            gMaps demo - <b>/assets/widgets/maps/gmaps/gmaps-demo.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://hpneo.github.io/gmaps/documentation.html" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h2 class="title-hero">
+        Google Maps
+    </h2>
+    <p class="title-lead">Use the markup below to create maps using the Google Maps API.</p>
+
+    <div class="divider"></div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">This example shows how to embed a basic map without pointers or other informations.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="map-basic" style="height: 300px;"></div>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div id="map-basic" style="height: 300px;"></div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+
+                            map1 = new GMaps({
+                                div: '#map-basic',
+                                lat: -12.043333,
+                                lng: -77.028333
+                            });
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Markers
+    </h3>
+    <p class="title-lead">This example shows a GMaps implementation with markers.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-box pad10A center-margin col-md-8">
+                    <div id="map-marker" style="height: 250px;"></div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="content-box pad10A center-margin col-md-8">
+                                <div id="map-marker" style="height: 250px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+
+                            map2 = new GMaps({
+                                div: '#map-marker',
+                                lat: -12.043333,
+                                lng: -77.028333
+                            });
+                            map2.addMarker({
+                                lat: -12.043333,
+                                lng: -77.03,
+                                title: 'Lima',
+                                details: {
+                                    database_id: 42,
+                                    author: 'HPNeo'
+                                },
+                                click: function(e){
+                                    if(console.log)
+                                        console.log(e);
+                                    alert('You clicked in this marker');
+                                }
+                            });
+                            map2.addMarker({
+                                lat: -12.042,
+                                lng: -77.028333,
+                                title: 'Marker with InfoWindow',
+                                infoWindow: {
+                                    content: '<p>HTML Content</p>'
+                                }
+                            });
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Interactions
+    </h4>
+    <p class="title-lead">Click on the map to dynamically create markers.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="content-box pad10A">
+                    <div id="map-interaction" style="height: 200px;"></div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-blue">
+                        Using indices
+                    </h3>
+                    <div class="content-box-wrapper">
+                        <ul id="markers-with-index" class="reset-ul">
+                            <li class="font-bold font-blue-alt text-center pad5B">Click inside the map to add a marker</li>
+                            <li class="divider"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="content-box pad10A">
+                                <div id="map-interaction" style="height: 200px;"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-blue">
+                                    Using indices
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    <ul id="markers-with-index" class="reset-ul">
+                                        <li class="font-bold font-blue-alt text-center pad5B">Click inside the map to add a marker</li>
+                                        <li class="divider"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            map = new GMaps({
+                                div: '#map-interaction',
+                                lat: -12.043333,
+                                lng: -77.028333
+                            });
+
+                            GMaps.on('marker_added', map, function(marker) {
+                                $('#markers-with-index').append('<li><a href="#" class="pan-to-marker" data-marker-index="' + map.markers.indexOf(marker) + '">' + marker.title + '</a></li>');
+
+                                $('#markers-with-coordinates').append('<li><a href="#" class="pan-to-marker" data-marker-lat="' + marker.getPosition().lat() + '" data-marker-lng="' + marker.getPosition().lng() + '">' + marker.title + '</a></li>');
+                            });
+
+                            GMaps.on('click', map.map, function(event) {
+                                var index = map.markers.length;
+                                var lat = event.latLng.lat();
+                                var lng = event.latLng.lng();
+
+                                var template = $('#edit_marker_template').text();
+
+                                var content = template.replace(/{{index}}/g, index).replace(/{{lat}}/g, lat).replace(/{{lng}}/g, lng);
+
+                                map.addMarker({
+                                    lat: lat,
+                                    lng: lng,
+                                    title: 'Marker #' + index,
+                                    infoWindow: {
+                                        content : content
+                                    }
+                                })
+                            });
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Polygons
+    </h3>
+    <p class="title-lead">You can create polygons on maps via Javascript.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="content-box pad10A center-margin col-md-8">
+                    <div id="map-polygon" style="height: 250px;"></div>
+                </div>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="content-box pad10A center-margin col-md-8">
+                                <div id="map-polygon" style="height: 250px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            map3 = new GMaps({
+                                div: '#map-polygon',
+                                lat: -12.043333,
+                                lng: -77.028333
+                            });
+
+                            var path = [[-12.040397656836609,-77.03373871559225],
+                                [-12.040248585302038,-77.03993927003302],
+                                [-12.050047116528843,-77.02448169303511],
+                                [-12.044804866577001,-77.02154422636042]];
+
+                            polygon = map3.drawPolygon({
+                                paths: path,
+                                strokeColor: '#BBD8E9',
+                                strokeOpacity: 1,
+                                strokeWeight: 3,
+                                fillColor: '#BBD8E9',
+                                fillOpacity: 0.6
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Street view
+    </h3>
+    <p class="title-lead">Use the markup below to create street view maps.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="content-box pad10A center-margin col-md-10">
+                    <div id="map-street" style="height: 350px;"></div>
+                </div>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="content-box pad10A center-margin col-md-10">
+                                <div id="map-street" style="height: 350px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        var panorama;
+
+                        $(document).ready(function(){
+                            panorama = GMaps.createPanorama({
+                                el: '#map-street',
+                                lat : 42.3455,
+                                lng : -71.0983
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

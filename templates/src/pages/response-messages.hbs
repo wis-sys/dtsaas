@@ -1,0 +1,287 @@
+---
+title: Response messages
+categories: Framework
+tags: Elements
+---
+    <h2 class="title-hero">
+        Response messages
+    </h2>
+    <p class="title-lead">Response Messages are used to display notice, warning, success, error and information messages.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/elements/response-messages.css - Contains the CSS needed for the response messages structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Colors
+    </h3>
+    <p class="title-lead">Basic examples for the response messages, without icons or titles.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="alert alert-success">
+            <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-info">
+            <p>Information message box using the <code>.alert-info</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-notice">
+            <p>Information message box using the <code>.alert-notice</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-warning">
+            <p>Information message box using the <code>.alert-warning</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-danger">
+            <p>Information message box using the <code>.alert-danger</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="alert alert-success">
+                        <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-info">
+                        <p>Information message box using the <code>.alert-info</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-notice">
+                        <p>Information message box using the <code>.alert-notice</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-warning">
+                        <p>Information message box using the <code>.alert-warning</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-danger">
+                        <p>Information message box using the <code>.alert-danger</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Titles
+    </h3>
+    <p class="title-lead">To add titles to the response messages boxes, you need to add a heading with <code>.alert-title</code> CSS class.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="alert alert-success">
+            <h4 class="alert-title">Success message title</h4>
+            <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-info">
+            <h4 class="alert-title">Info message title</h4>
+            <p>Information message box using the <code>.alert-info</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-notice">
+            <h4 class="alert-title">Notice message title</h4>
+            <p>Information message box using the <code>.alert-notice</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-warning">
+            <h4 class="alert-title">Warning message title</h4>
+            <p>Information message box using the <code>.alert-warning</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+        <div class="alert alert-danger">
+            <h4 class="alert-title">Danger message title</h4>
+            <p>Information message box using the <code>.alert-danger</code> color scheme. <a href="#" title="Link">Link</a></p>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="alert alert-success">
+                        <h4 class="alert-title">Success message title</h4>
+                        <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-info">
+                        <h4 class="alert-title">Info message title</h4>
+                        <p>Information message box using the <code>.alert-info</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-notice">
+                        <h4 class="alert-title">Notice message title</h4>
+                        <p>Information message box using the <code>.alert-notice</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-warning">
+                        <h4 class="alert-title">Warning message title</h4>
+                        <p>Information message box using the <code>.alert-warning</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+                    <div class="alert alert-danger">
+                        <h4 class="alert-title">Danger message title</h4>
+                        <p>Information message box using the <code>.alert-danger</code> color scheme. <a href="#" title="Link">Link</a></p>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Icons
+    </h3>
+    <p class="title-lead">Add icons to alert boxes using the following markup <code>&lt;div class="alert-icon"&gt; &lt;i class="glyph-icon icon-ICON-NAME-HERE">&lt;/i&gt; &lt;/div&gt;</code>. You also need to wrap the alert title and content inside an element with <code>.alert-content</code> CSS class.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="alert alert-success">
+            <div class="bg-green alert-icon">
+                <i class="glyph-icon icon-check"></i>
+            </div>
+            <div class="alert-content">
+                <h4 class="alert-title">Success message title</h4>
+                <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+            </div>
+        </div>
+        <div class="alert alert-info">
+            <div class="bg-black alert-icon">
+                <i class="glyph-icon icon-comment"></i>
+            </div>
+            <div class="alert-content">
+                <h4 class="alert-title">Info message title</h4>
+                <p>Information message box using the <code>.alert-info</code> color scheme. <a href="#" title="Link">Link</a></p>
+            </div>
+        </div>
+        <div class="alert alert-notice">
+            <div class="bg-blue alert-icon">
+                <i class="glyph-icon icon-info"></i>
+            </div>
+            <div class="alert-content">
+                <h4 class="alert-title">Notice message title</h4>
+                <p>Information message box using the <code>.alert-notice</code> color scheme. <a href="#" title="Link">Link</a></p>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            <div class="bg-orange alert-icon">
+                <i class="glyph-icon icon-warning"></i>
+            </div>
+            <div class="alert-content">
+                <h4 class="alert-title">Warning message title</h4>
+                <p>Information message box using the <code>.alert-warning</code> color scheme. <a href="#" title="Link">Link</a></p>
+            </div>
+        </div>
+        <div class="alert alert-danger">
+            <div class="bg-red alert-icon">
+                <i class="glyph-icon icon-times"></i>
+            </div>
+            <div class="alert-content">
+                <h4 class="alert-title">Danger message title</h4>
+                <p>Information message box using the <code>.alert-danger</code> color scheme. <a href="#" title="Link">Link</a></p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="alert alert-success">
+                        <div class="bg-green alert-icon">
+                            <i class="glyph-icon icon-check"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Success message title</h4>
+                            <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <div class="bg-black alert-icon">
+                            <i class="glyph-icon icon-comment"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Info message title</h4>
+                            <p>Information message box using the <code>.alert-info</code> color scheme. <a href="#" title="Link">Link</a></p>
+                        </div>
+                    </div>
+                    <div class="alert alert-notice">
+                        <div class="bg-blue alert-icon">
+                            <i class="glyph-icon icon-info"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Notice message title</h4>
+                            <p>Information message box using the <code>.alert-notice</code> color scheme. <a href="#" title="Link">Link</a></p>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning">
+                        <div class="bg-orange alert-icon">
+                            <i class="glyph-icon icon-warning"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Warning message title</h4>
+                            <p>Information message box using the <code>.alert-warning</code> color scheme. <a href="#" title="Link">Link</a></p>
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <div class="bg-red alert-icon">
+                            <i class="glyph-icon icon-times"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Danger message title</h4>
+                            <p>Information message box using the <code>.alert-danger</code> color scheme. <a href="#" title="Link">Link</a></p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Close button
+    </h3>
+    <p class="title-lead">Add <code>.alert-close</code> CSS class to the <code>.alert</code> response box element to create a closable response message box.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="alert alert-close alert-success">
+            <a href="#" title="Close" class="glyph-icon alert-close-btn icon-remove"></a>
+            <div class="bg-green alert-icon">
+                <i class="glyph-icon icon-check"></i>
+            </div>
+            <div class="alert-content">
+                <h4 class="alert-title">Success message title</h4>
+                <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="alert alert-close alert-success">
+                        <a href="#" title="Close" class="glyph-icon alert-close-btn icon-remove"></a>
+                        <div class="bg-green alert-icon">
+                            <i class="glyph-icon icon-check"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Success message title</h4>
+                            <p>Information message box using the <code>.alert-success</code> color scheme. <a href="#" title="Link">Link</a></p>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('.alert-close-btn').click(function(){
+                                $(this).parent().addClass('animated fadeOutDown');
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

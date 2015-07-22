@@ -1,0 +1,656 @@
+---
+title: Tile boxes
+
+categories: Framework
+tags: Elements
+---
+    <h2 class="title-hero">
+        Tile boxes
+    </h2>
+    <p class="title-lead">Tile boxes can be used to show all kinds of informations about stuff in your application.</p>
+
+    <div class="divider"></div>
+
+    {{> theming  }} 
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markup below to create basic tile boxes. You can remove any element you don't need from them.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="tile-box bg-primary">
+                    <div class="tile-header">
+                        YoY Growth
+                        <div class="float-right">
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +55%
+                        </div>
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-bullhorn"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="tile-box bg-default">
+                    <div class="tile-header">
+                        YoY Growth
+                        <div class="float-right">
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +55%
+                        </div>
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-dashboard"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="tile-box bg-green">
+                    <div class="tile-header">
+                        YoY Growth
+                        <div class="float-right">
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +55%
+                        </div>
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-camera"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box bg-primary">
+                                <div class="tile-header">
+                                    YoY Growth
+                                    <div class="float-right">
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +55%
+                                    </div>
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-bullhorn"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box bg-default">
+                                <div class="tile-header">
+                                    YoY Growth
+                                    <div class="float-right">
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +55%
+                                    </div>
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-dashboard"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box bg-green">
+                                <div class="tile-header">
+                                    YoY Growth
+                                    <div class="float-right">
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +55%
+                                    </div>
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-camera"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Additional fields
+    </h3>
+    <p class="title-lead">Below you will find tile boxes examples that have additional fields. To create these kind of boxes, add the <code>.tile-box-alt</code> CSS class to the <code>.tile-box</code> element, like in the examples below.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="tile-box tile-box-alt bg-primary">
+                    <div class="tile-header">
+                        YoY Growth
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-dashboard"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <div class="tile-footer">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="tile-box tile-box-alt bg-default">
+                    <div class="tile-header">
+                        YoY Growth
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-camera"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <div class="tile-footer">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="tile-box tile-box-alt bg-blue-alt">
+                    <div class="tile-header">
+                        YoY Growth
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-tag"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <div class="tile-footer">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box tile-box-alt bg-primary">
+                                <div class="tile-header">
+                                    YoY Growth
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-dashboard"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                    <small>
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +7,6% new users in the first quarter
+                                    </small>
+                                </div>
+                                <div class="tile-footer">
+                                    view details
+                                    <i class="glyph-icon icon-arrow-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box tile-box-alt bg-default">
+                                <div class="tile-header">
+                                    YoY Growth
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-camera"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                    <small>
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +7,6% new users in the first quarter
+                                    </small>
+                                </div>
+                                <div class="tile-footer">
+                                    view details
+                                    <i class="glyph-icon icon-arrow-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box tile-box-alt bg-blue-alt">
+                                <div class="tile-header">
+                                    YoY Growth
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-tag"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                    <small>
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +7,6% new users in the first quarter
+                                    </small>
+                                </div>
+                                <div class="tile-footer">
+                                    view details
+                                    <i class="glyph-icon icon-arrow-right"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Button tiles
+    </h3>
+    <p class="title-lead">You can transfrom tile elements into clickable buttons by adding the tile CSS classes, the <code>.btn</code> CSS class to a link element.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <a href="#" class="tile-box btn btn-primary" title="">
+                    <div class="tile-header">
+                        YoY Growth
+                        <div class="float-right">
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +55%
+                        </div>
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-bullhorn"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <a href="#" class="tile-box btn btn-default" title="">
+                    <div class="tile-header">
+                        YoY Growth
+                        <div class="float-right">
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +55%
+                        </div>
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-dashboard"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <a href="#" class="tile-box btn btn-success" title="">
+                    <div class="tile-header">
+                        YoY Growth
+                        <div class="float-right">
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +55%
+                        </div>
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-camera"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <a href="#" class="tile-box btn btn-primary" title="">
+                                <div class="tile-header">
+                                    YoY Growth
+                                    <div class="float-right">
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +55%
+                                    </div>
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-bullhorn"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <a href="#" class="tile-box btn btn-default" title="">
+                                <div class="tile-header">
+                                    YoY Growth
+                                    <div class="float-right">
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +55%
+                                    </div>
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-dashboard"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <a href="#" class="tile-box btn btn-success" title="">
+                                <div class="tile-header">
+                                    YoY Growth
+                                    <div class="float-right">
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +55%
+                                    </div>
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-camera"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Tiles with links
+    </h3>
+    <p class="title-lead">These are regular tile boxes with links inside. The examples below have a "view details" link in the footer.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="tile-box tile-box-alt bg-primary">
+                    <div class="tile-header">
+                        YoY Growth
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-dashboard"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="tile-box tile-box-alt bg-default">
+                    <div class="tile-header">
+                        YoY Growth
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-camera"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="tile-box tile-box-alt bg-blue-alt">
+                    <div class="tile-header">
+                        YoY Growth
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-tag"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box tile-box-alt bg-primary">
+                                <div class="tile-header">
+                                    YoY Growth
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-dashboard"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                    <small>
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +7,6% new users in the first quarter
+                                    </small>
+                                </div>
+                                <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                                    view details
+                                    <i class="glyph-icon icon-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box tile-box-alt bg-default">
+                                <div class="tile-header">
+                                    YoY Growth
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-camera"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                    <small>
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +7,6% new users in the first quarter
+                                    </small>
+                                </div>
+                                <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                                    view details
+                                    <i class="glyph-icon icon-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="tile-box tile-box-alt bg-blue-alt">
+                                <div class="tile-header">
+                                    YoY Growth
+                                </div>
+                                <div class="tile-content-wrapper">
+                                    <i class="glyph-icon icon-tag"></i>
+                                    <div class="tile-content">
+                                        <span>$</span>
+                                        378
+                                    </div>
+                                    <small>
+                                        <i class="glyph-icon icon-caret-up"></i>
+                                        +7,6% new users in the first quarter
+                                    </small>
+                                </div>
+                                <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                                    view details
+                                    <i class="glyph-icon icon-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

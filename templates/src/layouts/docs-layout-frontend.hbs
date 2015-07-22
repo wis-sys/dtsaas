@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang ="en">
+<head> 
+
+    {{> head  }}
+
+{{#if production}}
+
+    {{> assets-css  }}
+
+{{else}}
+
+    {{> assets-css-development  }}
+
+{{/if}}
+
+<!-- Frontend Theme -->
+
+<link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/default/framework-color.css">
+<link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/border-radius.css">
+
+<link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/frontend/color.css">
+
+<!-- Color Helpers CSS -->
+
+<link rel="stylesheet" type="text/css" href="../assets/helpers/colors.css">
+
+<style>
+
+.remove-docs {
+	display: none;
+}
+
+</style>
+
+</head> 
+<body class="docs-layout"> 
+    <div class="row">
+        <div class="col-md-3">
+
+            {{> docs-navigation  }}
+
+        </div>
+        <div class="col-md-9">
+
+          {{> body  }}
+
+        </div>
+    </div>
+
+{{#if production}}
+
+    {{> assets-js  }}
+
+{{else}}
+
+    {{> assets-js-development  }}
+
+{{/if}}
+
+</body > 
+</html > 

@@ -1,0 +1,59 @@
+---
+title: Tabs navigation
+categories: 
+---
+
+<!-- jQueryUI Tabs -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/tabs-ui/tabs.css">-->
+<script type="text/javascript" src="assets-minified/widgets/tabs-ui/tabs.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Tabs */
+
+    $(function() { "use strict";
+        $(".tabs").tabs();
+    });
+</script>
+
+    <div id="page-content">
+
+        <div class="page-box">
+            <h3 class="page-title">
+            Page with tabs
+            <small>
+                This page has a top tabs navigation.
+            </small>
+        </h3>
+
+
+            <div class="tabs tabs-navigation">
+                <ul>
+                    <li>
+                        <a href="#normal-tabs-1" title="Tab 1">
+                            Dashboard panels
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#normal-tabs-2" title="Tab 2">
+                            Content boxes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#normal-tabs-3" title="Tab 3">
+                            Calendar example
+                        </a>
+                    </li>
+                </ul>
+                <div id="normal-tabs-1">
+                    <h1 class="font-gray-dark text-center mrg25T mrg15B">Tab 1 example content.</h1>
+                </div>
+                <div id="normal-tabs-2">
+                    <h1 class="font-gray-dark text-center mrg25T mrg15B">Tab 2 example content.</h1>
+                </div>
+                <div id="normal-tabs-3">
+                    <h1 class="font-gray-dark text-center mrg25T mrg15B">Tab 3 example content.</h1>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #page-content -->

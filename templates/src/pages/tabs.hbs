@@ -1,0 +1,972 @@
+---
+title: Tabs
+categories: Framework
+tags: Widgets
+---
+
+<!-- jQueryUI Tabs -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/tabs-ui/tabs.css">-->
+<script type="text/javascript" src="assets-minified/widgets/tabs-ui/tabs.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Tabs */
+
+    $(function() { "use strict";
+        $(".tabs").tabs();
+    });
+
+    $(function() { "use strict";
+        $(".tabs-hover").tabs({
+            event: "mouseover"
+        });
+    });
+</script>
+
+    <h2 class="title-hero">
+        Tabs
+    </h2>
+    <p class="title-lead">A single content area with multiple panels, each associated with a header in a list.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Bootstrap tabs core - <b>/assets/widgets/tabs/tabs.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/elements/menus.css - Contains the CSS needed for the bootstrap tabs structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://getbootstrap.com/javascript/#tabs" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+
+    <div class="example-box-wrapper">
+
+        <ul id="myTab" class="nav clearfix nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+            <li class="dropdown">
+                <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                    <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">Submenu link 1</a></li>
+                    <li class=""><a href="#dropdown2" tabindex="-1" data-toggle="tab">Submenu link 2</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home">
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <ul id="myTab" class="nav clearfix nav-tabs">
+                        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                        <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                                <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">Submenu link 1</a></li>
+                                <li class=""><a href="#dropdown2" tabindex="-1" data-toggle="tab">Submenu link 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="home">
+                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                        </div>
+                        <div class="tab-pane fade" id="dropdown1">
+                            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                        </div>
+                        <div class="tab-pane fade" id="dropdown2">
+                            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Positions
+    </h3>
+    <p class="title-lead">Add one of the following CSS classes to change the tabs navigation menu position: <code>.nav-tabs-left</code>, <code>.nav-tabs-right</code>, <code>.nav-tabs-bottom</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="clearfix">
+
+            <div id="myTabContent-1" class="tab-content">
+                <div class="tab-pane fade active in" id="home-1">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div class="tab-pane fade" id="profile-1">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean  beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                </div>
+                <div class="tab-pane fade" id="dropdown1-1">
+                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                </div>
+                <div class="tab-pane fade" id="dropdown2-1">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                </div>
+            </div>
+            <ul id="myTab-1" class="nav clearfix nav-tabs nav-tabs-bottom">
+                <li class="active"><a href="#home-1" data-toggle="tab">Home</a></li>
+                <li class=""><a href="#profile-1" data-toggle="tab">Profile</a></li>
+                <li class="dropdown">
+                    <a href="#" id="myTabDrop1-1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1-1">
+                        <li><a href="#dropdown1-1" tabindex="-1" data-toggle="tab">Submenu link 1</a></li>
+                        <li class=""><a href="#dropdown2-1" tabindex="-1" data-toggle="tab">Submenu link 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="clearfix">
+
+                        <div id="myTabContent-1" class="tab-content">
+                            <div class="tab-pane fade active in" id="home-1">
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile-1">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean  beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown1-1">
+                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown2-1">
+                                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                            </div>
+                        </div>
+                        <ul id="myTab-1" class="nav clearfix nav-tabs nav-tabs-bottom">
+                            <li class="active"><a href="#home-1" data-toggle="tab">Home</a></li>
+                            <li class=""><a href="#profile-1" data-toggle="tab">Profile</a></li>
+                            <li class="dropdown">
+                                <a href="#" id="myTabDrop1-1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1-1">
+                                    <li><a href="#dropdown1-1" tabindex="-1" data-toggle="tab">Submenu link 1</a></li>
+                                    <li class=""><a href="#dropdown2-1" tabindex="-1" data-toggle="tab">Submenu link 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Horizontal list tabs menu
+    </h3>
+    <p class="title-lead">Use any of the available navigation menus to create tabbed content.</p>
+
+    <div class="example-box-wrapper">
+
+        <ul class="list-group list-group-separator row list-group-icons">
+            <li class="col-md-3">
+                <a href="#tab-example-4" data-toggle="tab" class="list-group-item">
+                    <i class="glyph-icon font-red icon-bullhorn"></i>
+                    Profile
+                </a>
+            </li>
+            <li class="col-md-3 active">
+                <a href="#tab-example-1" data-toggle="tab" class="list-group-item">
+                    <i class="glyph-icon icon-dashboard"></i>
+                    Home
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a href="#tab-example-2" data-toggle="tab" class="list-group-item">
+                    <i class="glyph-icon font-primary icon-camera"></i>
+                    Messages
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a href="#tab-example-3" data-toggle="tab" class="list-group-item">
+                    <i class="glyph-icon font-blue-alt icon-globe"></i>
+                    Settings
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab-example-1">
+                <p>Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-example-2">
+                <p> Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-example-3">
+                <p>Commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-example-4">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress,</p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <ul class="list-group list-group-separator row list-group-icons">
+                        <li class="col-md-3">
+                            <a href="#tab-example-4" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon font-red icon-bullhorn"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="col-md-3 active">
+                            <a href="#tab-example-1" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon icon-dashboard"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#tab-example-2" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon font-primary icon-camera"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#tab-example-3" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon font-blue-alt icon-globe"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tab-example-1">
+                            <p>Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-example-2">
+                            <p> Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-example-3">
+                            <p>Commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-example-4">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress,</p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h2 class="title-hero">
+        jQueryUI Tabs
+    </h2>
+    <p class="title-lead">Use the examples below to create jQueryUI powered tabbed content.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Tabs - <b>/assets/widgets/tabs-ui/tabs.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            <b>/assets/widgets/tabs-ui/tabs.css</b> - Contains the CSS needed for the tabs structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Tabs external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/tabs/" title="Tabs documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Tabs external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">To create a basic tabbed content area you have to use the following HTML structure and initialize the tabs widget using a selector.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="tabs">
+            <ul>
+                <li>
+                    <a href="#normal-tabs-1" title="Tab 1">
+                        Tab 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-2" title="Tab 2">
+                        Tab 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-3" title="Tab 3">
+                        Tab 3
+                    </a>
+                </li>
+            </ul>
+            <div id="normal-tabs-1">
+                tab 1 content
+            </div>
+            <div id="normal-tabs-2">
+                tab 2 content
+            </div>
+            <div id="normal-tabs-3">
+                tab 3 content
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#normal-tabs-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#normal-tabs-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#normal-tabs-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="normal-tabs-1">
+                            tab 1 content
+                        </div>
+                        <div id="normal-tabs-2">
+                            tab 2 content
+                        </div>
+                        <div id="normal-tabs-3">
+                            tab 3 content
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".tabs" ).tabs();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Alternate style
+    </h3>
+    <p class="title-lead">To create an alternate tabs navigation style, add the <code>.tabs-navigation</code> CSS class to the <code>.tabs</code> element.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="tabs tabs-navigation">
+            <ul>
+                <li>
+                    <a href="#normal-tabs-1" title="Tab 1">
+                        Tab 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-2" title="Tab 2">
+                        Tab 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-3" title="Tab 3">
+                        Tab 3
+                    </a>
+                </li>
+            </ul>
+            <div id="normal-tabs-1">
+                tab 1 content
+            </div>
+            <div id="normal-tabs-2">
+                tab 2 content
+            </div>
+            <div id="normal-tabs-3">
+                tab 3 content
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="tabs tabs-navigation">
+                        <ul>
+                            <li>
+                                <a href="#normal-tabs-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#normal-tabs-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#normal-tabs-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="normal-tabs-1">
+                            tab 1 content
+                        </div>
+                        <div id="normal-tabs-2">
+                            tab 2 content
+                        </div>
+                        <div id="normal-tabs-3">
+                            tab 3 content
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".tabs" ).tabs();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Tabs boxes
+    </h3>
+    <p class="title-lead">Contnt box header can accomodate the tabs widget navigation. To create a content box header tabs, add <code>.tabs</code> to the <code>.content-box</code> wrapper.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="content-box tabs">
+                    <h3 class="content-box-header bg-primary">
+                        <span>Content box title</span>
+                        <ul>
+                            <li>
+                                <a href="#tabs-example-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                    </h3>
+
+                    <div id="tabs-example-1">
+                        Tab 1 content goes here ...
+                    </div>
+                    <div id="tabs-example-2">
+                        Tab 2 content goes here ...
+                    </div>
+                    <div id="tabs-example-3">
+                        Tab 3 content goes here ...
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="content-box tabs">
+                    <h3 class="content-box-header bg-default">
+                        <span>Content box title</span>
+                        <ul>
+                            <li>
+                                <a href="#tabs-example-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                    </h3>
+
+                    <div id="tabs-example-1">
+                        Tab 1 content goes here ...
+                    </div>
+                    <div id="tabs-example-2">
+                        Tab 2 content goes here ...
+                    </div>
+                    <div id="tabs-example-3">
+                        Tab 3 content goes here ...
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="content-box tabs">
+                    <h3 class="content-box-header bg-white">
+                        <span>Content box title</span>
+                        <ul>
+                            <li>
+                                <a href="#tabs-example-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                    </h3>
+
+                    <div id="tabs-example-1">
+                        Tab 1 content goes here ...
+                    </div>
+                    <div id="tabs-example-2">
+                        Tab 2 content goes here ...
+                    </div>
+                    <div id="tabs-example-3">
+                        Tab 3 content goes here ...
+                    </div>
+
+                </div>
+                <div class="content-box tabs">
+                    <h3 class="content-box-header bg-red">
+                        <span>Content box title</span>
+                        <ul>
+                            <li>
+                                <a href="#tabs-example-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                    </h3>
+
+                    <div id="tabs-example-1">
+                        Tab 1 content goes here ...
+                    </div>
+                    <div id="tabs-example-2">
+                        Tab 2 content goes here ...
+                    </div>
+                    <div id="tabs-example-3">
+                        Tab 3 content goes here ...
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="content-box tabs">
+                    <h3 class="content-box-header bg-blue-alt">
+                        <span>Content box title</span>
+                        <ul>
+                            <li>
+                                <a href="#tabs-example-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                    </h3>
+
+                    <div id="tabs-example-1">
+                        Tab 1 content goes here ...
+                    </div>
+                    <div id="tabs-example-2">
+                        Tab 2 content goes here ...
+                    </div>
+                    <div id="tabs-example-3">
+                        Tab 3 content goes here ...
+                    </div>
+
+                </div>
+
+                <div class="content-box tabs">
+                    <h3 class="content-box-header bg-green">
+                        <span>Content box title</span>
+                        <ul>
+                            <li>
+                                <a href="#tabs-example-1" title="Tab 1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-2" title="Tab 2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-example-3" title="Tab 3">
+                                    Tab 3
+                                </a>
+                            </li>
+                        </ul>
+                    </h3>
+
+                    <div id="tabs-example-1">
+                        Tab 1 content goes here ...
+                    </div>
+                    <div id="tabs-example-2">
+                        Tab 2 content goes here ...
+                    </div>
+                    <div id="tabs-example-3">
+                        Tab 3 content goes here ...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <div class="content-box tabs">
+                                <h3 class="content-box-header bg-primary">
+                                    <span>Content box title</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-example-1" title="Tab 1">
+                                                Tab 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-2" title="Tab 2">
+                                                Tab 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-3" title="Tab 3">
+                                                Tab 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+
+                                <div id="tabs-example-1">
+                                    Tab 1 content goes here ...
+                                </div>
+                                <div id="tabs-example-2">
+                                    Tab 2 content goes here ...
+                                </div>
+                                <div id="tabs-example-3">
+                                    Tab 3 content goes here ...
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="content-box tabs">
+                                <h3 class="content-box-header bg-default">
+                                    <span>Content box title</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-example-1" title="Tab 1">
+                                                Tab 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-2" title="Tab 2">
+                                                Tab 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-3" title="Tab 3">
+                                                Tab 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+
+                                <div id="tabs-example-1">
+                                    Tab 1 content goes here ...
+                                </div>
+                                <div id="tabs-example-2">
+                                    Tab 2 content goes here ...
+                                </div>
+                                <div id="tabs-example-3">
+                                    Tab 3 content goes here ...
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="content-box tabs">
+                                <h3 class="content-box-header bg-white">
+                                    <span>Content box title</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-example-1" title="Tab 1">
+                                                Tab 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-2" title="Tab 2">
+                                                Tab 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-3" title="Tab 3">
+                                                Tab 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+
+                                <div id="tabs-example-1">
+                                    Tab 1 content goes here ...
+                                </div>
+                                <div id="tabs-example-2">
+                                    Tab 2 content goes here ...
+                                </div>
+                                <div id="tabs-example-3">
+                                    Tab 3 content goes here ...
+                                </div>
+
+                            </div>
+                            <div class="content-box tabs">
+                                <h3 class="content-box-header bg-red">
+                                    <span>Content box title</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-example-1" title="Tab 1">
+                                                Tab 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-2" title="Tab 2">
+                                                Tab 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-3" title="Tab 3">
+                                                Tab 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+
+                                <div id="tabs-example-1">
+                                    Tab 1 content goes here ...
+                                </div>
+                                <div id="tabs-example-2">
+                                    Tab 2 content goes here ...
+                                </div>
+                                <div id="tabs-example-3">
+                                    Tab 3 content goes here ...
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="content-box tabs">
+                                <h3 class="content-box-header bg-blue-alt">
+                                    <span>Content box title</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-example-1" title="Tab 1">
+                                                Tab 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-2" title="Tab 2">
+                                                Tab 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-3" title="Tab 3">
+                                                Tab 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+
+                                <div id="tabs-example-1">
+                                    Tab 1 content goes here ...
+                                </div>
+                                <div id="tabs-example-2">
+                                    Tab 2 content goes here ...
+                                </div>
+                                <div id="tabs-example-3">
+                                    Tab 3 content goes here ...
+                                </div>
+
+                            </div>
+
+                            <div class="content-box tabs">
+                                <h3 class="content-box-header bg-green">
+                                    <span>Content box title</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-example-1" title="Tab 1">
+                                                Tab 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-2" title="Tab 2">
+                                                Tab 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-example-3" title="Tab 3">
+                                                Tab 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+
+                                <div id="tabs-example-1">
+                                    Tab 1 content goes here ...
+                                </div>
+                                <div id="tabs-example-2">
+                                    Tab 2 content goes here ...
+                                </div>
+                                <div id="tabs-example-3">
+                                    Tab 3 content goes here ...
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".tabs" ).tabs();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

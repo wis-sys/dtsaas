@@ -1,0 +1,312 @@
+---
+title: Popovers
+categories: Framework
+tags: Widgets
+---
+    <h2 class="title-hero">
+        Popovers
+    </h2>
+    <p class="title-lead">Popovers are extended tooltips that can be attached to any element and can contain more informations than a regular tooltip.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Bootstrap Popover - <b>/assets/widgets/popover/popover.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/popover/popover.css - Contains the CSS needed for the popover structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://getbootstrap.com/javascript/#popovers" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Inline
+    </h3>
+    <p class="title-lead">To create inline popovers you need to add the <code>.display-block</code> CSS class to any <code>.popover</code> element.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="display-block popover top">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Popover top</h3>
+                    <div class="popover-content">
+                        Sed posuere consectetur est at lobortis. Aenean eu leo quam.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="display-block popover right">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Popover right</h3>
+                    <div class="popover-content">
+                        Pellentesque ornare sem lacinia quam venenatis vestibulum consectetur.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="display-block popover bottom">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Popover bottom</h3>
+                    <div class="popover-content">
+                        Sem lacinia quam venenatis vestibulum consectetur est at lobortis.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="display-block popover left">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Popover left</h3>
+                    <div class="popover-content">
+                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="display-block popover top">
+                                <div class="arrow"></div>
+                                <h3 class="popover-title">Popover top</h3>
+                                <div class="popover-content">
+                                    Sed posuere consectetur est at lobortis. Aenean eu leo quam.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="display-block popover right">
+                                <div class="arrow"></div>
+                                <h3 class="popover-title">Popover right</h3>
+                                <div class="popover-content">
+                                    Pellentesque ornare sem lacinia quam venenatis vestibulum consectetur.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="display-block popover bottom">
+                                <div class="arrow"></div>
+                                <h3 class="popover-title">Popover bottom</h3>
+                                <div class="popover-content">
+                                    Sem lacinia quam venenatis vestibulum consectetur est at lobortis.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="display-block popover left">
+                                <div class="arrow"></div>
+                                <h3 class="popover-title">Popover left</h3>
+                                <div class="popover-content">
+                                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Position
+    </h3>
+    <p class="title-lead">You can change the default popover position either by adding the <code>data-placement=""</code> attribute or by setting the placement parameter via Javascript.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="text-center demo-margin">
+            <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 4" title="Left popover" data-placement="left" >
+                Left popover
+            </a>
+            <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 1" title="Top popover" data-placement="top">
+                Top popover
+            </a>
+            <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 3" title="Bottom popover" data-placement="bottom" >
+                Bottom popover
+            </a>
+            <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 2" title="Right popover" data-placement="right" >
+                Right popover
+            </a>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="text-center demo-margin">
+                        <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 4" title="Left popover" data-placement="left" >
+                            Left popover
+                        </a>
+                        <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 1" title="Top popover" data-placement="top">
+                            Top popover
+                        </a>
+                        <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 3" title="Bottom popover" data-placement="bottom" >
+                            Bottom popover
+                        </a>
+                        <a href="#" class="btn btn-default popover-button-default btn-md" data-content="Popover content from <b>data-content</b> attribute 2" title="Right popover" data-placement="right" >
+                            Right popover
+                        </a>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('.popover-button-default').popover({
+                                container: 'body',
+                                html : true,
+                                animation: true
+                            }).click(function(evt) {
+                                evt.preventDefault();
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Triggers
+    </h3>
+    <p class="title-lead">You can select the action that triggers the popover either by adding the <code>data-trigger=""</code> attribute or by setting the trigger parameter via Javascript. Available triggers: <code>click</code>, <code>hover</code>, <code>focus</code>, <code>manual</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-default btn-md popover-button-default" data-content="Popover content from <b>data-content</b> attribute 1" title="Top popover" data-trigger="click" data-placement="top">
+            Click popover trigger</span>
+        </a>
+
+        <a href="#" class="btn btn-default btn-md popover-button-default" data-content="Popover content from <b>data-content</b> attribute 2" title="Right popover" data-trigger="hover" data-placement="right" >
+            Hover popover trigger</span>
+        </a>
+
+        <input type="text" class="form-control float-left mrg25R popover-button-default" style="width: 200px;" placeholder="Input focus trigger popover" data-content="Popover content from <b>data-content</b> attribute 3" title="Bottom popover" data-trigger="focus" data-placement="bottom">
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-default btn-md popover-button-default" data-content="Popover content from <b>data-content</b> attribute 1" title="Top popover" data-trigger="click" data-placement="top">
+                        Click popover trigger</span>
+                    </a>
+                    <a href="#" class="btn btn-default btn-md popover-button-default" data-content="Popover content from <b>data-content</b> attribute 2" title="Right popover" data-trigger="hover" data-placement="right" >
+                        Hover popover trigger</span>
+                    </a>
+                    <input type="text" class="form-control float-left mrg25R popover-button-default" style="width: 200px;" placeholder="Input focus trigger popover" data-content="Popover content from <b>data-content</b> attribute 3" title="Bottom popover" data-trigger="focus" data-placement="bottom">
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('.popover-button-default').popover({
+                                container: 'body',
+                                html : true,
+                                animation: true
+                            }).click(function(evt) {
+                                evt.preventDefault();
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Data source
+    </h3>
+    <p class="title-lead">Content can be added using the <code>data-content=""</code> attribute in which case you have to write all the content in the attribute or by using the <code>data-id=""</code> attribute which should point to a hidden element with the popover content. You can also specify the content via Javascript.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-default btn-md popover-button" title="Top popover" data-placement="top" data-id="#popover1">
+            Content from hidden inline div
+        </a>
+        <div class="hide" id="popover1">
+            Popover content from hidden div.
+        </div>
+        <a href="#" class="btn btn-default btn-md popover-button-default" data-content="<div class='pad10A'>Popover content written in the <b>data-content</b> attribute.</div>" title="Top popover" data-placement="top">
+            Content from data-content attribute
+        </a>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-default btn-md popover-button" title="Top popover" data-placement="top" data-id="#popover1">
+                        Content from hidden inline div
+                    </a>
+                    <div class="hide" id="popover1">
+                        Popover content from hidden div.
+                    </div>
+                    <a href="#" class="btn btn-default btn-md popover-button-default" data-content="<div class='pad10A'>Popover content written in the <b>data-content</b> attribute.</div>" title="Top popover" data-placement="top">
+                        Content from data-content attribute
+                    </a>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+
+                            $('.popover-button').popover({
+                                container: 'body',
+                                html : true,
+                                animation: true,
+                                content: function() {
+                                    var dataID = $(this).attr('data-id');
+                                    return $(dataID).html();
+                                }
+                            }).click(function(evt) {
+                                evt.preventDefault();
+                            });
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

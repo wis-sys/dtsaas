@@ -1,0 +1,81 @@
+---
+title: Tooltips
+categories: Framework
+tags: Widgets
+---
+    <h2 class="title-hero">
+        Tooltips
+    </h2>
+    <p class="title-lead">Tooltips can be added to any element and provide aditional information bubbles.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Bootstrap Tooltips - <b>/assets/widgets/tooltips/tooltips.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/tooltips/tooltips.css - Contains the CSS needed for the tooltips structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://getbootstrap.com/javascript/#tooltip" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">To create a tooltip you need to add the <code>.tooltip-button</code> CSS class to an element. Tooltips can have four positions, controlled by the <code>data-placement=""></code> attribute.</p>
+
+    <div class="example-box-wrapper">
+
+        <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+        <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+        <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+        <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                    <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                    <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                    <button type="button" class="btn btn-default tooltip-button" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('.tooltip-button').tooltip({
+                                container: 'body'
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

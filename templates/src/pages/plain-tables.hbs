@@ -1,0 +1,573 @@
+---
+title: Tables
+categories: Framework
+tags: Tables
+---
+    <h2 class="title-hero">
+        Tables
+    </h2>
+    <p class="title-lead">Our framework comes packed with a lot of table options variations.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/elements/tables.css - Contains the CSS needed for the tabs structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic structure
+    </h3>
+    <p class="title-lead">To apply the basic table styling you need to add the <code>.table</code> CSS class to any table element.</p>
+
+    <div class="example-box-wrapper">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Row 1</th>
+                    <th>Row 2</th>
+                    <th>Row 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Row 1</th>
+                            <th>Row 2</th>
+                            <th>Row 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Condensed table
+    </h3>
+    <p class="title-lead">To create a condensed table add the <code>.table-condensed</code> CSS class to the <code>.table</code> wrapper.</p>
+
+    <div class="example-box-wrapper">
+
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Row 1</th>
+                    <th>Row 2</th>
+                    <th>Row 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <table class="table table-condensed">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Row 1</th>
+                            <th>Row 2</th>
+                            <th>Row 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Bordered table
+    </h3>
+    <p class="title-lead">To create a bordered table add the <code>.table-bordered</code> CSS class to the <code>.table</code> wrapper.</p>
+
+    <div class="example-box-wrapper">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Row 1</th>
+                    <th>Row 2</th>
+                    <th>Row 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Row 1</th>
+                            <th>Row 2</th>
+                            <th>Row 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Striped table
+    </h3>
+    <p class="title-lead">To create a striped-row table add the <code>.table-striped</code> CSS class to the <code>.table</code> wrapper.</p>
+
+    <div class="example-box-wrapper">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Row 1</th>
+                    <th>Row 2</th>
+                    <th>Row 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Row 1</th>
+                            <th>Row 2</th>
+                            <th>Row 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+<h3 class="title-hero">
+    Hover table rows
+</h3>
+<p class="title-lead">To create hover table rows add the <code>.table-hover</code> CSS class to the <code>.table</code> wrapper.</p>
+
+<div class="example-box-wrapper">
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Row 1</th>
+            <th>Row 2</th>
+            <th>Row 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>#</td>
+            <td>Row 1</td>
+            <td>Row 2</td>
+            <td>Row 3</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            <td>Row 1</td>
+            <td>Row 2</td>
+            <td>Row 3</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            <td>Row 1</td>
+            <td>Row 2</td>
+            <td>Row 3</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            <td>Row 1</td>
+            <td>Row 2</td>
+            <td>Row 3</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Row 1</th>
+                            <th>Row 2</th>
+                            <th>Row 3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>Row 1</td>
+                            <td>Row 2</td>
+                            <td>Row 3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </code>
+			</pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Responsive tables
+    </h3>
+    <p class="title-lead">To create a basic responsive table wrap the <code>.table</code> element inside a div with the <code>.table-responsive</code> CSS class.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Row 1</th>
+                    <th>Row 2</th>
+                    <th>Row 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                    <td>Row 3</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Row 1</th>
+                                <th>Row 2</th>
+                                <th>Row 3</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>#</td>
+                                <td>Row 1</td>
+                                <td>Row 2</td>
+                                <td>Row 3</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>Row 1</td>
+                                <td>Row 2</td>
+                                <td>Row 3</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>Row 1</td>
+                                <td>Row 2</td>
+                                <td>Row 3</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>Row 1</td>
+                                <td>Row 2</td>
+                                <td>Row 3</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

@@ -1,0 +1,622 @@
+---
+title: Sortable elements
+
+categories: Framework
+tags: Widgets
+---
+
+<!-- JS Interactions -->
+
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/resizable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/draggable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/sortable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/selectable.js"></script>
+
+<script type="text/javascript">
+    /* Sortable elements */
+
+    $(function() { "use strict";
+        $(".sortable-elements").sortable();
+    });
+
+    $(function() { "use strict";
+        $(".column-sort").sortable({
+            connectWith: ".column-sort"
+        });
+    });
+</script>
+
+<!-- Nestable -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/nestable/nestable.css">-->
+<script type="text/javascript" src="assets-minified/widgets/nestable/nestable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/nestable/nestable-demo.js"></script>
+
+    <h2 class="title-hero">
+        Sortable elements
+    </h2>
+    <p class="title-lead">Enable a group of elements to be sortable.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Mouse - <b>/assets/js-core/jquery-ui-mouse.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Sortable - <b>/assets/widgets/interactions-ui/sortable.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Sortable external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/sortable/" title="Sortable documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Sortable external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Click on and drag an element to a new spot within the list, and the other items will adjust to fit. To make a list sortable add the <code>.sortable-elements</code> CSS class to it.</p>
+
+    <div class="example-box-wrapper">
+
+        <ul class="reset-ul sortable-elements">
+            <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 1
+            </li>
+            <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 2
+            </li>
+            <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 3
+            </li>
+            <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 4
+            </li>
+            <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 5
+            </li>
+            <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 6
+            </li>
+            <li class="bg-default btn display-block btn-md text-left demo-margin mrg5T">
+                <i class="glyph-icon icon-caret-right"></i>
+                Item 7
+            </li>
+        </ul>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <ul class="reset-ul sortable-elements">
+                        <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 1
+                        </li>
+                        <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 2
+                        </li>
+                        <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 3
+                        </li>
+                        <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 4
+                        </li>
+                        <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 5
+                        </li>
+                        <li class="bg-default btn display-block btn-md text-left mrg5B mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 6
+                        </li>
+                        <li class="bg-default btn display-block btn-md text-left demo-margin mrg5T">
+                            <i class="glyph-icon icon-caret-right"></i>
+                            Item 7
+                        </li>
+                    </ul>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".sortable-elements" ).sortable();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Portlets
+    </h3>
+    <p class="title-lead">Use the <code>connectWith</code> JS parameter to allow sorting between columns as shown in the example below.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6 column-sort">
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Portlet header 1
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <b>.bg-primary</b> class.
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Portlet header 2
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <b>.bg-primary</b> class.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 column-sort">
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Portlet header 3
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <b>.bg-primary</b> class.
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Portlet header 4
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <b>.bg-primary</b> class.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 column-sort">
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Portlet header 5
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <b>.bg-primary</b> class.
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Portlet header 6
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <b>.bg-primary</b> class.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6 column-sort">
+
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Portlet header 1
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <b>.bg-primary</b> class.
+                                </div>
+                            </div>
+
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Portlet header 2
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <b>.bg-primary</b> class.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 column-sort">
+
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Portlet header 3
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <b>.bg-primary</b> class.
+                                </div>
+                            </div>
+
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Portlet header 4
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <b>.bg-primary</b> class.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 column-sort">
+
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Portlet header 5
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <b>.bg-primary</b> class.
+                                </div>
+                            </div>
+
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Portlet header 6
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <b>.bg-primary</b> class.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".column-sort" ).sortable({
+                                connectWith: ".column-sort"
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h2 class="title-hero">
+        Nestable lists
+    </h2>
+    <p class="title-lead">Drag &amp; drop hierarchical list with mouse and touch compatibility.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Nestable - <b>/assets/widgets/nestable.js</b>
+                        </li>
+                        <li>
+                            Nestable demo - <b>/assets/widgets/nestable/nestable-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            <b>/assets/widgets/nestable/nestable.css</b> - Contains the CSS needed for the nestable structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Sortable external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/sortable/" title="Sortable documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Sortable external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Click on and drag an element to a new spot within the list, and the other items will adjust to fit.</p>
+
+    <div class="example-box-wrapper">
+
+        <menu id="nestable-menu">
+            <button type="button" class="btn btn-default" data-action="expand-all">Expand All</button>
+            <button type="button" class="btn btn-blue-alt" data-action="collapse-all">Collapse All</button>
+        </menu>
+
+        <div class="cf clearfix nestable-lists">
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-input">
+                        <textarea class="form-control" id="nestable-output"></textarea>
+                    </div>
+
+                    <div class="dd" id="nestable">
+                        <ol class="dd-list">
+                            <li class="dd-item" data-id="1">
+                                <div class="dd-handle">Item 1</div>
+                            </li>
+                            <li class="dd-item" data-id="2">
+                                <div class="dd-handle">Item 2</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="3"><div class="dd-handle">Item 3</div></li>
+                                    <li class="dd-item" data-id="4"><div class="dd-handle">Item 4</div></li>
+                                    <li class="dd-item" data-id="5">
+                                        <div class="dd-handle">Item 5</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="6"><div class="dd-handle">Item 6</div></li>
+                                            <li class="dd-item" data-id="7"><div class="dd-handle">Item 7</div></li>
+                                            <li class="dd-item" data-id="8"><div class="dd-handle">Item 8</div></li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="9"><div class="dd-handle">Item 9</div></li>
+                                    <li class="dd-item" data-id="10"><div class="dd-handle">Item 10</div></li>
+                                </ol>
+                            </li>
+                            <li class="dd-item" data-id="11">
+                                <div class="dd-handle">Item 11</div>
+                            </li>
+                            <li class="dd-item" data-id="12">
+                                <div class="dd-handle">Item 12</div>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-input">
+                        <textarea class="form-control" id="nestable2-output"></textarea>
+                    </div>
+
+                    <div class="dd" id="nestable2">
+                        <ol class="dd-list">
+                            <li class="dd-item" data-id="13">
+                                <div class="dd-handle">Item 13</div>
+                            </li>
+                            <li class="dd-item" data-id="14">
+                                <div class="dd-handle">Item 14</div>
+                            </li>
+                            <li class="dd-item" data-id="15">
+                                <div class="dd-handle">Item 15</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="16"><div class="dd-handle">Item 16</div></li>
+                                    <li class="dd-item" data-id="17"><div class="dd-handle">Item 17</div></li>
+                                    <li class="dd-item" data-id="18"><div class="dd-handle">Item 18</div></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <menu id="nestable-menu">
+                        <button type="button" class="btn btn-default" data-action="expand-all">Expand All</button>
+                        <button type="button" class="btn btn-blue-alt" data-action="collapse-all">Collapse All</button>
+                    </menu>
+
+                    <div class="cf clearfix nestable-lists">
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-input">
+                                    <textarea class="form-control" id="nestable-output"></textarea>
+                                </div>
+
+                                <div class="dd" id="nestable">
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="1">
+                                            <div class="dd-handle">Item 1</div>
+                                        </li>
+                                        <li class="dd-item" data-id="2">
+                                            <div class="dd-handle">Item 2</div>
+                                            <ol class="dd-list">
+                                                <li class="dd-item" data-id="3"><div class="dd-handle">Item 3</div></li>
+                                                <li class="dd-item" data-id="4"><div class="dd-handle">Item 4</div></li>
+                                                <li class="dd-item" data-id="5">
+                                                    <div class="dd-handle">Item 5</div>
+                                                    <ol class="dd-list">
+                                                        <li class="dd-item" data-id="6"><div class="dd-handle">Item 6</div></li>
+                                                        <li class="dd-item" data-id="7"><div class="dd-handle">Item 7</div></li>
+                                                        <li class="dd-item" data-id="8"><div class="dd-handle">Item 8</div></li>
+                                                    </ol>
+                                                </li>
+                                                <li class="dd-item" data-id="9"><div class="dd-handle">Item 9</div></li>
+                                                <li class="dd-item" data-id="10"><div class="dd-handle">Item 10</div></li>
+                                            </ol>
+                                        </li>
+                                        <li class="dd-item" data-id="11">
+                                            <div class="dd-handle">Item 11</div>
+                                        </li>
+                                        <li class="dd-item" data-id="12">
+                                            <div class="dd-handle">Item 12</div>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-input">
+                                    <textarea class="form-control" id="nestable2-output"></textarea>
+                                </div>
+
+                                <div class="dd" id="nestable2">
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="13">
+                                            <div class="dd-handle">Item 13</div>
+                                        </li>
+                                        <li class="dd-item" data-id="14">
+                                            <div class="dd-handle">Item 14</div>
+                                        </li>
+                                        <li class="dd-item" data-id="15">
+                                            <div class="dd-handle">Item 15</div>
+                                            <ol class="dd-list">
+                                                <li class="dd-item" data-id="16"><div class="dd-handle">Item 16</div></li>
+                                                <li class="dd-item" data-id="17"><div class="dd-handle">Item 17</div></li>
+                                                <li class="dd-item" data-id="18"><div class="dd-handle">Item 18</div></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Nestable -->
+
+                    <link rel="stylesheet" type="text/css" href="assets-minified/widgets/nestable/nestable.css">
+                    <script type="text/javascript" src="assets-minified/widgets/nestable/nestable.js"></script>
+                    <script type="text/javascript" src="assets-minified/widgets/nestable/nestable-demo.js"></script>
+
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Draggable Handles
+    </h3>
+    <p class="title-lead">If you're clever with your CSS and markup this can be achieved without any JavaScript changes.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="cf nestable-lists">
+
+            <div class="dd" id="nestable3">
+                <ol class="dd-list">
+                    <li class="dd-item dd3-item" data-id="13">
+                        <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 13</div>
+                    </li>
+                    <li class="dd-item dd3-item" data-id="14">
+                        <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 14</div>
+                    </li>
+                    <li class="dd-item dd3-item" data-id="15">
+                        <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 15</div>
+                        <ol class="dd-list">
+                            <li class="dd-item dd3-item" data-id="16">
+                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 16</div>
+                            </li>
+                            <li class="dd-item dd3-item" data-id="17">
+                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 17</div>
+                            </li>
+                            <li class="dd-item dd3-item" data-id="18">
+                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 18</div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="cf nestable-lists">
+
+                        <div class="dd" id="nestable3">
+                            <ol class="dd-list">
+                                <li class="dd-item dd3-item" data-id="13">
+                                    <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 13</div>
+                                </li>
+                                <li class="dd-item dd3-item" data-id="14">
+                                    <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 14</div>
+                                </li>
+                                <li class="dd-item dd3-item" data-id="15">
+                                    <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 15</div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item dd3-item" data-id="16">
+                                            <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 16</div>
+                                        </li>
+                                        <li class="dd-item dd3-item" data-id="17">
+                                            <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 17</div>
+                                        </li>
+                                        <li class="dd-item dd3-item" data-id="18">
+                                            <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 18</div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+                    <!-- Nestable -->
+
+                    <link rel="stylesheet" type="text/css" href="assets-minified/widgets/nestable/nestable.css">
+                    <script type="text/javascript" src="assets-minified/widgets/nestable/nestable.js"></script>
+                    <script type="text/javascript" src="assets-minified/widgets/nestable/nestable-demo.js"></script>
+
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

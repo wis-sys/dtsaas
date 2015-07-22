@@ -1,0 +1,242 @@
+---
+title: Morris charts
+categories: Framework
+tags: Charts
+---
+
+    <h2 class="title-hero">
+        Morris charts
+    </h2>
+    <p class="title-lead">Create line, area, bar and donut charts on the fly with this wonderful Raphael.js widget.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Raphael core - <b>/assets/js-core/raphael.js</b>
+                        </li>
+                        <li>
+                            Morris charts - <b>/assets/widgets/charts/morris/morris.js</b>
+                        </li>
+                        <li>
+                            Morris charts demo - <b>/assets/widgets/charts/morris/morris-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/charts/morris/morris.css - Contains the CSS needed for the Morris charts structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://morrisjs.github.io/morris.js/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markups below to create Morris charts.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Color Bars</h5>
+                <div class="content-box">
+                    <div id="color-bar"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Labels Bar</h5>
+                <div class="content-box">
+                    <div id="labels-bar"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Stacked Bars</h5>
+                <div class="content-box">
+                    <div id="stacked-bars"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Donut</h5>
+                <div class="content-box">
+                    <div id="donut"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Decimal Data</h5>
+                <div class="content-box">
+                    <div id="decimal-data"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Daytime Bars</h5>
+                <div class="content-box">
+                    <div id="daytime-bars"></div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Color Bars</h5>
+                            <div class="content-box">
+                                <div id="color-bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Labels Bar</h5>
+                            <div class="content-box">
+                                <div id="labels-bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Stacked Bars</h5>
+                            <div class="content-box">
+                                <div id="stacked-bars"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Donut</h5>
+                            <div class="content-box">
+                                <div id="donut"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Decimal Data</h5>
+                            <div class="content-box">
+                                <div id="decimal-data"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Daytime Bars</h5>
+                            <div class="content-box">
+                                <div id="daytime-bars"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Morris charts -->
+
+                    <script type="text/javascript" src="assets-minified/js-core/raphael.js"></script>
+                    <link rel="stylesheet" type="text/css" href="assets-minified/widgets/charts/morris/morris.css">
+                    <script type="text/javascript" src="assets-minified/widgets/charts/morris/morris.js"></script>
+                    <script type="text/javascript" src="assets-minified/widgets/charts/morris/morris-demo.js"></script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        More examples
+    </h3>
+    <p class="title-lead">Use the markups below to create even more Morris charts.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Jaguar 'E' Type vehicles in the UK</div>
+                <div class="content-box">
+                    <div id="hero-graph" class="graph"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">iPhone CPU benchmarks</div>
+                <div class="content-box">
+                    <div id="hero-bar" class="graph"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Quarterly Apple iOS device unit sales</div>
+                <div class="content-box">
+                    <div id="hero-area" class="graph"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Donut flavours</div>
+                <div class="content-box">
+                    <div id="hero-donut" class="graph"></div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Jaguar 'E' Type vehicles in the UK</div>
+                            <div class="content-box">
+                                <div id="hero-graph" class="graph"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">iPhone CPU benchmarks</div>
+                            <div class="content-box">
+                                <div id="hero-bar" class="graph"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Quarterly Apple iOS device unit sales</div>
+                            <div class="content-box">
+                                <div id="hero-area" class="graph"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-transform-upr text-center mrg0T mrg15B font-gray font-size-14">Donut flavours</div>
+                            <div class="content-box">
+                                <div id="hero-donut" class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Morris charts -->
+
+                    <script type="text/javascript" src="assets-minified/js-core/raphael.js"></script>
+                    <link rel="stylesheet" type="text/css" href="assets-minified/widgets/charts/morris/morris.css">
+                    <script type="text/javascript" src="assets-minified/widgets/charts/morris/morris.js"></script>
+                    <script type="text/javascript" src="assets-minified/widgets/charts/morris/morris-demo.js"></script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+<!-- Morris charts -->
+
+<script type="text/javascript" src="assets-minified/js-core/raphael.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/charts/morris/morris.css">-->
+<script type="text/javascript" src="assets-minified/widgets/charts/morris/morris.js"></script>
+
+<!-- Morris charts demo -->
+
+<script type="text/javascript" src="assets-minified/widgets/charts/morris/morris-demo.js"></script>

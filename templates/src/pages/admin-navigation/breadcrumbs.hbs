@@ -1,0 +1,138 @@
+---
+title: Breadcrumb
+categories: Admin templates
+---
+<div class="remove-production">
+
+    <h2 class="title-hero">
+        Breadcrumbs
+    </h2>
+    <p class="title-lead">Use the markups below to create breadcrumbs bars.</p>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="content-box mrg20B">
+
+                <div class="content-box-header bg-white mrg20B">
+                    Simple breadcrumb
+                </div>
+
+                <div class="text-center">
+
+                    <a href="../production/breadcrumb-simple.html" class="btn btn-default btn-lg" title="" target="_blank">View demo example</a>
+                    <i class="text-muted pad20T display-block font-size-11 text-center">Clicking the live demo link above opens a new window.</i>
+
+                </div>
+                <div class="divider mrg20T mrg20B"></div>
+                <div class="example-html">
+
+                    <pre>
+                        <code class="language-markup">
+                            <div id="page-nav" class="main-nav">
+
+                                <div id="page-breadcrumb">
+                                    <a href="#" title="Dashboard">
+                                        <i class="glyph-icon icon-dashboard"></i>
+                                        Dashboard
+                                    </a>
+                                    <a href="#" title="Elements">
+                                        <i class="glyph-icon icon-laptop"></i>
+                                        Elements
+                                    </a>
+                                    <span class="current">
+                                        Example breadcrumb
+                                    </span>
+                                </div>
+
+                                <div id="page-nav-right">
+                                    <a href="#" title="" class="btn btn-success">
+                                        <i class="glyph-icon icon-cogs"></i>
+                                        Statistics
+                                    </a>
+                                    <a href="#" title="" class="btn btn-blue-alt">
+                                        <i class="glyph-icon icon-cogs"></i>
+                                        Chat
+                                    </a>
+                                </div>
+
+                            </div><!-- #page-nav -->
+                        </code>
+                    </pre>
+
+                </div>
+
+                {{> docs-buttons  }}
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="content-box mrg20B">
+
+                <div class="content-box-header bg-white mrg20B">
+                    Breadcrumb with collapsed sidebar
+                </div>
+
+                <div class="text-center">
+
+                    <a href="../production/breadcrumb-sidebar-collapsed.html" class="btn btn-default btn-lg" title="" target="_blank">View demo example</a>
+                    <i class="text-muted pad20T display-block font-size-11 text-center">Clicking the live demo link above opens a new window.</i>
+
+                </div>
+                <div class="divider mrg20T mrg20B"></div>
+                <div class="example-html">
+
+                    <pre>
+                        <code class="language-markup">
+                            <script type="text/javascript">
+
+                                $(document).ready(function(){
+
+                                    $('body').addClass('sidebar-collapsed');
+
+                                });
+
+                            </script>
+
+                            <div id="page-nav" class="main-nav">
+
+                                <div id="page-breadcrumb">
+                                    <a href="#" title="Dashboard">
+                                        <i class="glyph-icon icon-dashboard"></i>
+                                        Dashboard
+                                    </a>
+                                    <a href="#" title="Elements">
+                                        <i class="glyph-icon icon-laptop"></i>
+                                        Elements
+                                    </a>
+                                    <span class="current">
+                                        Example breadcrumb
+                                    </span>
+                                </div>
+                                <div id="page-nav-right">
+                                    <a href="#" title="" class="btn btn-success">
+                                        <i class="glyph-icon icon-cogs"></i>
+                                        Statistics
+                                    </a>
+                                    <a href="#" title="" class="btn btn-blue-alt">
+                                        <i class="glyph-icon icon-cogs"></i>
+                                        Chat
+                                    </a>
+                                </div>
+
+                            </div><!-- #page-nav -->
+                        </code>
+                    </pre>
+
+                </div>
+
+                {{> docs-buttons  }}
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

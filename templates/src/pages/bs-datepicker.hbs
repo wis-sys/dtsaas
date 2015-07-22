@@ -1,0 +1,223 @@
+---
+title: Bootstrap datepicker
+
+categories: Framework
+tags: Widgets
+---
+
+<!-- Bootstrap Datepicker -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/datepicker/datepicker.css">-->
+<script type="text/javascript" src="assets-minified/widgets/datepicker/datepicker.js"></script>
+<script type="text/javascript">
+    /* Datepicker bootstrap */
+
+    $(function() { "use strict";
+        $('.bootstrap-datepicker').bsdatepicker({
+            format: 'mm-dd-yyyy'
+        });
+    });
+</script>
+
+<!-- Bootstrap Daterangepicker -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/daterangepicker/daterangepicker.css">-->
+<script type="text/javascript" src="assets-minified/widgets/daterangepicker/moment.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/daterangepicker/daterangepicker-demo.js"></script>
+
+    <h2 class="title-hero">
+        Bootstrap datepicker
+    </h2>
+    <p class="title-lead">Use the markups below to create datepicker elements.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Bootstrap Datepicker - <b>/assets/widgets/datepicker/datepicker.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/datepicker/datepicker.css - Contains the CSS needed for the datepicker structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://www.eyecon.ro/bootstrap-datepicker/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Set the date format using the <code>data-date-format="mm/dd/yy"</code> parameter attached to an input field.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="input-prepend input-group demo-margin">
+            <span class="add-on input-group-addon">
+                <i class="glyph-icon icon-calendar"></i>
+            </span>
+            <input type="text" style="width: 200px" class="bootstrap-datepicker form-control" value="02/16/12" data-date-format="mm/dd/yy">
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <script type="text/javascript">
+                        /* Datepicker bootstrap */
+
+                        $(function(){
+                            $('.bootstrap-datepicker').bsdatepicker({
+                                format: 'mm-dd-yyyy'
+                            });
+                        });
+                    </script>
+
+                    <div class="input-prepend input-group demo-margin">
+                        <span class="add-on input-group-addon">
+                            <i class="glyph-icon icon-calendar"></i>
+                        </span>
+                        <input type="text" style="width: 200px" class="bootstrap-datepicker form-control" value="02/16/12" data-date-format="mm/dd/yy">
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Rangepicker
+    </h3>
+    <p class="title-lead">Use the markup below to create a datepicker with ranges.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="input-prepend input-group demo-margin">
+            <span class="add-on input-group-addon">
+                <i class="glyph-icon icon-calendar"></i>
+            </span>
+            <input type="text" style="width: 200px" name="daterangepicker-example" id="daterangepicker-example" class="form-control" value="03/18/2013 - 03/23/2013">
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <script type="text/javascript">
+                        /* Datepicker bootstrap */
+
+                        $(function(){
+                            $('.bootstrap-datepicker').bsdatepicker({
+                                format: 'mm-dd-yyyy'
+                            });
+                        });
+                    </script>
+
+                    <div class="input-prepend input-group demo-margin">
+                        <span class="add-on input-group-addon">
+                            <i class="glyph-icon icon-calendar"></i>
+                        </span>
+                        <input type="text" style="width: 200px" name="daterangepicker-example" id="daterangepicker-example" class="form-control" value="03/18/2013 - 03/23/2013">
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+
+    <h4 class="title-hero">
+        Custom selector
+    </h4>
+    <p class="title-lead">Use the markup below to create a daterangepicker with custom date selector.</p>
+
+    <div class="example-box-wrapper text-center">
+
+        <div id="daterangepicker-custom" class="btn btn-primary" title="" data-toggle="dropdown">
+            <i class="glyph-icon icon-calendar"></i>
+            <span></span>
+            <b class="caret"></b>
+        </div>
+
+        <div class="example-html">
+                <pre>
+                    <code class="language-markup">
+                        <script type="text/javascript">
+                            /* Datepicker bootstrap */
+
+                            $(function(){
+                                $('.bootstrap-datepicker').bsdatepicker({
+                                    format: 'mm-dd-yyyy'
+                                });
+                            });
+                        </script>
+
+                        <div id="daterangepicker-custom" class="btn btn-primary" title="" data-toggle="dropdown">
+                            <i class="glyph-icon icon-calendar"></i>
+                            <span></span>
+                            <b class="caret"></b>
+                        </div>
+                    </code>
+                </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Date &amp; timepicker
+    </h4>
+    <p class="title-lead">Use the markup below to create a daterangepicker with integrated timepicker.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="input-prepend input-group demo-margin">
+            <span class="add-on input-group-addon">
+                <i class="glyph-icon icon-calendar"></i>
+            </span>
+            <input type="text" style="width: 200px" name="daterangepicker-time" id="daterangepicker-time" class="form-control" value="03/18/2013 - 03/23/2013">
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <script type="text/javascript">
+                        /* Datepicker bootstrap */
+
+                        $(function(){
+                            $('.bootstrap-datepicker').bsdatepicker({
+                                format: 'mm-dd-yyyy'
+                            });
+                        });
+                    </script>
+
+                    <div class="input-prepend input-group demo-margin">
+                        <span class="add-on input-group-addon">
+                            <i class="glyph-icon icon-calendar"></i>
+                        </span>
+                        <input type="text" style="width: 200px" name="daterangepicker-time" id="daterangepicker-time" class="form-control" value="03/18/2013 - 03/23/2013">
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

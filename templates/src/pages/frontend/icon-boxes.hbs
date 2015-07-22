@@ -1,0 +1,336 @@
+---
+title: Icon boxes
+categories: Frontend
+---
+
+{{#if docs_include}}
+    <h2 class="title-hero">
+        Icon boxes
+    </h2>
+    <p class="title-lead">Icon boxes have a title, content and an icon with different background colors.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/frontend-elements/icon-box.css - Contains the CSS needed for the icon-box structure. Styling is achieved from the color theme CSS file (/assets/themes/../frontend/*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}
+
+{{#if docs_exclude}}
+    <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markup below to create boxes with icons positioned at the top of the box.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="icon-box col-md-3">
+                <i class="icon-large glyph-icon bg-primary icon-picture-o"></i>
+                <h3 class="icon-title">Multiple themes</h3>
+                <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+            </div>
+            <div class="icon-box col-md-3">
+                <i class="icon-large glyph-icon bg-red icon-tablet"></i>
+                <h3 class="icon-title">Fully responsive</h3>
+                <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+            </div>
+            <div class="icon-box col-md-3">
+                <i class="icon-large glyph-icon bg-green icon-bar-chart-o"></i>
+                <h3 class="icon-title">Production-ready</h3>
+                <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+            </div>
+            <div class="icon-box col-md-3">
+                <i class="icon-large glyph-icon bg-gray font-black icon-gift"></i>
+                <h3 class="icon-title">Tons of widgets</h3>
+                <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="icon-box col-md-3">
+                            <i class="icon-large glyph-icon bg-primary icon-picture-o"></i>
+                            <h3 class="icon-title">Multiple themes</h3>
+                            <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+                        </div>
+                        <div class="icon-box col-md-3">
+                            <i class="icon-large glyph-icon bg-red icon-tablet"></i>
+                            <h3 class="icon-title">Fully responsive</h3>
+                            <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+                        </div>
+                        <div class="icon-box col-md-3">
+                            <i class="icon-large glyph-icon bg-green icon-bar-chart-o"></i>
+                            <h3 class="icon-title">Production-ready</h3>
+                            <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+                        </div>
+                        <div class="icon-box col-md-3">
+                            <i class="icon-large glyph-icon bg-gray font-black icon-gift"></i>
+                            <h3 class="icon-title">Tons of widgets</h3>
+                            <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Sizes
+    </h3>
+    <p class="title-lead">There are three sizes available for the icon wrapper: <code>.icon-large</code>, <code>.icon-medium</code>, <code>.icon-small</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="icon-box col-md-4">
+                <i class="icon-large glyph-icon bg-primary icon-picture-o"></i>
+                <h3 class="icon-title">Multiple themes</h3>
+                <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+            </div>
+            <div class="icon-box col-md-4">
+                <i class="icon-medium glyph-icon bg-red icon-tablet"></i>
+                <h3 class="icon-title">Fully responsive</h3>
+                <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+            </div>
+            <div class="icon-box col-md-4">
+                <i class="icon-small glyph-icon bg-green icon-bar-chart-o"></i>
+                <h3 class="icon-title">Production-ready</h3>
+                <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="icon-box col-md-4">
+                            <i class="icon-large glyph-icon bg-primary icon-picture-o"></i>
+                            <h3 class="icon-title">Multiple themes</h3>
+                            <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+                        </div>
+                        <div class="icon-box col-md-4">
+                            <i class="icon-medium glyph-icon bg-red icon-tablet"></i>
+                            <h3 class="icon-title">Fully responsive</h3>
+                            <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+                        </div>
+                        <div class="icon-box col-md-4">
+                            <i class="icon-small glyph-icon bg-green icon-bar-chart-o"></i>
+                            <h3 class="icon-title">Production-ready</h3>
+                            <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Alternate style
+    </h3>
+    <p class="title-lead">Use the CSS helper classes to create alternate styles by changing the border and font color for the icon wrappers. Aditionally, you need to add the <code>.icon-border</code> CSS class to the icon wrapper element <code>.glyph-icon</code> inside the icon box.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="icon-box col-md-3">
+                <i class="icon-medium glyph-icon border-green font-green icon-border icon-picture-o"></i>
+                <h3 class="icon-title">Multiple themes</h3>
+                <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+            </div>
+            <div class="icon-box col-md-3">
+                <i class="icon-medium glyph-icon border-red font-red icon-border icon-tablet"></i>
+                <h3 class="icon-title">Fully responsive</h3>
+                <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+            </div>
+            <div class="icon-box col-md-3">
+                <i class="icon-medium glyph-icon border-orange font-gray icon-border icon-bar-chart-o"></i>
+                <h3 class="icon-title">Production-ready</h3>
+                <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+            </div>
+            <div class="icon-box col-md-3">
+                <i class="icon-medium glyph-icon border-blue font-blue-alt icon-border font-black icon-gift"></i>
+                <h3 class="icon-title">Tons of widgets</h3>
+                <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="icon-box col-md-3">
+                            <i class="icon-medium glyph-icon border-green font-green icon-border icon-picture-o"></i>
+                            <h3 class="icon-title">Multiple themes</h3>
+                            <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+                        </div>
+                        <div class="icon-box col-md-3">
+                            <i class="icon-medium glyph-icon border-red font-red icon-border icon-tablet"></i>
+                            <h3 class="icon-title">Fully responsive</h3>
+                            <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+                        </div>
+                        <div class="icon-box col-md-3">
+                            <i class="icon-medium glyph-icon border-orange font-gray icon-border icon-bar-chart-o"></i>
+                            <h3 class="icon-title">Production-ready</h3>
+                            <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+                        </div>
+                        <div class="icon-box col-md-3">
+                            <i class="icon-medium glyph-icon border-blue font-blue-alt icon-border font-black icon-gift"></i>
+                            <h3 class="icon-title">Tons of widgets</h3>
+                            <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Left icon
+    </h3>
+    <p class="title-lead">To align the icon wrapper to the left, you need to add the <code>.icon-box-left</code> CSS class to the <code>.icon-box</code> element.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="icon-box icon-box-left col-md-3">
+                <i class="icon-small glyph-icon border-green font-green icon-border icon-picture-o"></i>
+                <h3 class="icon-title">Multiple themes</h3>
+                <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+            </div>
+            <div class="icon-box icon-box-left col-md-3">
+                <i class="icon-small glyph-icon border-red font-red icon-border icon-tablet"></i>
+                <h3 class="icon-title">Fully responsive</h3>
+                <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+            </div>
+            <div class="icon-box icon-box-left col-md-3">
+                <i class="icon-small glyph-icon border-orange font-gray icon-border icon-bar-chart-o"></i>
+                <h3 class="icon-title">Production-ready</h3>
+                <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+            </div>
+            <div class="icon-box icon-box-left col-md-3">
+                <i class="icon-small glyph-icon border-blue font-blue-alt icon-border font-black icon-gift"></i>
+                <h3 class="icon-title">Tons of widgets</h3>
+                <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="icon-box icon-box-left col-md-3">
+                            <i class="icon-small glyph-icon border-green font-green icon-border icon-picture-o"></i>
+                            <h3 class="icon-title">Multiple themes</h3>
+                            <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+                        </div>
+                        <div class="icon-box icon-box-left col-md-3">
+                            <i class="icon-small glyph-icon border-red font-red icon-border icon-tablet"></i>
+                            <h3 class="icon-title">Fully responsive</h3>
+                            <p class="icon-content">You can use the included Bootstrap 3 Grids System to create ...</p>
+                        </div>
+                        <div class="icon-box icon-box-left col-md-3">
+                            <i class="icon-small glyph-icon border-orange font-gray icon-border icon-bar-chart-o"></i>
+                            <h3 class="icon-title">Production-ready</h3>
+                            <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+                        </div>
+                        <div class="icon-box icon-box-left col-md-3">
+                            <i class="icon-small glyph-icon border-blue font-blue-alt icon-border font-black icon-gift"></i>
+                            <h3 class="icon-title">Tons of widgets</h3>
+                            <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Offset icons
+    </h3>
+    <p class="title-lead">Use the markup below to create icon boxes with offsets. Make sure you use the appropiate CSS classes based on the icon size.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="icon-box icon-box-offset-large bg-black inverse icon-boxed">
+                    <i class="icon-large glyph-icon bg-primary icon-picture-o"></i>
+                    <h3 class="icon-title">Fully responsive</h3>
+                    <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box icon-box-offset-medium bg-gray icon-boxed">
+                    <i class="icon-medium glyph-icon bg-red icon-tablet"></i>
+                    <h3 class="icon-title">Production-ready</h3>
+                    <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box icon-box-offset-small bg-default icon-boxed">
+                    <i class="icon-small glyph-icon bg-green icon-bar-chart-o"></i>
+                    <h3 class="icon-title">Tons of widgets</h3>
+                    <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="icon-box icon-box-offset-large bg-black inverse icon-boxed">
+                                <i class="icon-large glyph-icon bg-primary icon-picture-o"></i>
+                                <h3 class="icon-title">Fully responsive</h3>
+                                <p class="icon-content">The modular AUI arhitecture allows quick, beautiful and easy ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="icon-box icon-box-offset-medium bg-gray icon-boxed">
+                                <i class="icon-medium glyph-icon bg-red icon-tablet"></i>
+                                <h3 class="icon-title">Production-ready</h3>
+                                <p class="icon-content">With AUI, you can automatically generate production-ready ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="icon-box icon-box-offset-small bg-default icon-boxed">
+                                <i class="icon-small glyph-icon bg-green icon-bar-chart-o"></i>
+                                <h3 class="icon-title">Tons of widgets</h3>
+                                <p class="icon-content">The current AUI version comes packed with over 20 plugins ...</p>
+                            </div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+    </div>
+{{/if}}

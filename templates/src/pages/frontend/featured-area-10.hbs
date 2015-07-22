@@ -1,0 +1,86 @@
+---
+title: Featured area 10
+categories: 
+layout: featured-area-layout.hbs
+---
+
+<!-- Layerslider -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/layerslider/layerslider.css">-->
+<script type="text/javascript" src="assets-minified/js-core/greensock.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/layerslider/layerslider.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/layerslider/layerslider-transitions.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/layerslider/layerslider-demo.js"></script>
+
+        <div class="featured-area">
+
+            {{> frontend-navigation }}
+
+            <div id="layerslider" style="width: 100%; height: 720px; max-width: 100%;">
+
+                <div class="ls-slide" data-ls="slidedelay: 7000; transition2d: 75,79;">
+
+                    <img src="assets-minified/dummy-images/jellyfish-blur.jpg" class="ls-bg" alt="Slide background"/>
+
+                    <h1 class="ls-l" style="top: 100px; left: 100px;" data-ls="
+                        offsetxin: 0;
+                        offsetxout: 300;
+                        offsetyin: top;
+                        offsetyout: 300;
+                        durationin: 2000;
+                        durationout: 2000;
+                        delayin: 2000;
+                        rotateyin: 60;
+                    ">It's a clownfish!</h1>
+
+                    <img class="ls-l" style="left: 30%; top: 50%;" src="assets-minified/dummy-images/clownfish.png" alt="Image layer" data-ls="
+                        offsetxin: left;
+                        offsetxout: right;
+                        offsetyin: 150;
+                        offsetyout: -250;
+                        fadein: false;
+                        fadeout: false;
+                        easingin: easeoutquart;
+                        easingout: easeinquart;
+                        durationin: 2500;
+                        durationout: 2500;
+                        delayin: 500;
+                        showuntil: 1;
+                    ">
+
+                </div>
+
+                <div class="ls-slide" data-ls="slidedelay: 5000; transition2d: 5; timeshift: -1000;">
+
+                    <img src="assets-minified/dummy-images/slide-b-bg.jpg" class="ls-bg" alt="Slide background"/>
+
+                    <h2 class="ls-l" style="top: 600px; left: 50%;" data-ls="
+                        offsetxin: -100;
+                        offsetxout: 0;
+                        offsetyin: 0;
+                        offsetyout: bottom;
+                        durationin: 2500;
+                        delayin: 1000;
+                        skewxin: 60;
+                    ">We like Tucans :)</h2>
+
+                    <img class="ls-l" style="left: 650px; top: 70px;" src="assets-minified/dummy-images/tucan.png" alt="Image layer" data-ls="
+                        offsetxin: right;
+                        offsetxout: 0;
+                        offsetyin: 200;
+                        offsetyout: bottom;
+                        rotatein: 50;
+                        rotateout: -20;
+                        fadein: false;
+                        fadeout: false;
+                        easingin: easeoutquart;
+                        easingout: easeinquart;
+                        durationin: 2500;
+                        delayin: 500;
+                    ">
+
+                </div>
+
+            </div>
+
+        </div>

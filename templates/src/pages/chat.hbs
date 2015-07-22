@@ -1,0 +1,704 @@
+---
+title: Chat
+categories: Admin templates
+tags: Elements
+---
+
+<h2 class="title-hero">
+    Chat
+</h2>
+<p class="title-lead">The Chat box component offers the possibility of creating messaging systems for your web application.</p>
+
+<div class="divider"></div>
+
+<div class="row mrg20T remove-production">
+    <div class="col-md-12">
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-code-fork"></i>
+                Dependencies
+            </h3>
+            <div class="content-box-wrapper">
+                <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                <ul>
+                    <li>
+                        /assets/snippets/chat.css - Contains the CSS needed for the chat structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="title-hero">
+    Inline
+</h3>
+<p class="title-lead">Chat boxes can be created directly in the main content area or they can be wrapped inside other elements like content boxes, popovers, dialogs, dropdowns, etc. Each chat line can have multiple buttons, colors, title, etc.</p>
+
+<div class="example-box-wrapper">
+    <ul class="chat-box">
+        <li>
+            <div class="chat-author">
+                <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+            </div>
+            <div class="popover left no-shadow">
+                <div class="arrow"></div>
+                <div class="popover-content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                    <div class="chat-time">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        a few seconds ago
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="float-left">
+            <div class="chat-author">
+                <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+            </div>
+            <div class="popover right no-shadow">
+                <div class="arrow"></div>
+                <div class="popover-content">
+                    <h3>
+                        <a href="#" title="Horia Simon">Horia Simon</a>
+                        <div class="float-right">
+                            <a href="#" class="glyph-icon icon-inbox font-gray tooltip-button" data-placement="left" title="This chat line was received in the mail."></a>
+                        </div>
+                    </h3>
+                    This comment line has a title (author name) and a right button panel.
+                    <div class="chat-time">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        a few seconds ago
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="chat-author">
+                <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+            </div>
+            <div class="popover left no-shadow">
+                <div class="arrow"></div>
+                <div class="popover-content">
+                    This comment line has a bottom button panel, box shadow and title.
+                    <div class="chat-time">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        a few seconds ago
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="btn btn-sm btn-info font-bold text-transform-upr" title="">Reply</a>
+                    <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                </div>
+            </div>
+        </li>
+        <li class="chat-reply button-pane pad10A">
+
+            <div class="input-group">
+                <input type="text" placeholder="Say something here..." class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="example-html">
+        <pre>
+            <code class="language-markup">
+                <ul class="chat-box">
+                    <li>
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover left no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="float-left">
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover right no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <h3>
+                                    <a href="#" title="Horia Simon">Horia Simon</a>
+                                    <div class="float-right">
+                                        <a href="#" class="glyph-icon icon-inbox font-gray tooltip-button" data-placement="left" title="This chat line was received in the mail."></a>
+                                    </div>
+                                </h3>
+                                This comment line has a title (author name) and a right button panel.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover left no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                This comment line has a bottom button panel, box shadow and title.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                                <div class="divider"></div>
+                                <a href="#" class="btn btn-sm btn-info font-bold text-transform-upr" title="">Reply</a>
+                                <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="chat-reply button-pane pad10A">
+
+                        <div class="input-group">
+                            <input type="text" placeholder="Say something here..." class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </code>
+        </pre>
+    </div>
+    {{> docs-buttons  }}
+</div>
+
+
+<h3 class="title-hero">
+    Chat inside content box
+</h3>
+<p class="title-lead">You can wrap the chat elements inside a custom scrollbar content box or in a regular content box like our left example below.</p>
+
+<div class="example-box-wrapper">
+
+    <div class="content-box mrg25B">
+        <h3 class="content-box-header bg-blue text-left">
+            <i class="glyph-icon icon-comments"></i>
+            Chat box
+        </h3>
+        <div class="content-box-wrapper">
+
+            <ul class="chat-box">
+                <li>
+                    <div class="chat-author">
+                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                    </div>
+                    <div class="popover left no-shadow">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                            <div class="chat-time">
+                                <i class="glyph-icon icon-clock-o"></i>
+                                a few seconds ago
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="float-left">
+                    <div class="chat-author">
+                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                    </div>
+                    <div class="popover right no-shadow">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <h3>
+                                <a href="#" title="Horia Simon">Horia Simon</a>
+                                <div class="float-right">
+                                    <a href="#" class="btn glyph-icon icon-inbox font-gray tooltip-button" data-placement="bottom" title="This chat line was received in the mail."></a>
+                                </div>
+                            </h3>
+                            This comment line has a title (author name) and a right button panel.
+                            <div class="chat-time">
+                                <i class="glyph-icon icon-clock-o"></i>
+                                a few seconds ago
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="chat-author">
+                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                    </div>
+                    <div class="popover left no-shadow">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            This comment line has a bottom button panel, box shadow and title.
+                            <div class="chat-time">
+                                <i class="glyph-icon icon-clock-o"></i>
+                                a few seconds ago
+                            </div>
+                            <div class="divider"></div>
+                            <a href="#" class="btn btn-sm btn-default font-bold text-transform-upr" title=""><span class="button-content">Reply</span></a>
+                            <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="chat-author">
+                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                    </div>
+                    <div class="popover left no-shadow">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                            <div class="chat-time">
+                                <i class="glyph-icon icon-clock-o"></i>
+                                a few seconds ago
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="float-left">
+                    <div class="chat-author">
+                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                    </div>
+                    <div class="popover right no-shadow">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                            <div class="chat-time">
+                                <i class="glyph-icon icon-clock-o"></i>
+                                a few seconds ago
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="button-pane pad10A">
+            <div class="input-group">
+                <input type="text" placeholder="Say something here..." class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-html">
+        <pre>
+            <code class="language-markup">
+
+                <div class="content-box mrg25B">
+                    <h3 class="content-box-header bg-blue text-left">
+                        <i class="glyph-icon icon-comments"></i>
+                        Chat box
+                    </h3>
+                    <div class="content-box-wrapper">
+
+                        <ul class="chat-box">
+                            <li>
+                                <div class="chat-author">
+                                    <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                </div>
+                                <div class="popover left no-shadow">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                        <div class="chat-time">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            a few seconds ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="float-left">
+                                <div class="chat-author">
+                                    <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                </div>
+                                <div class="popover right no-shadow">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content">
+                                        <h3>
+                                            <a href="#" title="Horia Simon">Horia Simon</a>
+                                            <div class="float-right">
+                                                <a href="#" class="btn glyph-icon icon-inbox font-gray tooltip-button" data-placement="bottom" title="This chat line was received in the mail."></a>
+                                            </div>
+                                        </h3>
+                                        This comment line has a title (author name) and a right button panel.
+                                        <div class="chat-time">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            a few seconds ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chat-author">
+                                    <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                </div>
+                                <div class="popover left no-shadow">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content">
+                                        This comment line has a bottom button panel, box shadow and title.
+                                        <div class="chat-time">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            a few seconds ago
+                                        </div>
+                                        <div class="divider"></div>
+                                        <a href="#" class="btn btn-sm btn-default font-bold text-transform-upr" title=""><span class="button-content">Reply</span></a>
+                                        <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chat-author">
+                                    <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                </div>
+                                <div class="popover left no-shadow">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                        <div class="chat-time">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            a few seconds ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="float-left">
+                                <div class="chat-author">
+                                    <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                </div>
+                                <div class="popover right no-shadow">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                        <div class="chat-time">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            a few seconds ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="button-pane pad10A">
+                        <div class="input-group">
+                            <input type="text" placeholder="Say something here..." class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+        </pre>
+    </div>
+    {{> docs-buttons  }}
+</div>
+
+<h3 class="title-hero">
+    Scrollable chat box
+</h3>
+<p class="title-lead">Use the markup below to create a scrollable chat box.</p>
+
+<div class="example-box-wrapper">
+
+    <div class="content-box">
+        <h3 class="content-box-header bg-blue text-left">
+            <i class="glyph-icon icon-comments"></i>
+            Scrollable chat box
+        </h3>
+        <div class="content-box-wrapper">
+            <div class="scrollable-content scrollable-nice scrollable-medium">
+
+                <ul class="chat-box">
+                    <li>
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover left no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="float-left">
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover right no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <h3>
+                                    <a href="#" title="Horia Simon">Horia Simon</a>
+                                    <div class="float-right">
+                                        <a href="#" class="btn glyph-icon icon-inbox font-gray tooltip-button" data-placement="bottom" title="This chat line was received in the mail."></a>
+                                    </div>
+                                </h3>
+                                This comment line has a title (author name) and a right button panel.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover left no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                This comment line has a bottom button panel, box shadow and title.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                                <div class="divider"></div>
+                                <a href="#" class="btn btn-sm btn-default font-bold text-transform-upr" title=""><span class="button-content">Reply</span></a>
+                                <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover left no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="float-left">
+                        <div class="chat-author">
+                            <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                        </div>
+                        <div class="popover right no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="button-pane pad10A">
+            <div class="input-group">
+                <input type="text" placeholder="Say something here..." class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-html">
+        <pre>
+            <code class="language-markup">
+
+                <div class="content-box">
+                    <h3 class="content-box-header bg-blue text-left">
+                        <i class="glyph-icon icon-comments"></i>
+                        Scrollable chat box
+                    </h3>
+                    <div class="content-box-wrapper">
+                        <div class="scrollable-content scrollable-nice scrollable-medium">
+
+                            <ul class="chat-box">
+                                <li>
+                                    <div class="chat-author">
+                                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                    </div>
+                                    <div class="popover left no-shadow">
+                                        <div class="arrow"></div>
+                                        <div class="popover-content">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                            <div class="chat-time">
+                                                <i class="glyph-icon icon-clock-o"></i>
+                                                a few seconds ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="float-left">
+                                    <div class="chat-author">
+                                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                    </div>
+                                    <div class="popover right no-shadow">
+                                        <div class="arrow"></div>
+                                        <div class="popover-content">
+                                            <h3>
+                                                <a href="#" title="Horia Simon">Horia Simon</a>
+                                                <div class="float-right">
+                                                    <a href="#" class="btn glyph-icon icon-inbox font-gray tooltip-button" data-placement="bottom" title="This chat line was received in the mail."></a>
+                                                </div>
+                                            </h3>
+                                            This comment line has a title (author name) and a right button panel.
+                                            <div class="chat-time">
+                                                <i class="glyph-icon icon-clock-o"></i>
+                                                a few seconds ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chat-author">
+                                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                    </div>
+                                    <div class="popover left no-shadow">
+                                        <div class="arrow"></div>
+                                        <div class="popover-content">
+                                            This comment line has a bottom button panel, box shadow and title.
+                                            <div class="chat-time">
+                                                <i class="glyph-icon icon-clock-o"></i>
+                                                a few seconds ago
+                                            </div>
+                                            <div class="divider"></div>
+                                            <a href="#" class="btn btn-sm btn-default font-bold text-transform-upr" title=""><span class="button-content">Reply</span></a>
+                                            <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chat-author">
+                                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                    </div>
+                                    <div class="popover left no-shadow">
+                                        <div class="arrow"></div>
+                                        <div class="popover-content">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                            <div class="chat-time">
+                                                <i class="glyph-icon icon-clock-o"></i>
+                                                a few seconds ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="float-left">
+                                    <div class="chat-author">
+                                        <img width="36" src="assets-minified/dummy-images/gravatar.jpg" alt="" />
+                                    </div>
+                                    <div class="popover right no-shadow">
+                                        <div class="arrow"></div>
+                                        <div class="popover-content">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                            <div class="chat-time">
+                                                <i class="glyph-icon icon-clock-o"></i>
+                                                a few seconds ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="button-pane pad10A">
+                        <div class="input-group">
+                            <input type="text" placeholder="Say something here..." class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+        </pre>
+    </div>
+    {{> docs-buttons  }}
+</div>

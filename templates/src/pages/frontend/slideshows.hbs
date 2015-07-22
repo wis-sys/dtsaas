@@ -1,0 +1,711 @@
+---
+title: Slideshows
+categories: Frontend
+tags: Widgets
+---
+
+<!-- Owl carousel -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/owlcarousel/owlcarousel.css">-->
+<script type="text/javascript" src="assets-minified/widgets/owlcarousel/owlcarousel.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+<!-- VideoBG -->
+
+<script type="text/javascript" src="assets-minified/widgets/videobg/videobg.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/videobg/videobg-demo.js"></script>
+
+{{#if docs_include}}
+
+    <h2 class="title-hero">
+        Slideshows
+    </h2>
+    <p class="title-lead">Use the markups below to create all kinds of slideshows.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Owl Carousel - <b>/assets/widgets/owlcarousel/owlcarousel.js</b>
+                        </li>
+                        <li>
+                            Owl Carousel demo - <b>/assets/widgets/owlcarousel/owlcarousel-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/owlcarousel/owlcarousel.css - Contains the CSS needed for the Owl Carousel structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://owlgraphic.com/owlcarousel/#how-to" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+{{/if}}
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Sliders with inherited widths
+    </h3>
+    <p class="title-lead">You can use the grid system to create smaller fluid, responsive sliders. The example below inherits the width from the <code>.container</code> element.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="container">
+
+            <div class="owl-slider-1 slider-wrapper">
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="example-html">
+        <pre>
+        <code class="language-markup">
+
+            <div class="container">
+
+                <div class="owl-slider-example-1 slider-wrapper">
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                    </div>
+                </div>
+
+            </div>
+            <script type="text/javascript">
+
+                $(document).ready(function() {
+                    $(".owl-slider-example-1").owlCarousel({
+                        lazyLoad : true,
+                        autoPlay : 3000,
+                        stopOnHover : true,
+                        navigation:true,
+                        navigationText : ["<i class='glyph-icon icon-angle-left'></i>","<i class='glyph-icon icon-angle-right'></i>"],
+                        paginationSpeed : 1000,
+                        goToFirstSpeed : 2000,
+                        singleItem : true,
+                        autoHeight : true,
+                        transitionStyle:"goDown"
+                    });
+                });
+
+            </script>
+        </code>
+        </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Full width
+    </h3>
+    <p class="title-lead">Use the markup below to create a full width responsive slider with images.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="owl-slider-1 slider-wrapper">
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+            <div>
+                <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+            </div>
+        </div>
+
+        <div class="example-html">
+        <pre>
+        <code class="language-markup">
+
+            <div class="owl-slider-example-1 slider-wrapper">
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+                <div>
+                    <img src="http://placehold.it/1170x400/42bdc2/FFFFFF" class="img-full">
+                </div>
+            </div>
+            <script type="text/javascript">
+
+                $(document).ready(function() {
+                    $(".owl-slider-example-1").owlCarousel({
+                        lazyLoad : true,
+                        autoPlay : 3000,
+                        stopOnHover : true,
+                        navigation:true,
+                        navigationText : ["<i class='glyph-icon icon-angle-left'></i>","<i class='glyph-icon icon-angle-right'></i>"],
+                        paginationSpeed : 1000,
+                        goToFirstSpeed : 2000,
+                        singleItem : true,
+                        autoHeight : true,
+                        transitionStyle:"goDown"
+                    });
+                });
+
+            </script>
+        </code>
+        </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Slider with featured areas
+    </h3>
+    <p class="title-lead">You can use featured areas as sliders or any other element you see fit.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="owl-slider-2 slider-wrapper">
+            <div class="dummy-light-bg inverse title-box">
+                <div class="container clearfix">
+                    <div class="img-holder iphone-bg wow fadeInUp float-right"></div>
+                    <div class="float-content float-left">
+                        <h1 class="title-heading">Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</h1>
+                        <h3 class="title-content">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                        <a href="#" class="btn title-button btn-xl btn-info" title="Example button">
+                            Find out more
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dummy-light-bg2 inverse title-box overflow-hidden large-padding">
+                <div class="container clearfix">
+                    <div id="anim-test" class="col-md-6 col-md-pull-1"
+
+                    data-center="transform:translateY(0px); opacity: 0.6;"
+                    data-top-bottom="transform:translateY(-180px); opacity: 1;"
+                    data-anchor-target="#anim-test"
+
+                    >
+                        <div class="bg-holder">
+                            <img src="assets-minified/dummy-images/ipad_horizontal.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                            <h1 class="title-heading">Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</h1>
+                            <h3 class="title-content">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                            <a href="#" class="btn title-button btn-xl btn-info" title="Example button">
+                                Find out more
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div id="featured-slide-example" class="dummy-poly-3"
+                data-center="background-position: 50% 0px;"
+                data-top-bottom="background-position: 50% -250px;"
+                data-anchor-target="#featured-slide-example">
+
+                <div class="video-background-2 center-vertical" style="width: 100%; min-height: 600px;">
+                    <h2 class="center-content title-box title-big title-heading">
+                        <div class="container  wow bounceInDown">
+                            Featured Portfolio Projects
+                            <small>Best &amp; Most Popular of Our Works</small>
+                            <span>
+                                Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                            </span>
+                            <a href="#" class="btn-outline-inverse title-button" title="Example button">
+                                Purchase now
+                            </a>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+
+                    <div class="owl-slider-example-2 slider-wrapper">
+                        <div class="dummy-light-bg inverse title-box">
+                            <div class="container clearfix">
+                                <div class="img-holder iphone-bg wow fadeInUp float-right"></div>
+                                <div class="float-content float-left">
+                                    <h1 class="title-heading">Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</h1>
+                                    <h3 class="title-content">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                                    <a href="#" class="btn title-button btn-xl btn-info" title="Example button">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dummy-light-bg2 inverse title-box overflow-hidden large-padding">
+                            <div class="container clearfix">
+                                <div id="anim-test" class="col-md-6 col-md-pull-1"
+
+                                     data-center="transform:translateY(0px); opacity: 0.6;"
+                                     data-top-bottom="transform:translateY(-180px); opacity: 1;"
+                                     data-anchor-target="#anim-test"
+
+                                        >
+                                    <div class="bg-holder">
+                                        <img src="assets-minified/dummy-images/ipad_horizontal.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h1 class="title-heading">Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</h1>
+                                    <h3 class="title-content">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                                    <a href="#" class="btn title-button btn-xl btn-info" title="Example button">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="featured-slide-example" class="dummy-poly-3"
+                             data-center="background-position: 50% 0px;"
+                             data-top-bottom="background-position: 50% -250px;"
+                             data-anchor-target="#featured-slide-example">
+
+                            <div class="video-background-2 center-vertical" style="width: 100%; min-height: 600px;">
+                                <h2 class="center-content title-box title-big title-heading">
+                                    <div class="container  wow bounceInDown">
+                                        Featured Portfolio Projects
+                                        <small>Best &amp; Most Popular of Our Works</small>
+                                    <span>
+                                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                                    </span>
+                                        <a href="#" class="btn-outline-inverse title-button" title="Example button">
+                                            Purchase now
+                                        </a>
+                                    </div>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".owl-slider-example-2").owlCarousel({
+                                lazyLoad : true,
+                                autoPlay : 3000,
+                                stopOnHover : true,
+                                navigation:true,
+                                navigationText : ["<i class='glyph-icon icon-angle-left'></i>","<i class='glyph-icon icon-angle-right'></i>"],
+                                paginationSpeed : 1000,
+                                goToFirstSpeed : 2000,
+                                singleItem : true,
+                                autoHeight : true,
+                                transitionStyle:"fade"
+                            });
+                        });
+
+                    </script>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Features lists with sliders
+    </h3>
+    <p class="title-lead">Below you will find an example of a features list with a phone with sliding screens.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="container">
+            <div class="feature-box small-padding clearfix">
+                <div class="feature-img">
+                    <div class="iphone-wrapper">
+                        <div class="iphone-screen"></div>
+                        <div class="iphone-content">
+                            <div class="owl-slider-3 slider-wrapper">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-heading">
+                        <h2>Which of us ever to take a trivial </h2>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="glyph-icon icon-camera"></i>
+                            <span>
+                                <b>Wonderful serenity has taken</b>
+                                <p>Alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of.</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-anchor"></i>
+                            <span>
+                                <b>Steal into the inner sanctuary recently</b>
+                                <p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman and above it there.?</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-bolt"></i>
+                            <span>
+                                <b>Little too small, lay peacefully between its</b>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss.</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-bullhorn"></i>
+                            <span>
+                                <b>Supina Developer API</b>
+                                <p>Lorem ipsum dolor sic amet dixit tu? Access Supina's human room although a little too small.</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="feature-box small-padding clearfix">
+                <div class="feature-img float-right">
+                    <div class="iphone-wrapper">
+                        <div class="iphone-screen"></div>
+                        <div class="iphone-content">
+                            <div class="owl-slider-3 slider-wrapper">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-heading">
+                        <h2>Which of us ever to take a trivial </h2>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="glyph-icon icon-camera"></i>
+                            <span>
+                                <b>Wonderful serenity has taken</b>
+                                <p>Alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of.</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-anchor"></i>
+                            <span>
+                                <b>Steal into the inner sanctuary recently</b>
+                                <p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman and above it there.?</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-bolt"></i>
+                            <span>
+                                <b>Little too small, lay peacefully between its</b>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss.</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-bullhorn"></i>
+                            <span>
+                                <b>Supina Developer API</b>
+                                <p>Lorem ipsum dolor sic amet dixit tu? Access Supina's human room although a little too small.</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="container">
+                        <div class="feature-box small-padding clearfix">
+                            <div class="feature-img">
+                                <div class="iphone-wrapper">
+                                    <div class="iphone-screen"></div>
+                                    <div class="iphone-content">
+                                        <div class="owl-slider-example-3 slider-wrapper">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-heading">
+                                    <h2>Which of us ever to take a trivial </h2>
+                                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                                </div>
+                                <ul class="feature-list">
+                                    <li>
+                                        <i class="glyph-icon icon-camera"></i>
+                            <span>
+                                <b>Wonderful serenity has taken</b>
+                                <p>Alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of.</p>
+                            </span>
+                                    </li>
+                                    <li>
+                                        <i class="glyph-icon icon-anchor"></i>
+                            <span>
+                                <b>Steal into the inner sanctuary recently</b>
+                                <p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman and above it there.?</p>
+                            </span>
+                                    </li>
+                                    <li>
+                                        <i class="glyph-icon icon-bolt"></i>
+                            <span>
+                                <b>Little too small, lay peacefully between its</b>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss.</p>
+                            </span>
+                                    </li>
+                                    <li>
+                                        <i class="glyph-icon icon-bullhorn"></i>
+                            <span>
+                                <b>Supina Developer API</b>
+                                <p>Lorem ipsum dolor sic amet dixit tu? Access Supina's human room although a little too small.</p>
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="feature-box small-padding clearfix">
+                            <div class="feature-img float-right">
+                                <div class="iphone-wrapper">
+                                    <div class="iphone-screen"></div>
+                                    <div class="iphone-content">
+                                        <div class="owl-slider-example-3 slider-wrapper">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                            <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-heading">
+                                    <h2>Which of us ever to take a trivial </h2>
+                                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                                </div>
+                                <ul class="feature-list">
+                                    <li>
+                                        <i class="glyph-icon icon-camera"></i>
+                            <span>
+                                <b>Wonderful serenity has taken</b>
+                                <p>Alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of.</p>
+                            </span>
+                                    </li>
+                                    <li>
+                                        <i class="glyph-icon icon-anchor"></i>
+                            <span>
+                                <b>Steal into the inner sanctuary recently</b>
+                                <p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman and above it there.?</p>
+                            </span>
+                                    </li>
+                                    <li>
+                                        <i class="glyph-icon icon-bolt"></i>
+                            <span>
+                                <b>Little too small, lay peacefully between its</b>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss.</p>
+                            </span>
+                                    </li>
+                                    <li>
+                                        <i class="glyph-icon icon-bullhorn"></i>
+                            <span>
+                                <b>Supina Developer API</b>
+                                <p>Lorem ipsum dolor sic amet dixit tu? Access Supina's human room although a little too small.</p>
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".owl-slider-example-3").owlCarousel({
+                                lazyLoad : true,
+                                autoPlay : 3000,
+                                stopOnHover : true,
+                                navigation : true,
+                                navigationText : ["<i class='glyph-icon icon-angle-left'></i>","<i class='glyph-icon icon-angle-right'></i>"],
+                                paginationSpeed : 1000,
+                                goToFirstSpeed : 2000,
+                                singleItem : true,
+                                autoHeight : false,
+                            });
+                        });
+
+                    </script>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

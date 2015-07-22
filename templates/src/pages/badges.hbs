@@ -1,0 +1,274 @@
+---
+title: Badges
+categories: Framework
+tags: Elements
+---
+
+    <h2 class="title-hero">
+        Badges
+    </h2>
+    <p class="title-lead">Badges are inline elements with multiple styles that can be used to create numbers indicators and unread counts.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/elements/badges.css - Contains the CSS needed for the badges structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">To create a badge, add <code>.bs-badge</code> CSS class to any element.</p>
+
+    <div class="example-box-wrapper">
+
+        <a class="btn btn-default btn-lg" href="#">Inbox <span class="bs-badge">42</span></a>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <a class="btn btn-default btn-lg" href="#">Inbox <span class="bs-badge">42</span></a>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Background colors
+    </h3>
+    <p class="title-lead">You can use the color helper CSS classes to add different backgrounds to the label element.</p>
+
+    <h4 class="title-hero">
+        Theme inherited
+    </h4>
+    <p class="title-lead">The <code>.label-primary</code> color can be inherited from a theme color scheme you select. These colors are usually used through out the app to style different kinds of widgets, components and elements.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="bs-badge badge-primary">5</span></td>
+                <td><code>.badge-primary</code></td>
+                <td>This is the <b>primary</b> background color.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="title-hero">
+        Framework inherited
+    </h4>
+    <p class="title-lead">The color helper classes below come packed with the Bratilius Framework.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><span class="bs-badge badge-default">21</span></td>
+                <td><code>.badge-default</code></td>
+                <td>This is the <b>default</b> background color.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-success">56</span></td>
+                <td><code>.badge-success</code></td>
+                <td>Used for <b>success</b> actions.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-danger">573</span></td>
+                <td><code>.badge-danger</code></td>
+                <td>Used for <b>error</b> actions.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-warning">12</span></td>
+                <td><code>.badge-warning</code></td>
+                <td>Used for <b>warning</b> actions.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-info">43</span></td>
+                <td><code>.badge-info</code></td>
+                <td>Used for <b>information</b> actions.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="title-hero">
+        Additional colors
+    </h4>
+    <p class="title-lead">These helper classes also come packed with the Bratilius Framework.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="bs-badge badge-blue-alt">9</span></td>
+                <td><code>.badge-blue-alt</code></td>
+                <td>Alternate blue background.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-yellow">7</span></td>
+                <td><code>.badge-yellow</code></td>
+                <td>Yellow background.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-purple">4</span></td>
+                <td><code>.badge-purple</code></td>
+                <td>Purple background.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-azure">1</span></td>
+                <td><code>.badge-azure</code></td>
+                <td>Azure background.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-black">456</span></td>
+                <td><code>.badge-black</code></td>
+                <td>Black background.</td>
+            </tr>
+            <tr>
+                <td><span class="bs-badge badge-black-alt">51</span></td>
+                <td><code>.badge-black-alt</code></td>
+                <td>black alternate background.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="title-hero">
+        Absolute positioning
+    </h3>
+    <p class="title-lead">To create an absolute badge, add <code>.badge-absolute</code> CSS class to the <code>.bs-badge</code> element.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="bs-badge badge-absolute badge-red">9</span>
+            Left badge
+        </a>
+
+        <a href="#" class="btn btn-default btn-lg">
+            Right badge
+            <span class="bs-badge badge-absolute float-right badge-purple">87</span>
+        </a>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <a href="#" class="btn btn-default btn-lg">
+                        <span class="bs-badge badge-absolute badge-red">9</span>
+                        Left badge
+                    </a>
+                    <a href="#" class="btn btn-default btn-lg">
+                        Right badge
+                        <span class="bs-badge badge-absolute float-right badge-purple">87</span>
+                    </a>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Status badges
+    </h3>
+    <p class="title-lead">Use the examples below to create status indicator badges for profile images or similar elements.</p>
+
+    <div class="example-box-wrapper clearfix">
+
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial1.jpg" alt="" />
+            <div class="small-badge bg-green"></div>
+        </div>
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial3.jpg" alt="" />
+            <div class="small-badge bg-gray"></div>
+        </div>
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial2.jpg" alt="" />
+            <div class="small-badge bg-red"></div>
+        </div>
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial2.jpg" alt="" />
+            <div class="small-badge bg-orange"></div>
+        </div>
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial3.jpg" alt="" />
+            <div class="small-badge bg-gray"></div>
+        </div>
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial2.jpg" alt="" />
+            <div class="small-badge bg-red"></div>
+        </div>
+        <div class="status-badge mrg10A">
+            <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial1.jpg" alt="" />
+            <div class="small-badge bg-green"></div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial1.jpg" alt="" />
+                        <div class="small-badge bg-green"></div>
+                    </div>
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial3.jpg" alt="" />
+                        <div class="small-badge bg-gray"></div>
+                    </div>
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial2.jpg" alt="" />
+                        <div class="small-badge bg-red"></div>
+                    </div>
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial2.jpg" alt="" />
+                        <div class="small-badge bg-orange"></div>
+                    </div>
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial3.jpg" alt="" />
+                        <div class="small-badge bg-gray"></div>
+                    </div>
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial2.jpg" alt="" />
+                        <div class="small-badge bg-red"></div>
+                    </div>
+                    <div class="status-badge mrg10A">
+                        <img class="img-circle" width="40" src="assets-minified/dummy-images/people/testimonial1.jpg" alt="" />
+                        <div class="small-badge bg-green"></div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

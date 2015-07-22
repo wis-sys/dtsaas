@@ -1,0 +1,128 @@
+---
+title: Colorpicker
+categories: Framework
+tags: Widgets
+---
+
+<!-- Colorpicker -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/colorpicker/colorpicker.css">-->
+<script type="text/javascript" src="assets-minified/widgets/colorpicker/colorpicker.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/colorpicker/colorpicker-demo.js"></script>
+
+    <h2 class="title-hero">
+        Colorpicker
+    </h2>
+    <p class="title-lead">Use the markups below to create colorpickers.</p>
+
+    <div class="divider"></div>
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                           jQuery MiniColors - <b>/assets/widgets/colorpicker/colorpicker.js</b>
+                        </li>
+                        <li>
+                            Colorpicker demos - <b>/assets/widgets/colorpicker/colorpicker-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/colorpicker/colorpicker.css - Contains the CSS needed for the colorpicker structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://labs.abeautifulsite.net/jquery-minicolors/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+    <h3 class="title-hero">
+        Inline
+    </h3>
+    <p class="title-lead">Use the markup below to create an inline colorpicker element.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="colorpicker-inline"></div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div id="colorpicker-inline"></div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('#colorpicker-inline').minicolors(
+                                {
+                                    animationSpeed: 100,
+                                    change: null,
+                                    changeDelay: 0,
+                                    control: 'hue',
+                                    defaultValue: '',
+                                    hide: null,
+                                    hideSpeed: 100,
+                                    inline: true,
+                                    letterCase: 'lowercase',
+                                    opacity: true,
+                                    position: 'bottom right',
+                                    show: null,
+                                    showSpeed: 100,
+                                    textfield: true,
+                                    theme: 'default'
+                                });
+                        });
+                    </script>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Positions
+    </h3>
+    <p class="title-lead">Choose one of the following positions <code>bottom left</code>, <code>bottom right</code>, <code>top left</code>, <code>top right</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="colorpicker-inline" id="colorpicker-br" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="colorpicker-inline" id="colorpicker-tl" class="form-control">
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="colorpicker-inline" id="colorpicker-br" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="colorpicker-inline" id="colorpicker-tl" class="form-control">
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

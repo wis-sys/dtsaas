@@ -1,0 +1,305 @@
+---
+title: Calendar
+categories: Framework
+tags: Widgets
+---
+
+<!-- Calendar -->
+
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/resizable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/draggable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/sortable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/selectable.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/calendar/calendar.css">-->
+<script type="text/javascript" src="assets-minified/widgets/daterangepicker/moment.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/calendar/calendar.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/calendar/calendar-demo.js"></script>
+
+    <h2 class="title-hero">
+        Calendar
+    </h2>
+    <p class="title-lead">Full width, drag and drop calendar.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Calendar - <b>/assets/widgets/calendar/calendar.js</b>
+                        </li>
+                        <li>
+                            Calendar demos - <b>/assets/widgets/calendar/calendar-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/calendar/calendar.css - Contains the CSS needed for the calendar structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://www.eyecon.ro/bootstrap-datepicker/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">The example below shows a basic full width calendar implementation.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div id="calendar-example-1" class="col-md-10 center-margin"></div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+
+                    <div class="row">
+                        <div id="calendar-example-1" class="col-md-10 center-margin"></div>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        $(document).ready(function() {
+
+                            $('#calendar-example-1').fullCalendar({
+                                header: {
+                                    left: 'prev,next today',
+                                    center: 'title',
+                                    right: 'month,agendaWeek,agendaDay'
+                                },
+                                defaultDate: '2014-01-12',
+                                editable: true,
+                                events: [
+                                    {
+                                        title: 'All Day Event',
+                                        start: '2014-01-01'
+                                    },
+                                    {
+                                        title: 'Long Event',
+                                        start: '2014-01-07',
+                                        end: '2014-01-10'
+                                    },
+                                    {
+                                        id: 999,
+                                        title: 'Repeating Event',
+                                        start: '2014-01-09T16:00:00'
+                                    },
+                                    {
+                                        id: 999,
+                                        title: 'Repeating Event',
+                                        start: '2014-01-16T16:00:00'
+                                    },
+                                    {
+                                        title: 'Meeting',
+                                        start: '2014-01-12T10:30:00',
+                                        end: '2014-01-12T12:30:00'
+                                    },
+                                    {
+                                        title: 'Lunch',
+                                        start: '2014-01-12T12:00:00'
+                                    },
+                                    {
+                                        title: 'Birthday Party',
+                                        start: '2014-01-13T07:00:00'
+                                    },
+                                    {
+                                        title: 'Click for Google',
+                                        url: 'http://google.com/',
+                                        start: '2014-01-28'
+                                    }
+                                ]
+                            });
+
+                        });
+                    </script>
+
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        External draggable
+    </h3>
+    <p class="title-lead">You can drag events inside the calendar body.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-10 center-margin">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div id="calendar-example-2"></div>
+                    </div>
+                    <div class="col-md-3">
+						<div class="content-box" id="external-events">
+						    <h3 class="content-box-header bg-default">
+						        <span class="icon-separator">
+						            <i class="glyph-icon icon-calendar"></i>
+						        </span>
+						        Draggable Events
+						    </h3>
+						    <div class="content-box-wrapper">
+                                <div class="btn display-block mrg5B bg-orange external-event" data-class="bg-orange">
+                                    <div class="button-content">My Event 1</div>
+                                </div>
+                                <div class="btn display-block mrg5B bg-primary external-event">
+                                    <div class="button-content">My Event 2</div>
+                                </div>
+                                <div class="btn display-block mrg5B bg-yellow external-event">
+                                    <div class="button-content">My Event 3</div>
+                                </div>
+                                <div class="btn display-block mrg5B bg-blue-alt external-event">
+                                    <div class="button-content">My Event 4</div>
+                                </div>
+                                <div class="btn display-block mrg5B bg-red external-event">
+                                    <div class="button-content">My Event 5</div>
+                                </div>
+								<p>
+									<input type="checkbox" id="drop-remove" />
+									<label for="drop-remove">remove after drop</label>
+								</p>
+						    </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-10 center-margin">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div id="calendar-example-2"></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content-box" id="external-events">
+                                        <h3 class="content-box-header bg-default">
+                                            <span class="icon-separator">
+                                                <i class="glyph-icon icon-calendar"></i>
+                                            </span>
+                                            Draggable Events
+                                        </h3>
+                                        <div class="content-box-wrapper">
+                                            <div class="btn display-block mrg5B bg-orange external-event" data-class="bg-orange">
+                                                <div class="button-content">My Event 1</div>
+                                            </div>
+                                            <div class="btn display-block mrg5B bg-primary external-event">
+                                                <div class="button-content">My Event 2</div>
+                                            </div>
+                                            <div class="btn display-block mrg5B bg-yellow external-event">
+                                                <div class="button-content">My Event 3</div>
+                                            </div>
+                                            <div class="btn display-block mrg5B bg-blue-alt external-event">
+                                                <div class="button-content">My Event 4</div>
+                                            </div>
+                                            <div class="btn display-block mrg5B bg-red external-event">
+                                                <div class="button-content">My Event 5</div>
+                                            </div>
+                                            <p>
+                                                <input type="checkbox" id="drop-remove" />
+                                                <label for="drop-remove">remove after drop</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        $(document).ready(function() {
+
+                            /* initialize the external events
+                            -----------------------------------------------------------------*/
+
+                            $('#external-events div.external-event').each(function() {
+
+                                // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+                                // it doesn't need to have a start or end
+                                var eventObject = {
+                                    title: $.trim($(this).text()) // use the element's text as the event title
+                                };
+
+                                // store the Event Object in the DOM element so we can get to it later
+                                $(this).data('eventObject', eventObject);
+
+                                // make the event draggable using jQuery UI
+                                $(this).draggable({
+                                    zIndex: 999,
+                                    revert: true,      // will cause the event to go back to its
+                                    revertDuration: 0  //  original position after the drag
+                                });
+
+                            });
+
+
+                            /* initialize the calendar
+                            -----------------------------------------------------------------*/
+
+                            $('#calendar-example-2').fullCalendar({
+                                header: {
+                                    left: 'prev,next today',
+                                    center: 'title',
+                                    right: 'month,agendaWeek,agendaDay'
+                                },
+                                editable: true,
+                                droppable: true, // this allows things to be dropped onto the calendar !!!
+                                drop: function(date) { // this function is called when something is dropped
+
+                                    // retrieve the dropped element's stored Event Object
+                                    var originalEventObject = $(this).data('eventObject');
+
+                                    // we need to copy it, so that multiple events don't have a reference to the same object
+                                    var copiedEventObject = $.extend({}, originalEventObject);
+
+                                    // assign it the date that was reported
+                                    copiedEventObject.start = date;
+
+                                    // render the event on the calendar
+                                    // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+                                    $('#calendar-example-2').fullCalendar('renderEvent', copiedEventObject, true);
+
+                                    // is the "remove after drop" checkbox checked?
+                                    if ($('#drop-remove').is(':checked')) {
+                                        // if so, remove the element from the "Draggable Events" list
+                                        $(this).remove();
+                                    }
+
+                                }
+                            });
+                        });
+
+                    </script>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

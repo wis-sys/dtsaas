@@ -1,0 +1,420 @@
+---
+title: Sliders
+
+categories: Framework
+tags: Widgets
+---
+
+<!-- jQueryUI Slider -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/slider-ui/slider.css">-->
+<script type="text/javascript" src="assets-minified/widgets/slider-ui/slider.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/slider-ui/slider-demo.js"></script>
+
+<!-- Range Slider -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/range-slider/rangeslider.css">-->
+<script type="text/javascript" src="assets-minified/widgets/range-slider/rangeslider-core.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/range-slider/rangeslider-demo.js"></script>
+
+    <h2 class="title-hero">
+        Sliders
+    </h2>
+    <p class="title-lead">The slider widget transforms selected elements into sliders. There are various options such as multiple handles and ranges. The handle can be moved with the mouse or the arrow keys.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Mouse - <b>/assets/js-core/jquery-ui-mouse.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Slider - <b>/assets/widgets/slider-ui/slider.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Slider demo - <b>/assets/widgets/slider-ui/slider-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            <b>/assets/widgets/slider-ui/slider.css</b> - Contains the CSS needed for the slider structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Slider external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/slider/" title="Slider documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Slider external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="slider-example"></div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div id="slider-example"></div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#slider-example" ).slider();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Horizontal slider
+    </h3>
+    <p class="title-lead">This slider example has a horizontal orientation and shows the selected value in a different color for easier reading.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="horizontal-slider"></div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div id="horizontal-slider"></div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#horizontal-slider" ).slider({
+                                value: 40,
+                                orientation: "horizontal",
+                                range: "min",
+                                animate: true
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Range slider
+    </h3>
+    <p class="title-lead">Set the range option to true to capture a range of values with two drag handles. The space between the handles is filled with the secondary color from the selected layout color scheme to indicate those values are selected.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="slider-range"></div>
+
+        <div class="input-group">
+            <span class="input-group-addon">Price range:</span>
+            <input type="text" id="amount" class="form-control" placeholder="Price range ...">
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div id="slider-range"></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">Price range:</span>
+                        <input type="text" id="amount" class="form-control" placeholder="Price range ...">
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#slider-range" ).slider({
+                                range: true,
+                                min: 0,
+                                max: 500,
+                                values: [ 75, 300 ],
+                                slide: function( event, ui ) {
+                                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                                }
+                            });
+                            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Vertical slider
+    </h3>
+    <p class="title-lead">This example shows a vertical orietantion slider. You can assign a height value via <b>.height()</b> or by setting the height through CSS, and set the orientation option to "vertical".</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="slider-vertical" class="center-div"></div>
+
+        <div class="input-group">
+            <span class="input-group-addon">Horizontal range:</span>
+            <input type="text" id="amount3" class="form-control" placeholder="Price range ...">
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div id="slider-vertical" class="center-div"></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">Horizontal range:</span>
+                        <input type="text" id="amount3" class="form-control" placeholder="Price range ...">
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#slider-vertical" ).slider({
+                                orientation: "vertical",
+                                range: "min",
+                                min: 0,
+                                max: 100,
+                                value: 60,
+                                slide: function( event, ui ) {
+                                    $( "#amount3" ).val( ui.value );
+                                }
+                            });
+                            $( "#amount3" ).val( $( "#slider-vertical" ).slider( "value" ) );
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Range slider
+    </h3>
+    <p class="title-lead">Set the range option to true to capture a range of values with two drag handles. The space between the handles is filled with the secondary color from the selected layout color scheme to indicate those values are selected.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="slider-range"></div>
+
+        <div class="input-group">
+            <span class="input-group-addon">Price range:</span>
+            <input type="text" id="amount" class="form-control" placeholder="Price range ...">
+        </div>
+
+        <div class="example-html">
+    <pre>
+    <code class="language-markup">
+
+    </code>
+    </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Vertical slider
+    </h3>
+    <p class="title-lead">This example shows a vertical orietantion slider. You can assign a height value via <b>.height()</b> or by setting the height through CSS, and set the orientation option to "vertical".</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="slider-vertical" class="center-div"></div>
+
+        <div class="input-group">
+            <span class="input-group-addon">Horizontal range:</span>
+            <input type="text" id="amount3" class="form-control" placeholder="Price range ...">
+        </div>
+
+        <div class="example-html">
+    <pre>
+    <code class="language-markup">
+
+    </code>
+    </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Vertical range slider
+    </h3>
+    <p class="title-lead">Just like the horizontal range slider above, but only with vertical orientation.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="slider-range-vertical" class="center-div" style="height: 200px;"></div>
+
+        <div class="input-group">
+            <span class="input-group-addon">Horizontal range:</span>
+            <input type="text" id="amount-vertical-range" class="form-control" placeholder="Price range ...">
+        </div>
+
+        <div class="example-html">
+    <pre>
+    <code class="language-markup">
+
+    </code>
+    </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <div class="divider"></div>
+
+    <h2 class="title-hero">
+        Range slider
+    </h2>
+    <p class="title-lead">A powerful slider for selecting value ranges, supporting dates and more.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            RangeSlider core - <b>/assets/range-slider/rangeslider-core.js</b>
+                        </li>
+                        <li>
+                            RangeSlider demo - <b>/assets/range-slider/rangeslider-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            <b>/assets/widgets/range-slider/rangeslider.css</b> - Contains the CSS needed for the range slider structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the RangeSlider external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://ghusse.github.io/jQRangeSlider/documentation.html" title="RangeSlider documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                RangeSlider external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Basic range slider example.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="range-slider-basic"></div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+
+                <div id="range-slider-basic"></div>
+
+                <script type="text/javascript">
+                    $(function() { "use strict";
+                        $("#range-slider-basic").rangeSlider();
+                    });
+                </script>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Edit slider
+    </h3>
+    <p class="title-lead">Range slider with edit inputs at each end.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="range-slider-edit"></div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+
+                <div id="range-slider-edit"></div>
+
+                <script type="text/javascript">
+                    $(function() { "use strict";
+                        $("#range-slider-edit").editRangeSlider();
+                    });
+                </script>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Date slider
+    </h3>
+    <p class="title-lead">Range slider for select dates.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="range-slider-date"></div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+
+                <div id="range-slider-date"></div>
+
+                <script type="text/javascript">
+                    $(function() { "use strict";
+                        $("#range-slider-date").dateRangeSlider();
+                    });
+                </script>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

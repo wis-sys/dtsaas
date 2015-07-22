@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang ="en">
+<head> 
+
+    {{> head  }}
+
+{{#if production}}
+
+    {{> assets-css  }}
+
+{{else}}
+
+    {{> assets-css-development  }}
+
+{{/if}}
+
+<!-- Admin Theme -->
+
+<link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/layout.css">
+<link id="layout-color" rel="stylesheet" type="text/css" href="../assets/themes/bratilius/default/layout-color.css">
+<link id="framework-color" rel="stylesheet" type="text/css" href="../assets/themes/bratilius/default/framework-color.css">
+<link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/border-radius.css">
+
+<!-- Color Helpers CSS -->
+
+<link rel="stylesheet" type="text/css" href="../assets/helpers/colors.css">
+
+</head> 
+<body>
+    <div id="loading"><img src="../assets/images/spinner/loader-dark.gif" alt="Loading..."></div>
+        <div id="sb-site">
+
+            <div id="page-wrapper">
+
+                {{> common-header }}
+                {{> common-sidebar }}
+
+                <div id="page-content-wrapper" class="rm-transition">
+
+                    {{> body  }}
+
+                    <div id="page-content">
+                        <div class="page-box">
+                            <h3 class="page-title">
+                                {{title }}
+                                <small>
+                                    View all kinds of {{title }} examples below.
+                                </small>
+                            </h3>
+
+                            <h1 class="font-gray-dark text-center mrg25T mrg15B">This is a blank page with the content inside a white background wrapper element.</h1>
+
+                        </div>
+
+                    </div><!-- #page-content -->
+                </div><!-- #page-content-wrapper -->
+            </div><!-- #page-wrapper -->
+
+        </div><!-- #sb-site -->
+
+        {{> common-slidebars  }}
+
+{{#if production}}
+
+    {{> assets-js  }}
+
+{{else}}
+
+    {{> assets-js-development  }}
+
+{{/if}}
+    
+</body>
+</html>

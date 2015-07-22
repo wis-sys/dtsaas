@@ -1,0 +1,80 @@
+---
+title: Dropzone uploader
+categories: Framework
+tags: Elements
+---
+<h2 class="title-hero">
+    Dropzone uploader
+</h2>
+<p class="title-lead">Drag &amp; drop file uploads with image previews.</p>
+
+<div class="divider"></div>
+
+<!-- Dropzone uploader -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/dropzone/dropzone.css">-->
+<script type="text/javascript" src="assets-minified/widgets/dropzone/dropzone.js"></script>
+
+<div class="row mrg20T remove-production">
+    <div class="col-md-6">
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-code-fork"></i>
+                Dependencies
+            </h3>
+            <div class="content-box-wrapper">
+                <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                <ul>
+                    <li>
+                        jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                    </li>
+                    <li>
+                        Dropzone core - <b>/assets/widgets/dropzone/dropzone.js</b>
+                    </li>
+                </ul>
+                <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                <ul>
+                    <li>
+                        /assets/widgets/dropzone/dropzone.css - Contains the CSS needed for the Dropzone file uploader structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="alert alert-warning mrg15B">
+            <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+        </div>
+        <a href="http://www.dropzonejs.com/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+            <i class="glyph-icon icon-external-link"></i>
+            {{title}} external documentation
+        </a>
+    </div>
+</div>
+
+<div class="alert alert-warning">
+    <h4 class="alert-title">Uploader Functionality</h4>
+    <p>The dropzone file uplaoder below is for demonstration purposes only, so it may not actually upload files.</p>
+</div>
+
+<h3 class="title-hero">
+    Basic
+</h3>
+<p class="title-lead">Basic example for the dropzone uploader.</p>
+
+<div class="row" id="dropzone-example">
+    <form action="/file-upload" class="dropzone bg-gray col-md-10 center-margin" id="demo-upload"></form>
+</div>
+
+<div class="example-box-wrapper">
+    <div class="example-html">
+        <pre>
+            <code class="language-markup">
+                <div class="row" id="dropzone-example">
+                    <form action="/file-upload" class="dropzone bg-gray col-md-10 center-margin" id="demo-upload"></form>
+                </div>
+            </code>
+        </pre>
+    </div>
+{{> docs-buttons  }}
+</div>

@@ -1,0 +1,111 @@
+---
+title: Loading bar
+categories: Framework
+tags: Widgets
+---
+
+<!-- Loading bar -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/loading-bar/loadingbar.css">-->
+<script type="text/javascript" src="assets-minified/widgets/loading-bar/loadingbar.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/loading-bar/loadingbar-demo.js"></script>
+
+    <h2 class="title-hero">
+        Loading bar
+    </h2>
+    <p class="title-lead">Use the markups below to create YouTube like loading bars.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Loading bar core - <b>/assets/widgets/loading-bar/loadingbar.js</b>
+                        </li>
+                        <li>
+                            Datatables bootstrap - <b>/assets/widgets/loading-bar/loadingbar-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/loading-bar/loadingbar.css - Contains the CSS needed for the loading bar structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="https://github.com/peachananr/loading-bar" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Loading bars can have four different positions: horizontal left, horizontal right, vertical down and vertical up.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo btn btn-default btn-md">
+            Left to right example
+        </a>
+
+        <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo-right btn btn-default btn-md">
+            Right to left example
+        </a>
+
+        <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo-down btn btn-default btn-md">
+            Vertical down
+        </a>
+
+        <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-rame" class="reload loadingbar-demo-up btn btn-default btn-md">
+            Vertical up
+        </a>
+
+        <div id="loading-frame" class="scrollable-content scrollable-xs scrollable-nice"></div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo btn btn-default btn-md">
+                        Left to right example
+                    </a>
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo-right btn btn-default btn-md">
+                        Right to left example
+                    </a>
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo-down btn btn-default btn-md">
+                        Vertical down
+                    </a>
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-rame" class="reload loadingbar-demo-up btn btn-default btn-md">
+                        Vertical up
+                    </a>
+
+                    <div id="loading-frame" class="scrollable-content scrollable-xs scrollable-nice"></div>
+
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

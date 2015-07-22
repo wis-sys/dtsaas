@@ -1,0 +1,1551 @@
+---
+title: Carousels
+categories: Frontend
+tags: Widgets
+---
+
+<!-- Owl carousel -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/owlcarousel/owlcarousel.css">-->
+<script type="text/javascript" src="assets-minified/widgets/owlcarousel/owlcarousel.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+{{#if docs_include}}
+
+    <h2 class="title-hero">
+        Carousels
+    </h2>
+    <p class="title-lead">Use the markups below to create all kinds of carousels.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Owl Carousel - <b>/assets/widgets/owlcarousel/owlcarousel.js</b>
+                        </li>
+                        <li>
+                            Owl Carousel demo - <b>/assets/widgets/owlcarousel/owlcarousel-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/owlcarousel/owlcarousel.css - Contains the CSS needed for the Owl Carousel structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://owlgraphic.com/owlcarousel/#how-to" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+{{/if}}
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Full width
+    </h3>
+    <p class="title-lead">Use the markup below to create a full width responsive carousel. The images widths dictate the width of the carousel items.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="owl-carousel-1 slider-wrapper carousel-wrapper">
+
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_1.jpg" class="img-full">
+                  </a>
+
+              </div>
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_2.jpg" class="img-full">
+                  </a>
+
+              </div>
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_3.jpg" class="img-full">
+                  </a>
+
+              </div>
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_4.jpg" class="img-full">
+                  </a>
+
+              </div>
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_5.jpg" class="img-full">
+                  </a>
+
+              </div>
+
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_6.jpg" class="img-full">
+                  </a>
+
+              </div>
+              <div>
+
+                  <a href="#" class="thumbnail-box" title="">
+                      <div class="thumbnail-content">
+                          <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                      </div>
+                      <div class="thumbnail-overlay bg-black-opacity">
+                          <div class="center-vertical">
+                              <div class="center-content">
+                                  <div class="text-center animated fadeInDown">
+                                      <h3 class="mrg0A">
+                                          Example title
+                                          <small class="display-block">This is the title description</small>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <img src="assets-minified/dummy-images/350x300_7.jpg" class="img-full">
+                  </a>
+
+              </div>
+
+        </div>
+
+        <div class="example-html">
+        <pre>
+            <code class="language-markup">
+
+                <div class="owl-carousel-example-1 slider-wrapper carousel-wrapper">
+
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_1.jpg" class="img-full">
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_2.jpg" class="img-full">
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_3.jpg" class="img-full">
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_4.jpg" class="img-full">
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_5.jpg" class="img-full">
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_6.jpg" class="img-full">
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#" class="thumbnail-box" title="">
+                            <div class="thumbnail-content">
+                                <i class="icon-helper bg-green glyph-icon icon-plus"></i>
+                            </div>
+                            <div class="thumbnail-overlay bg-black-opacity">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <div class="text-center animated fadeInDown">
+                                            <h3 class="mrg0A">
+                                                Example title
+                                                <small class="display-block">This is the title description</small>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets-minified/dummy-images/350x300_7.jpg" class="img-full">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+
+                    $(document).ready(function() {
+                        $(".owl-carousel-example-1").owlCarousel({
+                            lazyLoad: true,
+                            items: 4,
+                            navigation: true,
+                            navigationText: ["<i class='glyph-icon icon-angle-left'></i>", "<i class='glyph-icon icon-angle-right'></i>"],
+                        });
+                    });
+
+                </script>
+
+            </code>
+        </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Spacing
+    </h3>
+    <p class="title-lead">This carousel example has the items spaced using the CSS helper classes.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="owl-carousel-1 slider-wrapper carousel-wrapper carousel-wrapper-alt">
+
+              <div>
+
+                  <div class="thumbnail-box-wrapper pad10A">
+                      <div class="thumbnail-box" title="">
+                          <div class="thumbnail-content">
+                              <div class="center-vertical">
+                                  <p class="center-content">
+                                      <a href="#" class="btn btn-xs btn-primary display-inline">
+                                          <i class="glyph-icon icon-search"></i>
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                          <img src="assets-minified/dummy-images/350x300_1.jpg" class="img-full">
+                      </div>
+                      <div class="thumbnail-text">
+                          <h4 class="clearfix">
+                              <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                          </h4>
+                          <p>Lorem ipsum dolor sic amet dixit tu</p>
+                      </div>
+                  </div>
+
+              </div>
+              <div>
+
+                  <div class="thumbnail-box-wrapper pad10A">
+                      <div class="thumbnail-box" title="">
+                          <div class="thumbnail-content">
+                              <div class="center-vertical">
+                                  <p class="center-content">
+                                      <a href="#" class="btn btn-xs btn-primary display-inline">
+                                          <i class="glyph-icon icon-search"></i>
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                          <img src="assets-minified/dummy-images/350x300_2.jpg" class="img-full">
+                      </div>
+                      <div class="thumbnail-text">
+                          <h4 class="clearfix">
+                              <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                          </h4>
+                          <p>Lorem ipsum dolor sic amet dixit tu</p>
+                      </div>
+                  </div>
+
+              </div>
+              <div>
+
+                  <div class="thumbnail-box-wrapper pad10A">
+                      <div class="thumbnail-box" title="">
+                          <div class="thumbnail-content">
+                              <div class="center-vertical">
+                                  <p class="center-content">
+                                      <a href="#" class="btn btn-xs btn-primary display-inline">
+                                          <i class="glyph-icon icon-search"></i>
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                          <img src="assets-minified/dummy-images/350x300_3.jpg" class="img-full">
+                      </div>
+                      <div class="thumbnail-text">
+                          <h4 class="clearfix">
+                              <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                          </h4>
+                          <p>Lorem ipsum dolor sic amet dixit tu</p>
+                      </div>
+                  </div>
+
+              </div>
+              <div>
+
+                  <div class="thumbnail-box-wrapper pad10A">
+                      <div class="thumbnail-box" title="">
+                          <div class="thumbnail-content">
+                              <div class="center-vertical">
+                                  <p class="center-content">
+                                      <a href="#" class="btn btn-xs btn-primary display-inline">
+                                          <i class="glyph-icon icon-search"></i>
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                          <img src="assets-minified/dummy-images/350x300_4.jpg" class="img-full">
+                      </div>
+                      <div class="thumbnail-text">
+                          <h4 class="clearfix">
+                              <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                          </h4>
+                          <p>Lorem ipsum dolor sic amet dixit tu</p>
+                      </div>
+                  </div>
+
+              </div>
+              <div>
+
+                  <div class="thumbnail-box-wrapper pad10A">
+                      <div class="thumbnail-box" title="">
+                          <div class="thumbnail-content">
+                              <div class="center-vertical">
+                                  <p class="center-content">
+                                      <a href="#" class="btn btn-xs btn-primary display-inline">
+                                          <i class="glyph-icon icon-search"></i>
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                          <img src="assets-minified/dummy-images/350x300_5.jpg" class="img-full">
+                      </div>
+                      <div class="thumbnail-text">
+                          <h4 class="clearfix">
+                              <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                          </h4>
+                          <p>Lorem ipsum dolor sic amet dixit tu</p>
+                      </div>
+                  </div>
+
+              </div>
+              <div>
+
+                  <div class="thumbnail-box-wrapper pad10A">
+                      <div class="thumbnail-box" title="">
+                          <div class="thumbnail-content">
+                              <div class="center-vertical">
+                                  <p class="center-content">
+                                      <a href="#" class="btn btn-xs btn-primary display-inline">
+                                          <i class="glyph-icon icon-search"></i>
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                          <img src="assets-minified/dummy-images/350x300_6.jpg" class="img-full">
+                      </div>
+                      <div class="thumbnail-text">
+                          <h4 class="clearfix">
+                              <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                          </h4>
+                          <p>Lorem ipsum dolor sic amet dixit tu</p>
+                      </div>
+                  </div>
+
+              </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+                <div class="owl-carousel-example-2 slider-wrapper carousel-wrapper carousel-wrapper-alt">
+
+                    <div>
+
+                        <div class="thumbnail-box-wrapper pad10A">
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                <i class="glyph-icon icon-search"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="assets-minified/dummy-images/350x300_1.jpg" class="img-full">
+                            </div>
+                            <div class="thumbnail-text">
+                                <h4 class="clearfix">
+                                    <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                                </h4>
+                                <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div class="thumbnail-box-wrapper pad10A">
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                <i class="glyph-icon icon-search"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="assets-minified/dummy-images/350x300_2.jpg" class="img-full">
+                            </div>
+                            <div class="thumbnail-text">
+                                <h4 class="clearfix">
+                                    <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                                </h4>
+                                <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div class="thumbnail-box-wrapper pad10A">
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                <i class="glyph-icon icon-search"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="assets-minified/dummy-images/350x300_3.jpg" class="img-full">
+                            </div>
+                            <div class="thumbnail-text">
+                                <h4 class="clearfix">
+                                    <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                                </h4>
+                                <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div class="thumbnail-box-wrapper pad10A">
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                <i class="glyph-icon icon-search"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="assets-minified/dummy-images/350x300_4.jpg" class="img-full">
+                            </div>
+                            <div class="thumbnail-text">
+                                <h4 class="clearfix">
+                                    <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                                </h4>
+                                <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div class="thumbnail-box-wrapper pad10A">
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                <i class="glyph-icon icon-search"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="assets-minified/dummy-images/350x300_5.jpg" class="img-full">
+                            </div>
+                            <div class="thumbnail-text">
+                                <h4 class="clearfix">
+                                    <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                                </h4>
+                                <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div class="thumbnail-box-wrapper pad10A">
+                            <div class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <p class="center-content">
+                                            <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                <i class="glyph-icon icon-search"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-30 bg-black"></div>
+                                <img src="assets-minified/dummy-images/350x300_6.jpg" class="img-full">
+                            </div>
+                            <div class="thumbnail-text">
+                                <h4 class="clearfix">
+                                    <a href="#" title="">Example title</a>
+                              <span class="float-right">
+                                  12 feb 2014
+                                  <i class="glyph-icon icon-clock-o"></i>
+                              </span>
+                                </h4>
+                                <p>Lorem ipsum dolor sic amet dixit tu</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $(".owl-carousel-example-2").owlCarousel({
+                            lazyLoad: true,
+                            items: 4,
+                            navigation: true,
+                            navigationText: ["<i class='glyph-icon icon-angle-left'></i>", "<i class='glyph-icon icon-angle-right'></i>"],
+                        });
+                    });
+                </script>
+
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Backgrounds
+    </h3>
+    <p class="title-lead">Use the markup below to create a carousel with a background image.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="dummy-dark-bg3 medium-padding font-white">
+
+            <div class="container">
+
+                <div class="owl-carousel-1 slider-wrapper carousel-wrapper carousel-wrapper-alt carousel-container">
+
+                      <div>
+
+                          <div class="thumbnail-box-wrapper pad10A">
+                              <div class="thumbnail-box" title="">
+                                  <div class="thumbnail-content">
+                                      <div class="center-vertical">
+                                          <p class="center-content">
+                                              <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                  <i class="glyph-icon icon-search"></i>
+                                              </a>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                  <img src="assets-minified/dummy-images/350x300_1.jpg" class="img-full radius-all-4">
+                              </div>
+                              <div class="thumbnail-text">
+                                  <h4 class="clearfix">
+                                      <a class="btn-link font-white" href="#" title="">Example title</a>
+                                      <span class="float-right">
+                                          12 feb 2014
+                                          <i class="glyph-icon icon-clock-o"></i>
+                                      </span>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sic amet dixit tu</p>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div>
+
+                          <div class="thumbnail-box-wrapper pad10A">
+                              <div class="thumbnail-box" title="">
+                                  <div class="thumbnail-content">
+                                      <div class="center-vertical">
+                                          <p class="center-content">
+                                              <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                  <i class="glyph-icon icon-search"></i>
+                                              </a>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                  <img src="assets-minified/dummy-images/350x300_2.jpg" class="img-full radius-all-4">
+                              </div>
+                              <div class="thumbnail-text">
+                                  <h4 class="clearfix">
+                                      <a class="btn-link font-white" href="#" title="">Example title</a>
+                                      <span class="float-right">
+                                          12 feb 2014
+                                          <i class="glyph-icon icon-clock-o"></i>
+                                      </span>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sic amet dixit tu</p>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div>
+
+                          <div class="thumbnail-box-wrapper pad10A">
+                              <div class="thumbnail-box" title="">
+                                  <div class="thumbnail-content">
+                                      <div class="center-vertical">
+                                          <p class="center-content">
+                                              <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                  <i class="glyph-icon icon-search"></i>
+                                              </a>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                  <img src="assets-minified/dummy-images/350x300_3.jpg" class="img-full radius-all-4">
+                              </div>
+                              <div class="thumbnail-text">
+                                  <h4 class="clearfix">
+                                      <a class="btn-link font-white" href="#" title="">Example title</a>
+                                      <span class="float-right">
+                                          12 feb 2014
+                                          <i class="glyph-icon icon-clock-o"></i>
+                                      </span>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sic amet dixit tu</p>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div>
+
+                          <div class="thumbnail-box-wrapper pad10A">
+                              <div class="thumbnail-box" title="">
+                                  <div class="thumbnail-content">
+                                      <div class="center-vertical">
+                                          <p class="center-content">
+                                              <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                  <i class="glyph-icon icon-search"></i>
+                                              </a>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                  <img src="assets-minified/dummy-images/350x300_4.jpg" class="img-full radius-all-4">
+                              </div>
+                              <div class="thumbnail-text">
+                                  <h4 class="clearfix">
+                                      <a class="btn-link font-white" href="#" title="">Example title</a>
+                                      <span class="float-right">
+                                          12 feb 2014
+                                          <i class="glyph-icon icon-clock-o"></i>
+                                      </span>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sic amet dixit tu</p>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div>
+
+                          <div class="thumbnail-box-wrapper pad10A">
+                              <div class="thumbnail-box" title="">
+                                  <div class="thumbnail-content">
+                                      <div class="center-vertical">
+                                          <p class="center-content">
+                                              <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                  <i class="glyph-icon icon-search"></i>
+                                              </a>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                  <img src="assets-minified/dummy-images/350x300_5.jpg" class="img-full radius-all-4">
+                              </div>
+                              <div class="thumbnail-text">
+                                  <h4 class="clearfix">
+                                      <a class="btn-link font-white" href="#" title="">Example title</a>
+                                      <span class="float-right">
+                                          12 feb 2014
+                                          <i class="glyph-icon icon-clock-o"></i>
+                                      </span>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sic amet dixit tu</p>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div>
+
+                          <div class="thumbnail-box-wrapper pad10A">
+                              <div class="thumbnail-box" title="">
+                                  <div class="thumbnail-content">
+                                      <div class="center-vertical">
+                                          <p class="center-content">
+                                              <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                  <i class="glyph-icon icon-search"></i>
+                                              </a>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                  <img src="assets-minified/dummy-images/350x300_6.jpg" class="img-full radius-all-4">
+                              </div>
+                              <div class="thumbnail-text">
+                                  <h4 class="clearfix">
+                                      <a class="btn-link font-white" href="#" title="">Example title</a>
+                                      <span class="float-right">
+                                          12 feb 2014
+                                          <i class="glyph-icon icon-clock-o"></i>
+                                      </span>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sic amet dixit tu</p>
+                              </div>
+                          </div>
+
+                      </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+
+                    <div class="dummy-dark-bg3 medium-padding font-white">
+
+                        <div class="container">
+
+                            <div class="owl-carousel-example-3 slider-wrapper carousel-wrapper carousel-wrapper-alt carousel-container">
+
+                                <div>
+
+                                    <div class="thumbnail-box-wrapper pad10A">
+                                        <div class="thumbnail-box" title="">
+                                            <div class="thumbnail-content">
+                                                <div class="center-vertical">
+                                                    <p class="center-content">
+                                                        <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                            <i class="glyph-icon icon-search"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                            <img src="assets-minified/dummy-images/350x300_1.jpg" class="img-full radius-all-4">
+                                        </div>
+                                        <div class="thumbnail-text">
+                                            <h4 class="clearfix">
+                                                <a class="btn-link font-white" href="#" title="">Example title</a>
+                                          <span class="float-right">
+                                              12 feb 2014
+                                              <i class="glyph-icon icon-clock-o"></i>
+                                          </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <div class="thumbnail-box-wrapper pad10A">
+                                        <div class="thumbnail-box" title="">
+                                            <div class="thumbnail-content">
+                                                <div class="center-vertical">
+                                                    <p class="center-content">
+                                                        <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                            <i class="glyph-icon icon-search"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                            <img src="assets-minified/dummy-images/350x300_2.jpg" class="img-full radius-all-4">
+                                        </div>
+                                        <div class="thumbnail-text">
+                                            <h4 class="clearfix">
+                                                <a class="btn-link font-white" href="#" title="">Example title</a>
+                                          <span class="float-right">
+                                              12 feb 2014
+                                              <i class="glyph-icon icon-clock-o"></i>
+                                          </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <div class="thumbnail-box-wrapper pad10A">
+                                        <div class="thumbnail-box" title="">
+                                            <div class="thumbnail-content">
+                                                <div class="center-vertical">
+                                                    <p class="center-content">
+                                                        <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                            <i class="glyph-icon icon-search"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                            <img src="assets-minified/dummy-images/350x300_3.jpg" class="img-full radius-all-4">
+                                        </div>
+                                        <div class="thumbnail-text">
+                                            <h4 class="clearfix">
+                                                <a class="btn-link font-white" href="#" title="">Example title</a>
+                                          <span class="float-right">
+                                              12 feb 2014
+                                              <i class="glyph-icon icon-clock-o"></i>
+                                          </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <div class="thumbnail-box-wrapper pad10A">
+                                        <div class="thumbnail-box" title="">
+                                            <div class="thumbnail-content">
+                                                <div class="center-vertical">
+                                                    <p class="center-content">
+                                                        <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                            <i class="glyph-icon icon-search"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                            <img src="assets-minified/dummy-images/350x300_4.jpg" class="img-full radius-all-4">
+                                        </div>
+                                        <div class="thumbnail-text">
+                                            <h4 class="clearfix">
+                                                <a class="btn-link font-white" href="#" title="">Example title</a>
+                                          <span class="float-right">
+                                              12 feb 2014
+                                              <i class="glyph-icon icon-clock-o"></i>
+                                          </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <div class="thumbnail-box-wrapper pad10A">
+                                        <div class="thumbnail-box" title="">
+                                            <div class="thumbnail-content">
+                                                <div class="center-vertical">
+                                                    <p class="center-content">
+                                                        <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                            <i class="glyph-icon icon-search"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                            <img src="assets-minified/dummy-images/350x300_5.jpg" class="img-full radius-all-4">
+                                        </div>
+                                        <div class="thumbnail-text">
+                                            <h4 class="clearfix">
+                                                <a class="btn-link font-white" href="#" title="">Example title</a>
+                                          <span class="float-right">
+                                              12 feb 2014
+                                              <i class="glyph-icon icon-clock-o"></i>
+                                          </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <div class="thumbnail-box-wrapper pad10A">
+                                        <div class="thumbnail-box" title="">
+                                            <div class="thumbnail-content">
+                                                <div class="center-vertical">
+                                                    <p class="center-content">
+                                                        <a href="#" class="btn btn-xs btn-primary display-inline">
+                                                            <i class="glyph-icon icon-search"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail-overlay radius-all-4 opacity-30 bg-black"></div>
+                                            <img src="assets-minified/dummy-images/350x300_6.jpg" class="img-full radius-all-4">
+                                        </div>
+                                        <div class="thumbnail-text">
+                                            <h4 class="clearfix">
+                                                <a class="btn-link font-white" href="#" title="">Example title</a>
+                                          <span class="float-right">
+                                              12 feb 2014
+                                              <i class="glyph-icon icon-clock-o"></i>
+                                          </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $(".owl-carousel-example-3").owlCarousel({
+                                lazyLoad: true,
+                                items: 4,
+                                navigation: true,
+                                navigationText: ["<i class='glyph-icon icon-angle-left'></i>", "<i class='glyph-icon icon-angle-right'></i>"],
+                            });
+                        });
+                    </script>
+
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+
+    <h3 class="title-hero">
+        Arrow colors
+    </h3>
+    <p class="title-lead">Add the <code>.inverse</code> CSS class to the <code>.carousel-container</code> element to make the next/previous arrow dark.</p>
+
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+
+    <div class="example-box-wrapper">
+
+        <div class="container">
+
+            <div class="owl-carousel-1 slider-wrapper carousel-wrapper inverse carousel-container">
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="thumbnail-box mrg10A" title="">
+                        <div class="thumbnail-content">
+                            <div class="center-vertical">
+                                <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                        <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+
+                <div class="container">
+
+                    <div class="owl-carousel-example-4 slider-wrapper carousel-wrapper inverse carousel-container">
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                        <div>
+
+                            <a href="#" class="thumbnail-box mrg10A" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                                <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $(".owl-carousel-example-4").owlCarousel({
+                            lazyLoad: true,
+                            items: 4,
+                            navigation: true,
+                            navigationText: ["<i class='glyph-icon icon-angle-left'></i>", "<i class='glyph-icon icon-angle-right'></i>"],
+                        });
+                    });
+                </script>
+
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

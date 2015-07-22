@@ -1,0 +1,1794 @@
+---
+title: Content boxes
+
+categories: Framework
+tags: Elements
+---
+    <h2 class="title-hero">
+        Content boxes
+    </h2>
+    <p class="title-lead">Content boxes are used to better organize your content and provide a visual consistency to your app.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/elements/content-box.css - Contains the CSS needed for the content boxes structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic structure
+    </h3>
+    <p class="title-lead">Below, you will find the basic structure needed to create a content box.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                content box title
+            </h3>
+            <div class="content-box-wrapper">
+                Content box body content.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            content box title
+                        </h3>
+                        <div class="content-box-wrapper">
+                            Content box body content.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Title background colors
+    </h3>
+    <p class="title-lead">Change the content box title background ( <code>.content-box-header</code> ) by adding to it one of the color CSS helper classes listed below.</p>
+
+    {{> theming  }} 
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-primary">
+                        Header with .bg-primary
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-primary</code> class.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-purple">
+                        Header with .bg-purple
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-purple</code> class.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-yellow">
+                        Header with .bg-yellow
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-yellow</code> class.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-blue">
+                        Header with .bg-blue
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-blue</code> class.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-white">
+                        Header with white background
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-white</code> class.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-black">
+                        Header with .bg-black
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-black</code> class.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-black">
+                        Header with .bg-black
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-black</code> class.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-blue-alt">
+                        Header with .bg-blue-alt
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-blue-alt</code> class.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-primary">
+                                    Header with .bg-primary
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-primary</code> class.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-purple">
+                                    Header with .bg-purple
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-purple</code> class.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-yellow">
+                                    Header with .bg-yellow
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-yellow</code> class.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-blue">
+                                    Header with .bg-blue
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-blue</code> class.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-white">
+                                    Header with white background
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-white</code> class.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-black">
+                                    Header with .bg-black
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-black</code> class.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-black">
+                                    Header with .bg-black
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-black</code> class.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-blue-alt">
+                                    Header with .bg-blue-alt
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-blue-alt</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Alternate header
+    </h3>
+    <p class="title-lead">Use the example below to create a content box with a two-line header title.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-default">
+                Content title
+                <small>Example header title description</small>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header content-box-header-alt bg-default">
+                            Content title
+                            <small>Example header title description</small>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Header icons
+    </h3>
+    <p class="title-lead">You can add icons to the content box header titles using the <code>FontAwesome</code> icons. For example to add a cog icon next to the title you need to use the following code <code>&lt;i class="glyph-icon icon-cog"&gt;&lt;/i&gt;</code></p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-primary">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-primary</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-default">
+                <i class="glyph-icon icon-cog"></i>
+                <span class="header-wrapper">
+                    Content title
+                    <small>Example header title description</small>
+                </span>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-primary">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-primary</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header content-box-header-alt bg-default">
+                            <i class="glyph-icon icon-cog"></i>
+                            <span class="header-wrapper">
+                                Content title
+                                <small>Example header title description</small>
+                            </span>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Icons separator
+    </h4>
+    <p class="title-lead">To create a separator for the header title icon you need to wrap it inside an element with the <code>.icon-separator</code> CSS class.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <span class="icon-separator">
+                    <i class="glyph-icon icon-cog"></i>
+                </span>
+                Content title
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-primary">
+                <span class="icon-separator">
+                    <i class="glyph-icon icon-cog"></i>
+                </span>
+                Content title
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-primary</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-default">
+                <span class="icon-separator">
+                    <i class="glyph-icon icon-cog"></i>
+                </span>
+                <span class="header-wrapper">
+                    Content title
+                    <small>Example header title description</small>
+                </span>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            <span class="icon-separator">
+                                <i class="glyph-icon icon-cog"></i>
+                            </span>
+                            Content title
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-primary">
+                            <span class="icon-separator">
+                                <i class="glyph-icon icon-cog"></i>
+                            </span>
+                            Content title
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-primary</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header content-box-header-alt bg-default">
+                            <span class="icon-separator">
+                                <i class="glyph-icon icon-cog"></i>
+                            </span>
+                            <span class="header-wrapper">
+                                Content title
+                                <small>Example header title description</small>
+                            </span>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Header buttons
+    </h3>
+    <p class="title-lead">You have the option to insert single buttons in the content boxes headers using the default button markup.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons">
+                    <a href="#" class="btn btn-xs btn-link" title="">Link</a>
+                    <a href="#" class="btn btn-xs btn-primary" title="">Extra small</a>
+                    <a href="#" class="btn btn-xs btn-success" title=""><i class="glyph-icon icon-caret-down"></i></a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-white">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons">
+                    <a href="#" class="btn btn-xs btn-link font-red" title=""><i class="glyph-icon icon-bar-chart-o font-size-14 opacity-hover"></i></a>
+                    <a href="#" class="btn btn-xs btn-link font-green" title=""><i class="glyph-icon icon-bullhorn font-size-14 opacity-hover"></i></a>
+                    <a href="#" class="btn btn-xs btn-link font-blue" title=""><i class="glyph-icon icon-bell-o font-size-14 opacity-hover"></i></a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-default">
+                <span class="icon-separator">
+                    <i class="glyph-icon icon-cog"></i>
+                </span>
+                <span class="header-wrapper">
+                    Content title
+                    <small>Example header title description</small>
+                </span>
+                <span class="header-buttons">
+                    <a href="#" class="btn btn-xs btn-link font-red" title=""><i class="glyph-icon icon-bar-chart-o font-size-14 opacity-hover"></i></a>
+                    <a href="#" class="btn btn-xs btn-link font-green" title=""><i class="glyph-icon icon-bullhorn font-size-14 opacity-hover"></i></a>
+                    <a href="#" class="btn btn-xs btn-link font-blue" title=""><i class="glyph-icon icon-bell-o font-size-14 opacity-hover"></i></a>
+                </span>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-primary">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons">
+                    <a href="#" class="btn btn-sm btn-link font-white" title="">Link</a>
+                    <a href="#" class="btn btn-sm btn-default no-border" title="">Small</a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-primary</code> class.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-blue">
+                <span class="icon-separator">
+                    <i class="glyph-icon icon-cog"></i>
+                </span>
+                <span class="header-wrapper">
+                    Content title
+                    <small>Example header title description</small>
+                </span>
+                <span class="header-buttons">
+                    <a href="#" class="btn btn-sm btn-link font-white" title="">Link</a>
+                    <a href="#" class="btn btn-sm btn-default no-border" title="">Small</a>
+                </span>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-blue</code> class.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons">
+                                <a href="#" class="btn btn-xs btn-link" title="">Link</a>
+                                <a href="#" class="btn btn-xs btn-primary" title="">Extra small</a>
+                                <a href="#" class="btn btn-xs btn-success" title=""><i class="glyph-icon icon-caret-down"></i></a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-white">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons">
+                                <a href="#" class="btn btn-xs btn-link font-red" title=""><i class="glyph-icon icon-bar-chart-o font-size-14 opacity-hover"></i></a>
+                                <a href="#" class="btn btn-xs btn-link font-green" title=""><i class="glyph-icon icon-bullhorn font-size-14 opacity-hover"></i></a>
+                                <a href="#" class="btn btn-xs btn-link font-blue" title=""><i class="glyph-icon icon-bell-o font-size-14 opacity-hover"></i></a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header content-box-header-alt bg-default">
+                            <span class="icon-separator">
+                                <i class="glyph-icon icon-cog"></i>
+                            </span>
+                            <span class="header-wrapper">
+                                Content title
+                                <small>Example header title description</small>
+                            </span>
+                            <span class="header-buttons">
+                                <a href="#" class="btn btn-xs btn-link font-red" title=""><i class="glyph-icon icon-bar-chart-o font-size-14 opacity-hover"></i></a>
+                                <a href="#" class="btn btn-xs btn-link font-green" title=""><i class="glyph-icon icon-bullhorn font-size-14 opacity-hover"></i></a>
+                                <a href="#" class="btn btn-xs btn-link font-blue" title=""><i class="glyph-icon icon-bell-o font-size-14 opacity-hover"></i></a>
+                            </span>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-primary">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons">
+                                <a href="#" class="btn btn-sm btn-link font-white" title="">Link</a>
+                                <a href="#" class="btn btn-sm btn-default no-border" title="">Small</a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-primary</code> class.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header content-box-header-alt bg-blue">
+                            <span class="icon-separator">
+                                <i class="glyph-icon icon-cog"></i>
+                            </span>
+                            <span class="header-wrapper">
+                                Content title
+                                <small>Example header title description</small>
+                            </span>
+                            <span class="header-buttons">
+                                <a href="#" class="btn btn-sm btn-link font-white" title="">Link</a>
+                                <a href="#" class="btn btn-sm btn-default no-border" title="">Small</a>
+                            </span>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-blue</code> class.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Header button groups
+    </h4>
+    <p class="title-lead">You can also include button groups in the content box headers using the markup below.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-white">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">1</button>
+                        <button type="button" class="btn btn-default">2</button>
+
+                        <div class="btn-group">
+                            <button id="btn-group-example" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="btn-group-example">
+                                <li><a href="#">Dropdown link</a></li>
+                                <li><a href="#">Dropdown link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </h3>
+            <div class="content-box-wrapper bg-black">
+                This content boxes has the header with <code>.bg-white</code> class and <code>.bg-black</code> for the content wrapper.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-white">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons">
+                    <div class="btn-toolbar" role="toolbar">
+                        <div class="btn-group btn-group-xs">
+                            <button type="button" class="btn btn-default">1</button>
+                            <button type="button" class="btn btn-default">2</button>
+                            <button type="button" class="btn btn-default">3</button>
+                            <button type="button" class="btn btn-default">4</button>
+                        </div>
+                        <div class="btn-group btn-group-xs">
+                            <button type="button" class="btn btn btn-default">5</button>
+                            <button type="button" class="btn btn btn-default">6</button>
+                            <button type="button" class="btn btn btn-default">7</button>
+                        </div>
+                        <div class="btn-group btn-group-xs">
+                            <button type="button" class="btn btn-default">8</button>
+                        </div>
+                    </div>
+                </div>
+            </h3>
+            <div class="content-box-wrapper bg-black-alt">
+                This content boxes has the header with <code>.bg-white</code> class and <code>.bg-black-alt</code> for the content wrapper.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-white">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">1</button>
+                                    <button type="button" class="btn btn-default">2</button>
+
+                                    <div class="btn-group">
+                                        <button id="btn-group-example" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            Dropdown
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="btn-group-example">
+                                            <li><a href="#">Dropdown link</a></li>
+                                            <li><a href="#">Dropdown link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper bg-black">
+                            This content boxes has the header with <code>.bg-white</code> class and <code>.bg-black</code> for the content wrapper.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-white">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons">
+                                <div class="btn-toolbar" role="toolbar">
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default">1</button>
+                                        <button type="button" class="btn btn-default">2</button>
+                                        <button type="button" class="btn btn-default">3</button>
+                                        <button type="button" class="btn btn-default">4</button>
+                                    </div>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn btn-default">5</button>
+                                        <button type="button" class="btn btn btn-default">6</button>
+                                        <button type="button" class="btn btn btn-default">7</button>
+                                    </div>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default">8</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper bg-black-alt">
+                            This content boxes has the header with <code>.bg-white</code> class and <code>.bg-black-alt</code> for the content wrapper.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Separated buttons
+    </h4>
+    <p class="title-lead">The separated buttons have a lighter background color than the content box header.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code>.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-primary">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-primary</code>.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-white">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-white</code>.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-black">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-black</code>.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-blue">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-blue</code>.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-black">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-black</code>.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code>.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-primary">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-primary</code>.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-white">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-white</code>.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-black">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-black</code>.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-blue">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-blue</code>.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-black">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-black</code>.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Badges &amp; Labels
+    </h4>
+    <p class="title-lead">Context boxes header can also contain badges and/or labels.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Badges <span class="bs-badge">42</span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Badges <span class="bs-badge">42</span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Labels <span class="bs-label label-primary">Primary label</span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Badges <span class="bs-badge badge-warning float-right">5</span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Labels <span class="bs-label label-info float-right">Label info</span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Badges <span class="bs-badge badge-success float-right badge-absolute">89</span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        <span class="bs-label label-success float-left">Label success</span>
+                        Badges
+                    </h3>
+                    <div class="content-box-wrapper">
+                        Content box body content.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Badges <span class="bs-badge">42</span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Badges <span class="bs-badge">42</span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Labels <span class="bs-label label-primary">Primary label</span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Badges <span class="bs-badge badge-warning float-right">5</span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Labels <span class="bs-label label-info float-right">Label info</span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Badges <span class="bs-badge badge-success float-right badge-absolute">89</span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    <span class="bs-label label-success float-left">Label success</span>
+                                    Badges
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    Content box body content.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Alternate style
+    </h3>
+    <p class="title-lead">To create a top border content box example, like the ones below, you need to add the following CSS helper classes to the <code>.conten-box</code> wrapper: <code>.border-top</code> and <code>border-red</code>. To achieve different border colors, replace "-red" with "-blue", "-blue-alt", "-green", "-orange", etc</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box border-top border-red">
+                    <h3 class="content-box-header clearfix">
+                        Red border
+                        <small>(Example description)</small>
+                        <span class="btn-group btn-group-sm float-right" data-toggle="buttons">
+                            <a href="#" class="btn btn-primary">
+                                <input type="radio" name="test-toggle-radio">
+                                <i class="glyph-icon icon-edit"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <input type="radio" name="test-toggle-radio">
+                                <i class="glyph-icon icon-camera"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <input type="radio" name="test-toggle-radio">
+                                <i class="glyph-icon icon-bar-chart-o"></i>
+                            </a>
+                        </span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="divider"></div>
+                        <p>This content boxes has a red top border.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box border-top border-green">
+                    <h3 class="content-box-header clearfix">
+                        Green border
+                        <small>(Example description)</small>
+                        <span class="btn-group btn-group-sm float-right" data-toggle="buttons">
+                            <a href="#" class="btn btn-black">
+                                <input type="radio" name="test-toggle-radio">
+                                <i class="glyph-icon icon-edit"></i>
+                            </a>
+                            <a href="#" class="btn btn-black">
+                                <input type="radio" name="test-toggle-radio">
+                                <i class="glyph-icon icon-bar-chart-o"></i>
+                            </a>
+                        </span>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="divider"></div>
+                        <p>This content boxes has a green top border.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="content-box border-top border-red">
+                                <h3 class="content-box-header clearfix">
+                                    Red border
+                                    <small>(Example description)</small>
+                                    <span class="btn-group btn-group-sm float-right" data-toggle="buttons">
+                                        <a href="#" class="btn btn-primary">
+                                            <input type="radio" name="test-toggle-radio">
+                                            <i class="glyph-icon icon-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-primary">
+                                            <input type="radio" name="test-toggle-radio">
+                                            <i class="glyph-icon icon-camera"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-primary">
+                                            <input type="radio" name="test-toggle-radio">
+                                            <i class="glyph-icon icon-bar-chart-o"></i>
+                                        </a>
+                                    </span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <div class="divider"></div>
+                                    <p>This content boxes has a red top border.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-box border-top border-green">
+                                <h3 class="content-box-header clearfix">
+                                    Green border
+                                    <small>(Example description)</small>
+                                    <span class="btn-group btn-group-sm float-right" data-toggle="buttons">
+                                        <a href="#" class="btn btn-black">
+                                            <input type="radio" name="test-toggle-radio">
+                                            <i class="glyph-icon icon-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-black">
+                                            <input type="radio" name="test-toggle-radio">
+                                            <i class="glyph-icon icon-bar-chart-o"></i>
+                                        </a>
+                                    </span>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <div class="divider"></div>
+                                    <p>This content boxes has a green top border.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Button panes
+    </h3>
+    <p class="title-lead">To create a footer button pane add a div with the <code>.button-pane</code> CSS class after the <code>.content-box-wrapper</code> element. To create a button pane above the content wrapper, move the <code>.button-pane</code> element above the <code>.content-box-wrapper</code> in the DOM add <code>.button-pane-top</code> CSS class to it.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-cog"></i>
+                Content title
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+            <div class="button-pane">
+                <button class="btn btn-info">Continue</button>
+                <button class="btn btn-link font-red">Cancel</button>
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-primary">
+                Content title
+                <small>Example header title description</small>
+            </h3>
+            <div class="button-pane button-pane-top">
+                <a href="#" class="btn btn-sm btn-danger float-left">
+                    <i class="glyph-icon icon-cogs"></i>
+                </a>
+                <div class="dropdown float-right">
+                    <a href="#" class="btn btn-sm btn-info" title="" data-toggle="dropdown">
+                        Right aligned submenu
+                        <i class="glyph-icon icon-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu float-right">
+                        <li>
+                            <a href="#" title="">
+                                Nav link 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                Nav link 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                Nav link 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code> class.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            <i class="glyph-icon icon-cog"></i>
+                            Content title
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                        <div class="button-pane">
+                            <button class="btn btn-info">Continue</button>
+                            <button class="btn btn-link font-red">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header content-box-header-alt bg-primary">
+                            Content title
+                            <small>Example header title description</small>
+                        </h3>
+                        <div class="button-pane button-pane-top">
+                            <a href="#" class="btn btn-sm btn-danger float-left">
+                                <i class="glyph-icon icon-cogs"></i>
+                            </a>
+                            <div class="dropdown float-right">
+                                <a href="#" class="btn btn-sm btn-info" title="" data-toggle="dropdown">
+                                    Right aligned submenu
+                                    <i class="glyph-icon icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a href="#" title="">
+                                            Nav link 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            Nav link 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            Nav link 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code> class.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Boxes loading overlays
+    </h3>
+    <p class="title-lead">Add <code>.refresh-button</code> CSS class to the element that you want to trigger the content box loading overlay. You can control the overlay color using the <code>data-theme="bg-green"></code> parameter. For lighter color data-theme parameter use <code>data-style="light"</code> and for darker ones, use <code>data-style="dark"</code>. Opacity can be controlled using the <code>data-opacity="80"></code> parameter. Accepted values are: 30, 60, 80, 100.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator refresh-button" data-style="dark" data-theme="bg-black" data-opacity="60">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code>.
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator refresh-button" data-style="dark" data-theme="bg-green" data-opacity="80">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code>.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator refresh-button" data-style="dark" data-theme="bg-black" data-opacity="60">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code>.
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator refresh-button" data-style="dark" data-theme="bg-green" data-opacity="80">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code>.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Toggle boxes
+    </h3>
+    <p class="title-lead">Add <code>.toggle-button</code> CSS class to the element that you want to trigger the content slide toggle.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator toggle-button">
+                        <i class="glyph-icon icon-chevron-up"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-default</code>.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator toggle-button">
+                                    <i class="glyph-icon icon-chevron-up"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-default</code>.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Initially closed
+    </h4>
+    <p class="title-lead">Add <code>.hide</code> CSS class to the <code>.content-box-wrapper</code> element that you want to show on toggle trigger.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator toggle-button">
+                        <i class="glyph-icon icon-chevron-down"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper hide">
+                This content boxes has the header with <code>.bg-default</code>.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-default">
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator toggle-button">
+                                    <i class="glyph-icon icon-chevron-down"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper hide">
+                            This content boxes has the header with <code>.bg-default</code>.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Hidden buttons
+    </h3>
+    <p class="title-lead">Add <code>.hidden-button</code> CSS class to the <code>.content-box</code> element to make the content box header elements that have the <code>.label-hide</code> CSS class,  initially hidden and show them only on content box hover.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="content-box hidden-button">
+            <h3 class="content-box-header bg-black">
+                Content title
+                <div class="header-buttons-separator">
+                    <a href="#" class="icon-separator btn-hide">
+                        <i class="glyph-icon icon-question"></i>
+                    </a>
+                    <a href="#" class="icon-separator btn-hide">
+                        <i class="glyph-icon icon-refresh"></i>
+                    </a>
+                    <a href="#" class="icon-separator btn-hide">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </h3>
+            <div class="content-box-wrapper">
+                This content boxes has the header with <code>.bg-black</code>.
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="content-box hidden-button">
+                        <h3 class="content-box-header bg-black">
+                            Content title
+                            <div class="header-buttons-separator">
+                                <a href="#" class="icon-separator btn-hide">
+                                    <i class="glyph-icon icon-question"></i>
+                                </a>
+                                <a href="#" class="icon-separator btn-hide">
+                                    <i class="glyph-icon icon-refresh"></i>
+                                </a>
+                                <a href="#" class="icon-separator btn-hide">
+                                    <i class="glyph-icon icon-times"></i>
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="content-box-wrapper">
+                            This content boxes has the header with <code>.bg-black</code>.
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Closable boxes
+    </h3>
+    <p class="title-lead">Add <code>.remove-button</code> CSS class to the element that you want to trigger the content box remove. To control the animation used for the removal, use the <code>data-animation="flipOutY"</code> parameter. To learn more about the animation you can use, read the Animations documentation page.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-black">
+                        Content title
+                        <div class="header-buttons-separator">
+                            <a href="#" class="icon-separator remove-button" data-animation="flipOutX">
+                                <i class="glyph-icon icon-times"></i>
+                            </a>
+                        </div>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-black</code>.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-white">
+                        Content title
+                        <div class="header-buttons-separator">
+                            <a href="#" class="icon-separator remove-button" data-animation="fadeOutLeft">
+                                <i class="glyph-icon icon-times"></i>
+                            </a>
+                        </div>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-white</code>.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-default">
+                        Content title
+                        <div class="header-buttons-separator">
+                            <a href="#" class="icon-separator remove-button" data-animation="rotateOut">
+                                <i class="glyph-icon icon-times"></i>
+                            </a>
+                        </div>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-default</code>.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h3 class="content-box-header bg-red">
+                        Content title
+                        <div class="header-buttons-separator">
+                            <a href="#" class="icon-separator remove-button" data-animation="fadeOutRight">
+                                <i class="glyph-icon icon-times"></i>
+                            </a>
+                        </div>
+                    </h3>
+                    <div class="content-box-wrapper">
+                        This content boxes has the header with <code>.bg-default</code>.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-black">
+                                    Content title
+                                    <div class="header-buttons-separator">
+                                        <a href="#" class="icon-separator remove-button" data-animation="flipOutX">
+                                            <i class="glyph-icon icon-times"></i>
+                                        </a>
+                                    </div>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-black</code>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-white">
+                                    Content title
+                                    <div class="header-buttons-separator">
+                                        <a href="#" class="icon-separator remove-button" data-animation="fadeOutLeft">
+                                            <i class="glyph-icon icon-times"></i>
+                                        </a>
+                                    </div>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-white</code>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-default">
+                                    Content title
+                                    <div class="header-buttons-separator">
+                                        <a href="#" class="icon-separator remove-button" data-animation="rotateOut">
+                                            <i class="glyph-icon icon-times"></i>
+                                        </a>
+                                    </div>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-default</code>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-box">
+                                <h3 class="content-box-header bg-red">
+                                    Content title
+                                    <div class="header-buttons-separator">
+                                        <a href="#" class="icon-separator remove-button" data-animation="fadeOutRight">
+                                            <i class="glyph-icon icon-times"></i>
+                                        </a>
+                                    </div>
+                                </h3>
+                                <div class="content-box-wrapper">
+                                    This content boxes has the header with <code>.bg-default</code>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Panels
+    </h3>
+    <p class="title-lead">Use the markup below to create content panels.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-body">
+                        Basic panel example
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">Panel heading without title</div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                    <div class="panel-footer">Panel footer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    Basic panel example
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">Panel heading without title</div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+
+                            <div class="panel">
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                                <div class="panel-footer">Panel footer</div>
+                            </div>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

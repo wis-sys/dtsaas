@@ -1,0 +1,191 @@
+---
+title: Accordions
+external_docs: http://getbootstrap.com/javascript/#collapse
+categories: Framework
+tags: Widgets
+---
+
+<!-- jQueryUI Accordions -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/accordion-ui/accordion.css">-->
+<script type="text/javascript" src="assets-minified/widgets/accordion-ui/accordion.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Accordion */
+
+    $(function() { "use strict";
+        $(".accordion").accordion({
+            heightStyle: "content"
+        });
+    });
+
+    $(function() { "use strict";
+        $("#accordion-hover")
+            .accordion({
+                event: 'mouseover',
+                heightStyle: 'auto'
+            });
+    });
+</script>
+    <h2 class="title-hero">
+        Accordions
+    </h2>
+    <p class="title-lead">The accordions examples below use jQueryUI to create accordion elements.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Accordion - <b>/assets/widgets/accordion-ui/accordion.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            <b>/assets/widgets/accordion-ui/accordion.css</b> - Contains the CSS needed for the accordion structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Accordion external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/accordion/" title="Accordion documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Accordion external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">To create a basic accordion area you have to use the following HTML structure and initialize the jQueryUI Accordion widget using a selector.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="accordion">
+            <h3>Header 1</h3>
+            <div>
+                Accordion content 1
+            </div>
+            <h3>Header 2</h3>
+            <div>
+                Accordion content 2
+            </div>
+            <h3>Header 3</h3>
+            <div>
+                Accordion content 3
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="accordion">
+                        <h3>Header 1</h3>
+                        <div>
+                            Accordion content 1
+                        </div>
+                        <h3>Header 2</h3>
+                        <div>
+                            Accordion content 2
+                        </div>
+                        <h3>Header 3</h3>
+                        <div>
+                            Accordion content 3
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( ".accordion" ).accordion({
+                                heightStyle: "content"
+                            });
+                        });
+                    </script>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Open on mouseover
+    </h3>
+    <p class="title-lead">The jQueryUI Accordion widget also support the option to open tabbed content on mouse over, rather than click.</p>
+
+    <div class="example-box-wrapper">
+
+        <div id="accordion-hover">
+            <h3>Header 1</h3>
+            <div>
+                Accordion content 1
+            </div>
+            <h3>Header 2</h3>
+            <div>
+                Accordion content 2
+            </div>
+            <h3>Header 3</h3>
+            <div>
+                Accordion content 3
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div id="accordion-hover">
+                        <h3>Header 1</h3>
+                        <div>
+                            Accordion content 1
+                        </div>
+                        <h3>Header 2</h3>
+                        <div>
+                            Accordion content 2
+                        </div>
+                        <h3>Header 3</h3>
+                        <div>
+                            Accordion content 3
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $( "#accordion-hover" )
+                                .accordion({
+                                    event: 'mouseover',
+                                    heightStyle: 'auto'
+                                });
+                        });
+                    </script>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+
+
+
+
+

@@ -1,0 +1,449 @@
+---
+title: Page titles
+categories: Frontend
+tags: Widgets
+---
+
+<!-- VideoBG -->
+
+<script type="text/javascript" src="assets-minified/widgets/videobg/videobg.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/videobg/videobg-demo.js"></script>
+
+{{#if docs_include}}
+
+    <h2 class="title-hero">
+        Page titles
+    </h2>
+    <p class="title-lead">Use the markups below to create different style page titles.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/frontend-elements/title-box.css - Contains the CSS needed for the titles structure.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{/if}}
+
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Fixed background
+    </h3>
+    <p class="title-lead">Add the <code>.fixed-bg</code> CSS class to the <code>.title-box</code> element to set the background image to fixed.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="dummy-dark-bg2 fixed-bg title-box large-padding">
+            <div class="container">
+                <h1 class="title-heading">Fixed background</h1>
+                <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                    Purchase now
+                </a>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="dummy-dark-bg2 fixed-bg title-box large-padding">
+                        <div class="container">
+                            <h1 class="title-heading">Fixed background</h1>
+                            <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                            <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                                Purchase now
+                            </a>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Scrolling parallax effects
+    </h3>
+    <p class="title-lead">Use the <code>data-</code> parameters to add all kind of effects and style modifiers for elements.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="dummy-dark-bg title-box large-padding"
+            data-top="background-position: 50% 0px;"
+            data-250-top="background-position: 50% -200px;"
+        >
+
+            <div class="container featured-box" data-top="transform:translateY(80px); opacity: 0;" data-250-top="transform:translateY(0px); opacity: 1;">
+                <h1 class="title-heading">Page titles</h1>
+                <h3 class="title-content">This page has a parallax fading title example.</h3>
+            </div>
+
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+                <div class="dummy-dark-bg title-box large-padding"
+                    data-top="background-position: 50% 0px;"
+                    data-250-top="background-position: 50% -200px;"
+                >
+                    <div class="container featured-box" data-top="transform:translateY(80px); opacity: 0;" data-250-top="transform:translateY(0px); opacity: 1;">
+                        <h1 class="title-heading">Page titles</h1>
+                        <h3 class="title-content">This page has a parallax fading title example.</h3>
+                    </div>
+                </div>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Animations
+    </h3>
+    <p class="title-lead">You can use the included animation CSS classes to add enter/exit effects to titles.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div id="featured-slide-example5" class="dummy-dark-bg title-box large-padding">
+            <div class="container featured-box wow lightSpeedIn" data-top="opacity: 0;" data-250-top="opacity: 1;">
+                <h1 class="title-heading">Page titles</h1>
+                <h3 class="title-content">This page title example has lightSpeedIn animation.</h3>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div id="featured-slide-example5" class="dummy-dark-bg title-box large-padding">
+                        <div class="container featured-box wow lightSpeedIn" data-top="opacity: 0;" data-250-top="opacity: 1;">
+                            <h1 class="title-heading">Page titles</h1>
+                            <h3 class="title-content">This page title example has lightSpeedIn animation.</h3>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Center title
+    </h3>
+    <p class="title-lead">Add the <code>.text-center</code> CSS helper class to the <code>.title-box</code> element to center the content.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="dummy-poly-2 title-box text-center medium-padding">
+
+            <div class="container">
+                <h1 class="title-heading">Center title</h1>
+                <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+            </div>
+
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="dummy-poly-2 title-box text-center medium-padding">
+                        <div class="container">
+                            <h1 class="title-heading">Center title</h1>
+                            <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Alternate backgrounds
+    </h3>
+    <p class="title-lead">This examples uses a different background image.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="dummy-poly-3 title-box text-center medium-padding">
+            <div class="container">
+                <h1 class="title-heading">Title box</h1>
+                <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+                <div class="dummy-poly-3 title-box text-center medium-padding">
+                    <div class="container">
+                        <h1 class="title-heading">Title box</h1>
+                        <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                    </div>
+                </div>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Inversed colors
+    </h3>
+    <p class="title-lead">Add the <code>.inverse</code> CSS class to the <code>.title-box</code> element if it has a lighter background image or color.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="title-box dummy-light-bg2 inverse medium-padding">
+            <div class="container">
+                <h1 class="title-heading">Inversed</h1>
+                <h3 class="title-content">This title box has a light background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+                <code class="language-markup">
+                    <div class="title-box dummy-light-bg2 inverse medium-padding">
+                        <div class="container">
+                            <h1 class="title-heading">Inversed</h1>
+                            <h3 class="title-content">This title box has a light background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                        </div>
+                    </div>
+                </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Buttons
+    </h3>
+    <p class="title-lead">Use the markup below to add buttons to page title boxes.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="dummy-dark-bg title-box fixed-bg medium-padding">
+            <div class="container">
+                <h1 class="title-heading">Fixed background</h1>
+                <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                    Purchase now
+                </a>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+                <div class="dummy-dark-bg title-box fixed-bg medium-padding">
+                    <div class="container">
+                        <h1 class="title-heading">Fixed background</h1>
+                        <h3 class="title-content">This title box has a dark background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                        <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                            Purchase now
+                        </a>
+                    </div>
+                </div>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Buttons alternate
+    </h3>
+    <p class="title-lead">Use the markup below to add buttons to title boxes that have a lighter background color or image.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="title-box dummy-light-bg inverse medium-padding">
+            <div class="container">
+                <h1 class="title-heading">Inversed</h1>
+                <h3 class="title-content">This title box has a light background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                <a href="#" class="btn title-button btn-big btn-danger" title="Purchase Supina">
+                    Purchase now
+                </a>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+                <div class="title-box dummy-light-bg inverse medium-padding">
+                    <div class="container">
+                        <h1 class="title-heading">Inversed</h1>
+                        <h3 class="title-content">This title box has a light background image or color. This is a <a href="#" title="AUI Themes">link</a> example.</h3>
+                        <a href="#" class="btn title-button btn-big btn-danger" title="Purchase Supina">
+                            Purchase now
+                        </a>
+                    </div>
+                </div>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+{{#if docs_exclude}}
+  <div class="container">
+{{/if}}
+    <h3 class="title-hero">
+        Spacing
+    </h3>
+    <p class="title-lead">Use one of the following CSS classes to add top/bottom padding to elements: <code>.small-padding</code>, <code>medium-padding</code>, <code>.large-padding</code>, <code>.xlarge-padding</code>.</p>
+{{#if docs_exclude}}
+  </div>
+{{/if}}
+    <div class="example-box-wrapper">
+
+        <div class="dummy-dark-bg medium-padding title-box">
+            <h2 class="title-big title-heading">
+                <div class="container">
+                    Featured Portfolio Projects
+                    <small>Best &amp; Most Popular of Our Works</small>
+                    <span>
+                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                    </span>
+                </div>
+            </h2>
+        </div>
+        <br />
+        <div class="dummy-poly-1 medium-padding title-box">
+            <h2 class="title-big title-heading">
+                <div class="container">
+                    Featured Portfolio Projects
+                    <small>Best &amp; Most Popular of Our Works</small>
+                    <span>
+                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                    </span>
+                    <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                        Purchase now
+                    </a>
+                </div>
+            </h2>
+        </div>
+        <br />
+        <div class="bg-primary">
+            <div class="video-background center-vertical" style="width: 100%; min-height: 600px;">
+            <h2 class="center-content title-box title-big title-heading">
+                <div class="container">
+                    Featured Portfolio Projects
+                    <small>Best &amp; Most Popular of Our Works</small>
+                    <span>
+                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                    </span>
+                    <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                        Purchase now
+                    </a>
+                </div>
+            </h2>
+            </div>
+        </div>
+
+        <div class="example-html">
+            <pre>
+            <code class="language-markup">
+                <div class="dummy-dark-bg medium-padding title-box">
+                    <h2 class="title-big title-heading">
+                        <div class="container">
+                            Featured Portfolio Projects
+                            <small>Best &amp; Most Popular of Our Works</small>
+                    <span>
+                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                    </span>
+                        </div>
+                    </h2>
+                </div>
+                <br />
+                <div class="dummy-poly-1 medium-padding title-box">
+                    <h2 class="title-big title-heading">
+                        <div class="container">
+                            Featured Portfolio Projects
+                            <small>Best &amp; Most Popular of Our Works</small>
+                    <span>
+                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                    </span>
+                            <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                                Purchase now
+                            </a>
+                        </div>
+                    </h2>
+                </div>
+                <br />
+                <div class="bg-primary">
+                    <div class="video-background center-vertical" style="width: 100%; min-height: 600px;">
+                        <h2 class="center-content title-box title-big title-heading">
+                            <div class="container">
+                                Featured Portfolio Projects
+                                <small>Best &amp; Most Popular of Our Works</small>
+                    <span>
+                        Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                    </span>
+                                <a href="#" class="btn-outline-inverse title-button" title="Purchase Supina">
+                                    Purchase now
+                                </a>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+            </code>
+            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>

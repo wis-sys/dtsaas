@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang ="en">
+<head> 
+
+    {{> head  }}
+
+{{#if production}}
+
+    {{> assets-css  }}
+
+{{else}}
+
+    {{> assets-css-development  }}
+
+{{/if}}
+
+    <!-- HG sticky -->
+
+    <script type="text/javascript" src="../assets/widgets/sticky/sticky.js"></script>
+
+    <!-- Highlight -->
+
+    <link class="remove-production" rel="stylesheet" type="text/css" href="../assets/widgets/prism/prism.css">
+    <script class="remove-production" type="text/javascript" src="../assets/widgets/prism/prism.js"></script>
+    <script class="remove-production" type="text/javascript">
+        $(document).ready(function() {
+
+            $('.language-markup').each(function(i){
+                $(this).text($(this).html());
+            });
+
+            $('.source-btn').click(function(){
+                $(this).parent().parent().find('.example-html').addClass('show-source');
+                $('body').append('<div id="example-overlay" class="ui-widget-overlay bg-black opacity-60"></div>');
+                $('.example-close-modal').show();
+            });
+
+            $('.example-close-modal').click(function(){
+                $('#example-overlay').remove();
+                $('.example-html').removeClass('show-source');
+                $('.example-close-modal').hide();
+            });
+
+        });
+
+    </script>
+
+    <!-- Demo -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/demo.css">
+
+    <!-- FRONTEND ELEMENTS -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/frontend-elements/frontend-elements-all.css">
+
+    <!-- Admin Theme -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/layout.css">
+    <link id="layout-color" rel="stylesheet" type="text/css" href="../assets/themes/bratilius/default/layout-color.css">
+    <link id="framework-color" rel="stylesheet" type="text/css" href="../assets/themes/bratilius/default/framework-color.css">
+    <link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/border-radius.css">
+
+    <script type="text/javascript" src="../assets/themes/bratilius/js/layout.js"></script>
+    <script type="text/javascript" src="../assets/widgets/wow/wow.js"></script>
+    <!-- Frontend Theme -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/themes/bratilius/frontend/color.css">
+    <script type="text/javascript" src="../assets/themes/bratilius/frontend/js/frontend-init.js"></script>
+
+    <!-- Color Helpers CSS -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/helpers/colors.css">
+    <style>
+    .remove-docs {
+        display: none;
+    }
+    </style>
+
+</head> 
+<body class="docs-layout">
+    <div id="loading" class="ui-front hide loader ui-widget-overlay bg-white opacity-100"><img src="../assets/images/spinner/loader-dark.gif" alt=""></div>
+    <div class="row" style="margin: 0;">
+        <div class="col-md-3">
+
+            {{> docs-navigation  }}
+
+        </div>
+        <div class="col-md-9">
+
+          {{> body  }}
+
+        </div>
+    </div>
+
+{{#if production}}
+
+    {{> assets-js  }}
+
+{{else}}
+
+    {{> assets-js-development  }}
+
+{{/if}}
+
+</body> 
+</html> 

@@ -1,0 +1,93 @@
+---
+title: Timepicker
+categories: Framework
+tags: Widgets
+---
+
+<!-- Bootstrap Timepicker -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/timepicker/timepicker.css">-->
+<script type="text/javascript" src="assets-minified/widgets/timepicker/timepicker.js"></script>
+<script type="text/javascript">
+    /* Timepicker */
+
+    $(function() { "use strict";
+        $('.timepicker-example').timepicker();
+    });
+</script>
+
+    <h2 class="title-hero">
+        Timepicker
+    </h2>
+    <p class="title-lead">Use the markups below to create timepickers.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Bootstrap Dropdown - <b>/assets/widgets/dropdown/dropdown.js</b>
+                        </li>
+                        <li>
+                            Bootstrap Timepicker - <b>/assets/widgets/timepicker/timepicker.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/dropdown/dropdown.css - Contains the CSS needed for the timepicker dropdown menu.
+                        </li>
+                        <li>
+                            /assets/widgets/timepicker/timepicker.css - Contains the CSS needed for the timepicker structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="https://github.com/jdewit/bootstrap-timepicker" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markup below to create a 12 hours format timepicker.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="bootstrap-timepicker dropdown">
+            <input class="timepicker-example form-control" type="text">
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="bootstrap-timepicker dropdown">
+                        <input class="timepicker-example form-control" type="text">
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('.timepicker-example').timepicker();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

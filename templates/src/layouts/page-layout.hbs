@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang ="en">
+<head> 
+
+    {{> head  }}
+
+{{#if production}}
+
+    {{> assets-css  }}
+
+{{else}}
+
+    {{> assets-css-development  }}
+
+{{/if}}
+
+</head> 
+<body>
+    <div id="loading"><img src="../assets/images/spinner/loader-dark.gif" alt="Loading..."></div>
+
+        <div id="sb-site">
+            <div id="page-wrapper">
+
+                {{> common-header }}
+                {{> common-sidebar }}
+
+                <div id="page-content-wrapper" class="rm-transition">
+
+                    
+
+                    {{> body  }}
+
+                </div><!-- #page-content-wrapper -->
+            </div><!-- #page-wrapper -->
+
+        </div><!-- #sb-site -->
+
+        {{> common-slidebars  }}
+
+{{#if production}}
+
+    {{> assets-js  }}
+
+{{else}}
+
+    {{> assets-js-development  }}
+
+{{/if}}
+
+</body>
+</html>

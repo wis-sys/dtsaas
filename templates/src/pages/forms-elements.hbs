@@ -1,0 +1,2807 @@
+---
+title: Forms elements
+categories: Framework
+tags: Forms
+---
+
+<!-- jQueryUI Spinner -->
+
+<script type="text/javascript" src="assets-minified/widgets/spinner/spinner.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Spinner */
+
+    $(function() { "use strict";
+        $(".spinner-input").spinner();
+    });
+</script>
+
+<!-- Input switch -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/input-switch/inputswitch.css">-->
+<script type="text/javascript" src="assets-minified/widgets/input-switch/inputswitch.js"></script>
+<script type="text/javascript">
+    /* Input switch */
+
+    $(function() { "use strict";
+        $('.input-switch').bootstrapSwitch();
+    });
+</script>
+
+<!-- Textarea -->
+
+<script type="text/javascript" src="assets-minified/widgets/textarea/textarea.js"></script>
+<script type="text/javascript">
+    /* Textarea autoresize */
+
+    $(function() { "use strict";
+        $('.textarea-autosize').autosize();
+    });
+</script>
+
+<!-- Multi select -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/multi-select/multiselect.css">-->
+<script type="text/javascript" src="assets-minified/widgets/multi-select/multiselect.js"></script>
+<script type="text/javascript">
+    /* Multiselect inputs */
+
+    $(function() { "use strict";
+        $(".multi-select").multiSelect();
+        $(".ms-container").append('<i class="glyph-icon icon-exchange"></i>');
+    });
+</script>
+
+    <h2 class="title-hero">
+        Forms elements
+    </h2>
+    <p class="title-lead">Use the examples below to build your forms.</p>
+
+    <div class="divider"></div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">All form elements like, inputs, selects, textareas should have the <code>.form-control</code> CSS class. Each form row should have the <code>.form-group</code> CSS class.</p>
+    <div class="example-box-wrapper">
+
+        <form role="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio"> Check me out
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Inline
+    </h3>
+    <p class="title-lead">To create an inline form add the <code>.form-inline</code> CSS class to the <code>&lt;form&gt;</code> element.</p>
+    <div class="example-box-wrapper">
+
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword2">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Sign in</button>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Horizontal form
+    </h3>
+    <p class="title-lead">To create a horizontal form add the <code>.form-horizontal</code> CSS class to the <code>&lt;form&gt;</code> element.</p>
+    <div class="example-box-wrapper">
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="radio">
+                        <label>
+                            <input type="radio"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-info">Sign in</button>
+                </div>
+            </div>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-info">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Checkbox
+    </h3>
+    <p class="title-lead">Use the markups below to create form layouts with checkboxes.</p>
+
+    <h4 class="title-hero">
+        Vertical layout
+    </h4>
+    <p class="title-lead">Use the markup below to vertically align checkbox inputs.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Checkbox 1
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Checkbox 2
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Checkbox 3
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" disabled value="">
+                    Disabled checkbox
+                </label>
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Checkbox 1
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Checkbox 2
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Checkbox 3
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" disabled value="">
+                                Disabled checkbox
+                            </label>
+                        </div>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Horizontal layout
+    </h4>
+    <p class="title-lead">Use the <code>.checkbox-inline</code> classes on a series of checkboxes or checkboxes for controls that appear on the same line.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox4" value="option1">
+                Checkbox 1
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox5" value="option2">
+                Checkbox 2
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox6" value="option3">
+                Checkbox 3
+            </label>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox4" value="option1">
+                            Checkbox 1
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox5" value="option2">
+                            Checkbox 2
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox6" value="option3">
+                            Checkbox 3
+                        </label>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Custom checkbox
+    </h3>
+    <p class="title-lead">Add the <code>.custom-checkbox</code> CSS class to the checkbox input that you would like to have custom styling.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Uniform core - <b>/assets/widgets/uniform/uniform.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/uniform/uniform.css - Contains the CSS needed for the inputs structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Uniform documentation accessible through the link below.</p>
+            </div>
+            <a href="http://uniformjs.com/#docs" title="Custom form elements documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Uniform documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="checkbox-inline">
+                <label>
+                    <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                    Checkbox 1
+                </label>
+            </div>
+            <div class="checkbox-inline">
+                <label>
+                    <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                    Checkbox 2
+                </label>
+            </div>
+            <div class="checkbox-inline">
+                <label>
+                    <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                    Checkbox 3
+                </label>
+            </div>
+            <div class="checkbox-inline">
+                <label>
+                    <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                    Checkbox 4
+                </label>
+            </div>
+            <div class="checkbox-inline">
+                <label>
+                    <input type="checkbox" disabled id="inlineCheckbox9" class="custom-checkbox">
+                    Disabled checkbox
+                </label>
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <div class="checkbox-inline">
+                            <label>
+                                <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                                Checkbox 1
+                            </label>
+                        </div>
+                        <div class="checkbox-inline">
+                            <label>
+                                <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                                Checkbox 2
+                            </label>
+                        </div>
+                        <div class="checkbox-inline">
+                            <label>
+                                <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                                Checkbox 3
+                            </label>
+                        </div>
+                        <div class="checkbox-inline">
+                            <label>
+                                <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                                Checkbox 4
+                            </label>
+                        </div>
+                        <div class="checkbox-inline">
+                            <label>
+                                <input type="checkbox" disabled id="inlineCheckbox9" class="custom-checkbox">
+                                Disabled checkbox
+                            </label>
+                        </div>
+
+                    </form>
+
+                    <script type="text/javascript">
+                        /* Custom Inputs */
+
+                        $(function () {
+
+                            $('input[type="checkbox"].custom-checkbox').uniform();
+                            $('input[type="radio"].custom-radio').uniform();
+
+                            $('.checker span').append('<i class="glyph-icon icon-check"></i>');
+                            $('.radio span').append('<i class="glyph-icon icon-circle"></i>');
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Background colors
+    </h4>
+    <p class="title-lead">You can use the color helper CSS classes to add different backgrounds to the custom checkbox inputs.</p>
+
+    <h4 class="title-hero">
+        Theme inherited
+    </h4>
+    <p class="title-lead">The <code>.checkbox-primary</code> color can be inherited from a theme color scheme you select. These colors are usually used through out the app to style different kinds of widgets, components and elements.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="checkbox-inline checkbox-primary">
+                        <label>
+                            <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                            Primary checkbox
+                        </label>
+                    </div>
+                </td>
+                <td><code>.checkbox-primary</code></td>
+                <td>This is the <b>primary</b> background color.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="title-hero">
+        Framework inherited
+    </h4>
+    <p class="title-lead">The color helper classes below come packed with the framework.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    <div class="checkbox-inline checkbox-success">
+                        <label>
+                            <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                            Success checkbox
+                        </label>
+                    </div>
+                </td>
+                <td><code>.checkbox-success</code></td>
+                <td>Used for <b>success</b> actions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="checkbox-inline checkbox-danger">
+                        <label>
+                            <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                            Danger checkbox
+                        </label>
+                    </div>
+                </td>
+                <td><code>.checkbox-danger</code></td>
+                <td>Used for <b>error</b> actions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="checkbox-inline checkbox-warning">
+                        <label>
+                            <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                            Warning checkbox
+                        </label>
+                    </div>
+                </td>
+                <td><code>.checkbox-warning</code></td>
+                <td>Used for <b>warning</b> actions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="checkbox-inline checkbox-info">
+                        <label>
+                            <input type="checkbox" id="inlineCheckbox9" class="custom-checkbox">
+                            Info checkbox
+                        </label>
+                    </div>
+                </td>
+                <td><code>.checkbox-info</code></td>
+                <td>Used for <b>information</b> actions.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="title-hero">
+        Radio
+    </h3>
+    <p class="title-lead">Use the markups below to create form layouts with radios.</p>
+
+    <h4 class="title-hero">
+        Vertical layout
+    </h4>
+    <p class="title-lead">Use the markup below to vertically align radio inputs.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="example-radio"  value="">
+                    Radio 1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="example-radio"  value="">
+                    Radio 2
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="example-radio"  value="">
+                    Radio 3
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" disabled name="example-radio"  value="">
+                    Disabled radio
+                </label>
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="example-radio"  value="">
+                                Radio 1
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="example-radio"  value="">
+                                Radio 2
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="example-radio"  value="">
+                                Radio 3
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" disabled name="example-radio"  value="">
+                                Disabled radio
+                            </label>
+                        </div>
+
+                    </form>
+
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Horizontal layout
+    </h4>
+    <p class="title-lead">Use the <code>.radio-inline</code> classes on a series of radios or radios for controls that appear on the same line.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <label class="radio-inline">
+                <input type="radio" name="example-radio" id="inlineRadio4" value="option1">
+                Radio 1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="example-radio" id="inlineRadio5" value="option2">
+                Radio 2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="example-radio" id="inlineRadio6" value="option3">
+                Radio 3
+            </label>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <label class="radio-inline">
+                            <input type="radio" name="example-radio" id="inlineRadio4" value="option1">
+                            Radio 1
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="example-radio" id="inlineRadio5" value="option2">
+                            Radio 2
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="example-radio" id="inlineRadio6" value="option3">
+                            Radio 3
+                        </label>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Custom radio
+    </h3>
+    <p class="title-lead">Add the <code>.custom-input</code> CSS class to the radio input that you would like to have custom styling.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Uniform core - <b>/assets/widgets/uniform/uniform.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/uniform/uniform.css - Contains the CSS needed for the inputs structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Uniform documentation accessible through the link below.</p>
+            </div>
+            <a href="http://uniformjs.com/#docs" title="Custom form elements documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Uniform documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                    Radio 1
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                    Radio 2
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                    Radio 3
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                    Radio 4
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" disabled name="example-radio"  id="inlineRadio9" class="custom-radio">
+                    Disabled radio
+                </label>
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                                Radio 1
+                            </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                                Radio 2
+                            </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                                Radio 3
+                            </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" name="example-radio"  id="inlineRadio9" class="custom-radio">
+                                Radio 4
+                            </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" disabled name="example-radio"  id="inlineRadio9" class="custom-radio">
+                                Disabled radio
+                            </label>
+                        </div>
+
+                    </form>
+
+                    <script type="text/javascript">
+                        /* Custom Inputs */
+
+                        $(function () {
+
+                            $('input[type="checkbox"].custom-checkbox').uniform();
+                            $('input[type="radio"].custom-radio').uniform();
+
+                            $('.checker span').append('<i class="glyph-icon icon-check"></i>');
+                            $('.radio span').append('<i class="glyph-icon icon-circle"></i>');
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+
+    <h4 class="title-hero">
+        Background colors
+    </h4>
+    <p class="title-lead">You can use the color helper CSS classes to add different backgrounds to the custom radio inputs.</p>
+
+    <h4 class="title-hero">
+        Theme inherited
+    </h4>
+    <p class="title-lead">The <code>.radio-primary</code> color can be inherited from a theme color scheme you select. These colors are usually used through out the app to style different kinds of widgets, components and elements.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="radio-inline radio-primary">
+                        <label>
+                            <input type="radio" name="example-radio" id="inlineRadio9" class="custom-radio">
+                            Primary radio
+                        </label>
+                    </div>
+                </td>
+                <td><code>.radio-primary</code></td>
+                <td>This is the <b>primary</b> background color.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="title-hero">
+        Framework inherited
+    </h4>
+    <p class="title-lead">The color helper classes below come packed with the Bratilius Framework.</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Helper class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    <div class="radio-inline radio-success">
+                        <label>
+                            <input type="radio" name="example-radio" id="inlineRadio9" class="custom-radio">
+                            Success radio
+                        </label>
+                    </div>
+                </td>
+                <td><code>.radio-success</code></td>
+                <td>Used for <b>success</b> actions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="radio-inline radio-danger">
+                        <label>
+                            <input type="radio" name="example-radio" id="inlineRadio9" class="custom-radio">
+                            Danger radio
+                        </label>
+                    </div>
+                </td>
+                <td><code>.radio-danger</code></td>
+                <td>Used for <b>error</b> actions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="radio-inline radio-warning">
+                        <label>
+                            <input type="radio" name="example-radio" id="inlineRadio9" class="custom-radio">
+                            Warning radio
+                        </label>
+                    </div>
+                </td>
+                <td><code>.radio-warning</code></td>
+                <td>Used for <b>warning</b> actions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="radio-inline radio-info">
+                        <label>
+                            <input type="radio" name="example-radio" id="inlineRadio9" class="custom-radio">
+                            Info radio
+                        </label>
+                    </div>
+                </td>
+                <td><code>.radio-info</code></td>
+                <td>Used for <b>information</b> actions.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="title-hero">
+        Select
+    </h3>
+    <p class="title-lead">Use the markups below to create select inputs.</p>
+    <h4 class="title-hero">
+        Basic
+    </h4>
+    <p class="title-lead">To disable a select input, add the <code>disabled</code> parameter to it.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <br />
+
+            <select disabled class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <br />
+
+                        <select disabled class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                    </form>
+
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h2 class="title-hero">
+        Input switches
+    </h2>
+    <p class="title-lead">Use the markups below to create input switches.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Input switches - <b>/assets/widgets/input-switch/inputswitch.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/input-switch/inputswitch.css - Contains the CSS needed for the input switches structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Input switch documentation accessible through the link below.</p>
+            </div>
+            <a href="http://www.bootstrap-switch.org/documentation-3.html" title="Input switch documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Input switch documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Add the <code>.input-switch</code> CSS class to any checkbox or radio to create custom input switches.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <input type="checkbox" name="checkbox-example-1" class="input-switch" checked data-size="large" data-on-text="On" data-off-text="Off text">
+
+        </form>
+
+        <div class="example-html">
+                    <pre>
+                        <code class="language-markup">
+                            <input type="checkbox" name="checkbox-example-1" class="input-switch" checked data-size="large" data-on-text="On" data-off-text="Off">
+
+                            <script type="text/javascript">
+                                $(function() { "use strict";
+                                    $('.input-switch').bootstrapSwitch();
+                                });
+                            </script>
+                        </code>
+                    </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Background colors
+    </h3>
+    <p class="title-lead">You can use the color helper CSS classes to add different backgrounds to the custom input switches. You can change the color using the <code>data-on-color</code> parameter for the "On" state and <code>data-off-color</code>
+        parameter for the "Off" state. Accepted values are <code>primary</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>danger</code>, <code>default</code></p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <input type="checkbox" data-on-color="primary" name="checkbox-example-1" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="info" name="checkbox-example-2" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="success" name="checkbox-example-3" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="warning" name="checkbox-example-4" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="danger" name="checkbox-example-5" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="default" name="checkbox-example-6" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+
+        </form>
+
+        <div class="example-html">
+                            <pre>
+                                <code class="language-markup">
+
+                                    <input type="checkbox" data-on-color="primary" name="checkbox-example-1" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="info" name="checkbox-example-2" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="success" name="checkbox-example-3" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="warning" name="checkbox-example-4" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="danger" name="checkbox-example-5" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="default" name="checkbox-example-6" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+
+                                    <script type="text/javascript">
+                                        $(function() { "use strict";
+                                            $('.input-switch').bootstrapSwitch();
+                                        });
+                                    </script>
+                                </code>
+                            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Sizing
+    </h3>
+    <p class="title-lead">You can change the size of the input switches using the <code>data-size</code> parameter. Accepted values are <code>mini</code>, <code>small</code>, <code>normal</code>, <code>large</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <input type="checkbox" data-on-color="primary" data-size="mini" name="checkbox-example-1" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="info" data-size="small" name="checkbox-example-2" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="success" data-size="normal" name="checkbox-example-3" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+            <input type="checkbox" data-on-color="warning" data-size="large" name="checkbox-example-4" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+
+        </form>
+
+        <div class="example-html">
+                            <pre>
+                                <code class="language-markup">
+
+                                    <input type="checkbox" data-on-color="primary" data-size="mini" name="checkbox-example-1" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="info" data-size="small" name="checkbox-example-2" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="success" data-size="normal" name="checkbox-example-3" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+                                    <input type="checkbox" data-on-color="warning" data-size="large" name="checkbox-example-4" class="input-switch" checked data-size="medium" data-on-text="On" data-off-text="Off">
+
+                                    <script type="text/javascript">
+                                        $(function() { "use strict";
+                                            $('.input-switch').bootstrapSwitch();
+                                        });
+                                    </script>
+                                </code>
+                            </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+
+    <h3 class="title-hero">
+        Custom selects
+    </h3>
+    <p class="title-lead">Use the markups below to create select inputs with custom styling.</p>
+    <h4 class="title-hero">
+        Basic
+    </h4>
+    <p class="title-lead">Add the <code>.custom-select</code> CSS class to the radio input that you would like to have custom styling.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Uniform core - <b>/assets/widgets/uniform/uniform.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/uniform/uniform.css - Contains the CSS needed for the inputs structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Uniform documentation accessible through the link below.</p>
+            </div>
+            <a href="http://uniformjs.com/#docs" title="Custom form elements documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Uniform documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <select name="" class="custom-select">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+            </select>
+
+            <br />
+
+            <select name="" disabled class="custom-select">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+            </select>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <select name="" class="custom-select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+
+                        <br />
+
+                        <select name="" disabled class="custom-select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+
+                    </form>
+
+                    <script type="text/javascript">
+                        /* Custom Inputs */
+
+                        $(function () {
+
+                            $('.custom-select').uniform();
+
+                            // $(".selector").append('<i class="glyph-icon icon-caret-down"></i>');
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Chosen select
+    </h3>
+    <p class="title-lead">To create custom select inputs with searchable results you need to add the <code>.chosen-select</code> CSS class to the select input. Use the <code>data-placeholder="Title here..."</code> to add a title to the custom select. To make a Chosen select disabled, add the <code>disabled</code> parameter to it.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Chosen core - <b>/assets/widgets/chosen/chosen.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/chosen/chosen.css - Contains the CSS needed for the selects structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Uniform documentation accessible through the link below.</p>
+            </div>
+            <a href="http://harvesthq.github.io/chosen/" title="Chosen documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Chosen external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <select name="" class="chosen-select">
+
+                <optgroup label="Option group 1">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                    <option>Option 5</option>
+                    <option>Option 6</option>
+                    <option>Option 7</option>
+                    <option>Option 8</option>
+                </optgroup>
+                <optgroup label="Option group 3">
+                    <option>Option 9</option>
+                    <option>Option 10</option>
+                    <option>Option 11</option>
+                    <option>Option 12</option>
+                </optgroup>
+
+            </select>
+
+            <br /><br />
+
+            <select name="" disabled data-placeholder="Disabled basic select input" class="chosen-select">
+
+                <optgroup label="Option group 1">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                    <option>Option 5</option>
+                    <option>Option 6</option>
+                    <option>Option 7</option>
+                    <option>Option 8</option>
+                </optgroup>
+                <optgroup label="Option group 3">
+                    <option>Option 9</option>
+                    <option>Option 10</option>
+                    <option>Option 11</option>
+                    <option>Option 12</option>
+                </optgroup>
+
+            </select>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <select name="" class="chosen-select">
+
+                            <optgroup label="Option group 1">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </optgroup>
+                            <optgroup label="Option group 2">
+                                <option>Option 5</option>
+                                <option>Option 6</option>
+                                <option>Option 7</option>
+                                <option>Option 8</option>
+                            </optgroup>
+                            <optgroup label="Option group 3">
+                                <option>Option 9</option>
+                                <option>Option 10</option>
+                                <option>Option 11</option>
+                                <option>Option 12</option>
+                            </optgroup>
+
+                        </select>
+
+                        <br /><br />
+
+                        <select name="" disabled data-placeholder="Disabled basic select input" class="chosen-select">
+
+                            <optgroup label="Option group 1">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </optgroup>
+                            <optgroup label="Option group 2">
+                                <option>Option 5</option>
+                                <option>Option 6</option>
+                                <option>Option 7</option>
+                                <option>Option 8</option>
+                            </optgroup>
+                            <optgroup label="Option group 3">
+                                <option>Option 9</option>
+                                <option>Option 10</option>
+                                <option>Option 11</option>
+                                <option>Option 12</option>
+                            </optgroup>
+
+                        </select>
+
+                    </form>
+
+                    <script type="text/javascript">
+                        /* Chosen select */
+
+                        $(function () {
+
+                            $(".chosen-select").chosen();
+
+                            $(".chosen-search").append('<i class="glyph-icon icon-search"></i>');
+                            $(".chosen-single div").html('<i class="glyph-icon icon-caret-down"></i>');
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Multiselect
+    </h3>
+    <p class="title-lead">To create multiselect inputs, you need to add the <code>multiple</code> parameter to a select input.</p>
+    <h4 class="title-hero">
+        Basic
+    </h4>
+    <p class="title-lead">To apply custom styling to multiple select inputs, add the <code>.form-control</code>CSS class.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <select multiple="" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+
+                </div>
+                <div class="col-md-6">
+
+                    <select disabled="" multiple="" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <select multiple="" class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <select disabled="" multiple="" class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Chosen multiselect
+    </h4>
+    <p class="title-lead">To create custom multiselect inputs with searchable results you need to add the <code>.chosen-select</code> CSS class to the select input and the <code>multiple</code> parameter.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <select name="" multiple data-placeholder="Click to see available options..." class="chosen-select">
+                <optgroup label="Option group 1">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                    <option>Option 5</option>
+                    <option>Option 6</option>
+                    <option>Option 7</option>
+                    <option>Option 8</option>
+                </optgroup>
+                <optgroup label="Option group 3">
+                    <option>Option 9</option>
+                    <option>Option 10</option>
+                    <option>Option 11</option>
+                    <option>Option 12</option>
+                </optgroup>
+            </select>
+
+            <br />
+            <br />
+
+            <select name="" multiple disabled data-placeholder="Disabled multiselect input" class="chosen-select">
+                <optgroup label="Option group 1">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </optgroup>
+            </select>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <select name="" multiple data-placeholder="Click to see available options..." class="chosen-select">
+                            <optgroup label="Option group 1">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </optgroup>
+                            <optgroup label="Option group 2">
+                                <option>Option 5</option>
+                                <option>Option 6</option>
+                                <option>Option 7</option>
+                                <option>Option 8</option>
+                            </optgroup>
+                            <optgroup label="Option group 3">
+                                <option>Option 9</option>
+                                <option>Option 10</option>
+                                <option>Option 11</option>
+                                <option>Option 12</option>
+                            </optgroup>
+                        </select>
+
+                        <br />
+                        <br />
+
+                        <select name="" multiple disabled data-placeholder="Disabled multiselect input" class="chosen-select">
+                            <optgroup label="Option group 1">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </optgroup>
+                        </select>
+
+                    </form>
+
+                    <script type="text/javascript">
+                        /* Chosen select */
+
+                        $(function () {
+
+                            $(".chosen-select").chosen();
+
+                            $(".chosen-search").append('<i class="glyph-icon icon-search"></i>');
+                            $(".chosen-single div").html('<i class="glyph-icon icon-caret-down"></i>');
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Multiselect list
+    </h4>
+    <p class="title-lead">To transform a basic multiple select input into a multiselect list, you need to add the <code>.multi-select</code> CSS class to it.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Multiselect core - <b>/assets/widgets/multi-select/multiselect.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/multi-select/multiselect.css - Contains the CSS needed for the multi-select structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Multiselect documentation accessible through the link below.</p>
+            </div>
+            <a href="http://loudev.com/#usage" title="Multiselect documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Multiselect external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <select multiple class="multi-select" name="">
+                <option>Dallas Cowboys</option>
+                <option>New York Giants</option>
+                <option>Philadelphia Eagles</option>
+                <option>Washington Redskins</option>
+                <option>Chicago Bears</option>
+                <option>Detroit Lions</option>
+                <option>Green Bay Packers</option>
+                <option>Minnesota Vikings</option>
+                <option>Atlanta Falcons</option>
+                <option>Carolina Panthers</option>
+                <option>New Orleans Saints</option>
+                <option>Tampa Bay Buccaneers</option>
+                <option>Arizona Cardinals</option>
+                <option>St. Louis Rams</option>
+                <option>San Francisco 49ers</option>
+                <option>Seattle Seahawks</option>
+                <option>Buffalo Bills</option>
+                <option>Miami Dolphins</option>
+                <option>New England Patriots</option>
+                <option>New York Jets</option>
+                <option>Baltimore Ravens</option>
+                <option>Cincinnati Bengals</option>
+                <option>Cleveland Browns</option>
+                <option>Pittsburgh Steelers</option>
+                <option>Houston Texans</option>
+                <option>Indianapolis Colts</option>
+                <option>Jacksonville Jaguars</option>
+                <option>Tennessee Titans</option>
+                <option>Denver Broncos</option>
+                <option>Kansas City Chiefs</option>
+                <option>Oakland Raiders</option>
+                <option>San Diego Chargers</option>
+            </select>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <select multiple class="multi-select" name="">
+                            <option>Dallas Cowboys</option>
+                            <option>New York Giants</option>
+                            <option>Philadelphia Eagles</option>
+                            <option>Washington Redskins</option>
+                            <option>Chicago Bears</option>
+                            <option>Detroit Lions</option>
+                            <option>Green Bay Packers</option>
+                            <option>Minnesota Vikings</option>
+                            <option>Atlanta Falcons</option>
+                            <option>Carolina Panthers</option>
+                            <option>New Orleans Saints</option>
+                            <option>Tampa Bay Buccaneers</option>
+                            <option>Arizona Cardinals</option>
+                            <option>St. Louis Rams</option>
+                            <option>San Francisco 49ers</option>
+                            <option>Seattle Seahawks</option>
+                            <option>Buffalo Bills</option>
+                            <option>Miami Dolphins</option>
+                            <option>New England Patriots</option>
+                            <option>New York Jets</option>
+                            <option>Baltimore Ravens</option>
+                            <option>Cincinnati Bengals</option>
+                            <option>Cleveland Browns</option>
+                            <option>Pittsburgh Steelers</option>
+                            <option>Houston Texans</option>
+                            <option>Indianapolis Colts</option>
+                            <option>Jacksonville Jaguars</option>
+                            <option>Tennessee Titans</option>
+                            <option>Denver Broncos</option>
+                            <option>Kansas City Chiefs</option>
+                            <option>Oakland Raiders</option>
+                            <option>San Diego Chargers</option>
+                        </select>
+
+                    </form>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+
+                            $(".multi-select").multiSelect();
+                            $(".ms-container").append('<i class="glyph-icon icon-exchange"></i>');
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Textarea
+    </h3>
+    <p class="title-lead">To apply styling to any textarea, you need to add to it the <code>.form-control</code> CSS class.</p>
+    <h4 class="title-hero">
+        Basic
+    </h4>
+    <p class="title-lead">Below you will find a basic textarea example. Disable textarea by adding either the <code>.disabled</code> CSS helper class or the <code>disabled</code> parameter.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <textarea name="" class="form-control textarea-noresize"></textarea>
+
+            <br />
+
+            <textarea name="" disabled class="form-control textarea-noresize"></textarea>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <textarea name="" class="form-control textarea-noresize"></textarea>
+
+                        <br />
+
+                        <textarea name="" disabled class="form-control textarea-noresize"></textarea>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Sizing
+    </h4>
+    <p class="title-lead">Textarea can have one of the following heights: <code>.textarea-xs</code>, <code>.textarea-sm</code>, <code>.textarea-md</code>, <code>.textarea-lg</code>.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <textarea name="" placeholder=".textarea-sm" rows="3" class="form-control textarea-sm"></textarea>
+
+                    <br />
+
+                    <textarea name="" placeholder=".textarea-md" rows="3" class="form-control textarea-md"></textarea>
+
+                </div>
+                <div class="col-md-6">
+
+                    <textarea name="" placeholder=".textarea-xs" rows="3" class="form-control textarea-xs"></textarea>
+
+                    <br />
+
+                    <textarea name="" placeholder=".textarea-lg" rows="3" class="form-control textarea-lg"></textarea>
+
+                </div>
+
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <textarea name="" placeholder=".textarea-sm" rows="3" class="form-control textarea-sm"></textarea>
+
+                                <br />
+
+                                <textarea name="" placeholder=".textarea-md" rows="3" class="form-control textarea-md"></textarea>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <textarea name="" placeholder=".textarea-xs" rows="3" class="form-control textarea-xs"></textarea>
+
+                                <br />
+
+                                <textarea name="" placeholder=".textarea-lg" rows="3" class="form-control textarea-lg"></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        No resize
+    </h4>
+    <p class="title-lead">Add the <code>.textarea-no-resize</code> CSS class to textareas to remove the possibility of resize.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <textarea name="" rows="3" class="form-control textarea-no-resize"></textarea>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <textarea name="" rows="3" class="form-control textarea-no-resize"></textarea>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Autoresize
+    </h4>
+    <p class="title-lead">Add the <code>.textarea-autosize</code> CSS class to textareas to auto-resize textareas as you type more text into them.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <textarea name="" rows="3" class="form-control textarea-autosize"></textarea>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <textarea name="" rows="3" class="form-control textarea-autosize"></textarea>
+
+                    </form>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('.textarea-autosize').autosize();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Character count
+    </h4>
+    <p class="title-lead">Add the <code>.textarea-counter</code> CSS class to textareas to add a remaining characters counter.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <textarea name="" rows="3" class="form-control textarea-counter"></textarea>
+            <div class="character-remaining clear input-description">125 characters left</div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <textarea name="" rows="3" class="form-control textarea-counter"></textarea>
+                    <div class="character-remaining clear input-description">125 characters left</div>
+
+                    <script type="text/javascript">
+                        $(function () {
+
+                            $('.textarea-counter').keyup(function () {
+                                var max = 125;
+                                var len = $(this).val().length;
+                                if (len >= max) {
+                                    $('.character-remaining').text(' you have reached the limit');
+                                } else {
+                                    var char = max - len;
+                                    $('.character-remaining').text(char + ' characters left');
+                                }
+                            });
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h2 class="title-hero">
+        Input
+    </h2>
+    <p class="title-lead">Use the markups below to create text inputs.</p>
+
+    <div class="divider"></div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">To apply styling to input fields, you need to add to it the <code>.form-control</code> CSS class. Add the <code>disabled</code> parameter to a text input to disable it.</p>
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <input type="text" name="" class="form-control" />
+
+            <br />
+
+            <input type="text" name="" disabled class="form-control" />
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <input type="text" name="" class="form-control" />
+                        <br />
+                        <input type="text" name="" disabled class="form-control" />
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Autocomplete
+    </h3>
+    <p class="title-lead">To create autocomplete inputs you need to add the <code>.autocomplete-input</code> CSS class to an input field.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Position - <b>/assets/js-core/jquery-ui-position.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Menu - <b>/assets/js-core/jquery-ui-menu.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Autocomplete - <b>/assets/widgets/autocomplete/autocomplete.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Menu - <b>/assets/widgets/autocomplete/menu.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Autocomplete documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/autocomplete/" title="Autocomplete documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Autocomplete external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <input type="text" name="" placeholder="Start typing to see results..." class="form-control autocomplete-input" />
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <input type="text" name="" placeholder="Start typing to see results..." class="form-control autocomplete-input" />
+                    </form>
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            var availableTags = [
+                                "ActionScript",
+                                "AppleScript",
+                                "Asp",
+                                "BASIC",
+                                "C",
+                                "C++",
+                                "Clojure",
+                                "COBOL",
+                                "ColdFusion",
+                                "Erlang",
+                                "Fortran",
+                                "Groovy",
+                                "Haskell",
+                                "Java",
+                                "JavaScript",
+                                "Lisp",
+                                "Perl",
+                                "PHP",
+                                "Python",
+                                "Ruby",
+                                "Scala",
+                                "Scheme"
+                            ];
+                            $( ".autocomplete-input" ).autocomplete({
+                                source: availableTags
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Spinner
+    </h3>
+    <p class="title-lead">To create a spinner input you need to add the <code>.spinner-input</code> CSS class to an input field.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Button - <b>/assets/widgets/button-ui/button.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Spinner - <b>/assets/widgets/spinner/spinner.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Spinner documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/spinner/" title="Spinner documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Spinner external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <form>
+            <input type="text" name="" class="form-control spinner-input" />
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <input type="text" name="" class="form-control spinner-input" />
+                    </form>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $(".spinner-input" ).spinner();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Input groups
+    </h3>
+    <p class="title-lead">Extend form controls by adding text or buttons before, after, or on both sides of any text-based input. Use <code>.input-group</code> with an <code>.input-group-addon</code> to prepend or append elements to a single <code>.form-control</code>.</p>
+
+    <h4 class="title-hero">
+        Basic
+    </h4>
+    <p class="title-lead">Place one add-on or button on either side of an input. You may also place one on both sides of an input.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+            </div>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Sizing
+    </h4>
+    <p class="title-lead">Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <div class="input-group input-group-sm">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Checkboxes &amp; radios addons
+    </h4>
+    <p class="title-lead">Place any checkbox or radio option within an input group's addon instead of text.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="checkbox">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input class="custom-checkbox" checked name="input-name" id="input-id-1" type="checkbox">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" name="input-name">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" class="custom-radio" checked name="input-name" id="input-id-2">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="checkbox">
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                        <span class="input-group-addon">
+                            <input class="custom-checkbox" checked name="input-name" id="input-id-1" type="checkbox">
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" name="input-name">
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" class="custom-radio" checked name="input-name" id="input-id-2">
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Buttons addons
+    </h4>
+    <p class="title-lead">Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you'll need to use <code>.input-group-btn</code> to wrap the buttons. This is required due to default browser styles that cannot be overridden.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Go!</button>
+                        </span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Go!</button>
+                        </span>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </code>
+			</pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Icons addons
+    </h4>
+    <p class="title-lead">Wrap <code>&lt;i class="glyph-icon icon-cog"&gt;&lt;/i&gt;</code> elements inside <code>.input-group-addon</code> to create outer icon addons.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="input-group">
+                        <span class="input-group-addon bg-black">
+                            <i class="glyph-icon icon-lock"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon bg-green">
+                            <i class="glyph-icon icon-retweet"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon bg-white font-green">
+                            <i class="glyph-icon icon-tag"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon bg-white">
+                            <i class="glyph-icon icon-times"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="input-group">
+                        <span class="input-group-addon btn-primary">
+                            <i class="glyph-icon icon-cogs"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon bg-blue">
+                            <i class="glyph-icon icon-shopping-cart"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyph-icon icon-calendar"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon bg-red">
+                        <i class="glyph-icon icon-bullhorn"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <form>
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="input-group">
+                        <span class="input-group-addon bg-black">
+                            <i class="glyph-icon icon-lock"></i>
+                        </span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                        <span class="input-group-addon bg-green">
+                            <i class="glyph-icon icon-retweet"></i>
+                        </span>
+                                </div>
+
+                                <div class="input-group">
+                        <span class="input-group-addon bg-white font-green">
+                            <i class="glyph-icon icon-tag"></i>
+                        </span>
+                                    <input type="text" class="form-control">
+                        <span class="input-group-addon bg-white">
+                            <i class="glyph-icon icon-times"></i>
+                        </span>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="input-group">
+                        <span class="input-group-addon btn-primary">
+                            <i class="glyph-icon icon-cogs"></i>
+                        </span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                        <span class="input-group-addon bg-blue">
+                            <i class="glyph-icon icon-shopping-cart"></i>
+                        </span>
+                                </div>
+
+                                <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyph-icon icon-calendar"></i>
+                        </span>
+                                    <input type="text" class="form-control">
+                        <span class="input-group-addon bg-red">
+                        <i class="glyph-icon icon-bullhorn"></i>
+                        </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h4 class="title-hero">
+        Inside icons addons
+    </h4>
+    <p class="title-lead">Wrap <code>&lt;i class="glyph-icon icon-cog"&gt;&lt;/i&gt;</code> elements inside <code>.input-group-addon</code> to create inner icon addons.</p>
+
+    <div class="example-box-wrapper">
+
+        <form>
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-black">
+                            <i class="glyph-icon icon-lock"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-green">
+                            <i class="glyph-icon icon-retweet"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-white font-green">
+                            <i class="glyph-icon icon-tag"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="input-group">
+                        <span class="input-group-addon addon-inside btn-primary">
+                            <i class="glyph-icon icon-cogs"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-blue">
+                            <i class="glyph-icon icon-shopping-cart"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-red">
+                            <i class="glyph-icon icon-bullhorn"></i>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <form>
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-black">
+                            <i class="glyph-icon icon-lock"></i>
+                        </span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+
+                                <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-green">
+                            <i class="glyph-icon icon-retweet"></i>
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-white font-green">
+                            <i class="glyph-icon icon-tag"></i>
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="input-group">
+                        <span class="input-group-addon addon-inside btn-primary">
+                            <i class="glyph-icon icon-cogs"></i>
+                        </span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+
+                                <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-blue">
+                            <i class="glyph-icon icon-shopping-cart"></i>
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="input-group">
+                        <span class="input-group-addon addon-inside bg-red">
+                            <i class="glyph-icon icon-bullhorn"></i>
+                        </span>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

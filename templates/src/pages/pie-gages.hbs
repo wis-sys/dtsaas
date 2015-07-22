@@ -1,0 +1,293 @@
+---
+title: Pie Gages
+categories: Framework
+tags: Charts
+---
+
+<!-- PieGage charts -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/charts/piegage/piegage.css">-->
+<script type="text/javascript" src="assets-minified/widgets/charts/piegage/piegage.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/charts/piegage/piegage-demo.js"></script>
+
+    <h2 class="title-hero">
+        Pie Gages
+    </h2>
+    <p class="title-lead">Pie gages render simple pie charts for single values that can be used standalone or with buttons and information boxes.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Piegage charts - <b>/assets/widgets/charts/piegage.js</b>
+                        </li>
+                        <li>
+                            Piegage charts demo - <b>/assets/widgets/charts/piegage-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/charts/piegage.css - Contains the CSS needed for the Piegage charts structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://github.com/rendro/easy-pie-chart/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="mrg20T text-center pad10A content-box">
+        <a href="#" class="btn center-div btn-primary updateEasyPieChart">
+            <i class="glyph-icon icon-refresh"></i>
+            Refresh all pie charts
+        </a>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">You can style all the pie gauges aspects from the color and width of the pie indicator line to the label that is beneath it.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row demo-margin">
+            <div class="col-md-3">
+                <div class="chart" data-percent="55">
+                    <span>55</span>%
+                </div>
+                <div class="text-center pad10T font-size-15 font-gray text-transform-upr">New visits</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart" data-percent="46">
+                    <span>46</span>%
+                </div>
+                <div class="text-center pad10T font-size-15 font-gray text-transform-upr">Bounce rate</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart" data-percent="92">
+                    <span>92</span>%
+                </div>
+                <div class="text-center pad10T font-size-15 font-gray text-transform-upr">Server load</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart" data-percent="84" data-bar-color="#2980b9">
+                    <span>752</span>MB
+                </div>
+                <div class="text-center pad10T font-size-15 font-gray text-transform-upr">Used RAM</div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="55">
+                                <span>55</span>%
+                            </div>
+                            <div class="text-center pad10T font-size-15 font-gray text-transform-upr">New visits</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="46">
+                                <span>46</span>%
+                            </div>
+                            <div class="text-center pad10T font-size-15 font-gray text-transform-upr">Bounce rate</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="92">
+                                <span>92</span>%
+                            </div>
+                            <div class="text-center pad10T font-size-15 font-gray text-transform-upr">Server load</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="84" data-bar-color="#2980b9">
+                                <span>752</span>MB
+                            </div>
+                            <div class="text-center pad10T font-size-15 font-gray text-transform-upr">Used RAM</div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Sizes
+    </h3>
+    <p class="title-lead">You can also control the size of the pie gages using the framework included CSS classes.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row demo-margin">
+            <div class="col-md-3">
+                <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">New visits</div>
+                <div class="chart-alt-2" data-percent="55"><span>55</span>%</div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Bounce rate</div>
+                <div class="chart-alt-2" data-percent="46"><span>46</span>%</div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Server load</div>
+                <div class="chart-alt-2" data-percent="92"><span>92</span>%</div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Used RAM</div>
+                <div class="chart-alt-2" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">New visits</div>
+                            <div class="chart-alt-2" data-percent="55"><span>55</span>%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Bounce rate</div>
+                            <div class="chart-alt-2" data-percent="46"><span>46</span>%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Server load</div>
+                            <div class="chart-alt-2" data-percent="92"><span>92</span>%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Used RAM</div>
+                            <div class="chart-alt-2" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Dark backgrounds
+    </h3>
+    <p class="title-lead">You can use dark background with the pie gauges as shown in the examples below.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="bg-black pad20A row demo-margin">
+            <div class="col-md-3">
+                <div class="chart-alt" data-percent="55"><span>55</span>%</div>
+                <div class="text-center pad10T">New visits</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart-alt" data-percent="46"><span>46</span>%</div>
+                <div class="text-center pad10T">Bounce rate</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart-alt" data-percent="92"><span>92</span>%</div>
+                <div class="text-center pad10T">Server load</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart-alt" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                <div class="text-center pad10T">Used RAM</div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="bg-black pad20A row demo-margin">
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="55"><span>55</span>%</div>
+                            <div class="text-center pad10T">New visits</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="46"><span>46</span>%</div>
+                            <div class="text-center pad10T">Bounce rate</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="92"><span>92</span>%</div>
+                            <div class="text-center pad10T">Server load</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                            <div class="text-center pad10T">Used RAM</div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Label styling
+    </h3>
+    <p class="title-lead">Use the included core helper classes to style the box wrapper and the info labels for pie charts any way you want. Here are some examples we created.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row demo-margin">
+            <div class="col-md-3">
+                <div class="chart-alt-1" data-percent="55"><span>55</span>%</div>
+                <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-blue">New visits</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart-alt-1" data-percent="46"><span>46</span>%</div>
+                <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-red">Bounce rate</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart-alt-1" data-percent="92"><span>92</span>%</div>
+                <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-green">Server load</div>
+            </div>
+            <div class="col-md-3">
+                <div class="chart-alt-1" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-orange">Used RAM</div>
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="55"><span>55</span>%</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-blue">New visits</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="46"><span>46</span>%</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-red">Bounce rate</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="92"><span>92</span>%</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-green">Server load</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-orange">Used RAM</div>
+                        </div>
+                    </div>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

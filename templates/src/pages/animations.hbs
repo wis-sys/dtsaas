@@ -1,0 +1,388 @@
+---
+title: Animations
+categories: Admin templates
+tags: Elements
+---
+
+<!-- Skrollr -->
+
+<script type="text/javascript" src="assets-minified/widgets/skrollr/skrollr.js"></script>
+
+<!-- WOW animations -->
+
+<script type="text/javascript" src="assets-minified/widgets/wow/wow.js"></script>
+<script type="text/javascript">
+    /* WOW animations */
+
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 100
+    });
+    wow.init();
+</script>
+
+    <h2 class="title-hero">
+        Animations
+    </h2>
+    <p class="title-lead">Use the markups below to create animations.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/helpers/animate.css - Contains the CSS needed for animation effects.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Animations core
+    </h3>
+    <p class="title-lead">To add animations to any element add one of the CSS classes below. To trigger the actual animation you need to add the <code>.animated</code> CSS class.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="text-center">
+            <h2 id="animationSandbox">Animate.css</h2>
+
+            <select class="input form-control mrg25A input--dropdown js--animations">
+                <optgroup label="Attention Seekers">
+                    <option value="bounce">bounce</option>
+                    <option value="flash">flash</option>
+                    <option value="pulse">pulse</option>
+                    <option value="rubberBand">rubberBand</option>
+                    <option value="shake">shake</option>
+                    <option value="swing">swing</option>
+                    <option value="tada">tada</option>
+                    <option value="wobble">wobble</option>
+                </optgroup>
+
+                <optgroup label="Bouncing Entrances">
+                    <option value="bounceIn">bounceIn</option>
+                    <option value="bounceInDown">bounceInDown</option>
+                    <option value="bounceInLeft">bounceInLeft</option>
+                    <option value="bounceInRight">bounceInRight</option>
+                    <option value="bounceInUp">bounceInUp</option>
+                </optgroup>
+
+                <optgroup label="Bouncing Exits">
+                    <option value="bounceOut">bounceOut</option>
+                    <option value="bounceOutDown">bounceOutDown</option>
+                    <option value="bounceOutLeft">bounceOutLeft</option>
+                    <option value="bounceOutRight">bounceOutRight</option>
+                    <option value="bounceOutUp">bounceOutUp</option>
+                </optgroup>
+
+                <optgroup label="Fading Entrances">
+                    <option value="fadeIn">fadeIn</option>
+                    <option value="fadeInDown">fadeInDown</option>
+                    <option value="fadeInDownBig">fadeInDownBig</option>
+                    <option value="fadeInLeft">fadeInLeft</option>
+                    <option value="fadeInLeftBig">fadeInLeftBig</option>
+                    <option value="fadeInRight">fadeInRight</option>
+                    <option value="fadeInRightBig">fadeInRightBig</option>
+                    <option value="fadeInUp">fadeInUp</option>
+                    <option value="fadeInUpBig">fadeInUpBig</option>
+                </optgroup>
+
+                <optgroup label="Fading Exits">
+                    <option value="fadeOut">fadeOut</option>
+                    <option value="fadeOutDown">fadeOutDown</option>
+                    <option value="fadeOutDownBig">fadeOutDownBig</option>
+                    <option value="fadeOutLeft">fadeOutLeft</option>
+                    <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                    <option value="fadeOutRight">fadeOutRight</option>
+                    <option value="fadeOutRightBig">fadeOutRightBig</option>
+                    <option value="fadeOutUp">fadeOutUp</option>
+                    <option value="fadeOutUpBig">fadeOutUpBig</option>
+                </optgroup>
+
+                <optgroup label="Flippers">
+                    <option value="flip">flip</option>
+                    <option value="flipInX">flipInX</option>
+                    <option value="flipInY">flipInY</option>
+                    <option value="flipOutX">flipOutX</option>
+                    <option value="flipOutY">flipOutY</option>
+                </optgroup>
+
+                <optgroup label="Lightspeed">
+                    <option value="lightSpeedIn">lightSpeedIn</option>
+                    <option value="lightSpeedOut">lightSpeedOut</option>
+                </optgroup>
+
+                <optgroup label="Rotating Entrances">
+                    <option value="rotateIn">rotateIn</option>
+                    <option value="rotateInDownLeft">rotateInDownLeft</option>
+                    <option value="rotateInDownRight">rotateInDownRight</option>
+                    <option value="rotateInUpLeft">rotateInUpLeft</option>
+                    <option value="rotateInUpRight">rotateInUpRight</option>
+                </optgroup>
+
+                <optgroup label="Rotating Exits">
+                    <option value="rotateOut">rotateOut</option>
+                    <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                    <option value="rotateOutDownRight">rotateOutDownRight</option>
+                    <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                    <option value="rotateOutUpRight">rotateOutUpRight</option>
+                </optgroup>
+
+                <optgroup label="Specials">
+                    <option value="hinge">hinge</option>
+                    <option value="rollIn">rollIn</option>
+                    <option value="rollOut">rollOut</option>
+                </optgroup>
+
+                <optgroup label="Zoom Entrances">
+                    <option value="zoomIn">zoomIn</option>
+                    <option value="zoomInDown">zoomInDown</option>
+                    <option value="zoomInLeft">zoomInLeft</option>
+                    <option value="zoomInRight">zoomInRight</option>
+                    <option value="zoomInUp">zoomInUp</option>
+                </optgroup>
+
+                <optgroup label="Zoom Exits">
+                    <option value="zoomOut">zoomOut</option>
+                    <option value="zoomOutDown">zoomOutDown</option>
+                    <option value="zoomOutLeft">zoomOutLeft</option>
+                    <option value="zoomOutRight">zoomOutRight</option>
+                    <option value="zoomOutUp">zoomOutUp</option>
+                </optgroup>
+            </select>
+
+            <button class="butt js--triggerAnimation btn btn-success btn-lg mrg20B">Animate it</button>
+
+        </div>
+        <script type="text/javascript">
+            function testAnim(x) {
+                $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    $(this).removeClass();
+                });
+            };
+
+            $(document).ready(function(){
+                $('.js--triggerAnimation').click(function(){
+                    var anim = $('.js--animations').val();
+                    testAnim(anim);
+                });
+
+                $('.js--animations').change(function(){
+                    var anim = $(this).val();
+                    testAnim(anim);
+                });
+            });
+
+        </script>
+
+        <div class="example-html">
+                <pre>
+                    <code class="language-markup">
+
+                    </code>
+                </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Reveal animations
+    </h3>
+    <p class="title-lead">Use the markups below to trigger animations based on specified parameters only on browser window scroll.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            WOW Core - <b>/assets/js-core/wow.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/helpers/animate.css - Contains the CSS needed for animation effects.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the WOW external documentation accessible through the link below.</p>
+            </div>
+            <a href="https://github.com/matthieua/WOW" title="WOW documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                WOW external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+        <div class="dummy-dark-bg2 xlarge-padding">
+            <h2 class="title-box title-big title-heading">
+                <div class="large-padding bg-black-opacity">
+                    <div class="container">
+                        <div class="wow rollIn" data-wow-delay="0.4s">Featured Portfolio Projects</div>
+                        <small class="wow fadeInUp" data-wow-delay="0.6s">Best &amp; Most Popular of Our Works</small>
+                            <span class="wow fadeInDown" data-wow-delay="0.8s">
+                                Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                            </span>
+                        <div class="title-button">
+                            <a data-wow-delay="1s" href="#" class="wow slideInLeft btn btn-lg cta-btn font-size-14 btn-success text-transform-upr" title="">
+                                Get it now
+                            </a>
+                            <a data-wow-delay="1.2s" href="#" class="wow slideInRight btn btn-lg cta-btn font-size-14 btn-warning text-transform-upr" title="">
+                                Features Tour
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </h2>
+        </div>
+
+        <div class="example-html">
+                <pre>
+                    <code class="language-markup">
+                        <div class="dummy-dark-bg2 xlarge-padding">
+                            <h2 class="title-box title-big title-heading">
+                                <div class="large-padding bg-black-opacity">
+                                    <div class="container">
+                                        <div class="wow rollIn" data-wow-delay="0.4s">Featured Portfolio Projects</div>
+                                        <small class="wow fadeInUp" data-wow-delay="0.6s">Best &amp; Most Popular of Our Works</small>
+                            <span class="wow fadeInDown" data-wow-delay="0.8s">
+                                Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                            </span>
+                                        <div class="title-button">
+                                            <a data-wow-delay="1s" href="#" class="wow slideInLeft btn btn-lg cta-btn font-size-14 btn-success text-transform-upr" title="">
+                                                Get it now
+                                            </a>
+                                            <a data-wow-delay="1.2s" href="#" class="wow slideInRight btn btn-lg cta-btn font-size-14 btn-warning text-transform-upr" title="">
+                                                Features Tour
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </h2>
+                        </div>
+
+                        <script type="text/javascript">
+                            wow = new WOW(
+                                    {
+                                        animateClass: 'animated',
+                                        offset:       100
+                                    }
+                            );
+                            wow.init();
+                        </script>
+                    </code>
+                </pre>
+        </div>
+        {{> docs-buttons  }}
+    </div>
+
+
+    <h3 class="title-hero">
+        Scroll animations &amp; parallax
+    </h3>
+    <p class="title-lead">Use the markups below to create parallax effects and scrolling animations. See the red spot that circles the screen? That is Skrollr in action.</p>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            Skrollr Core - <b>/assets/widgets/skrollr/skrollr.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the Skrollr external documentation accessible through the link below.</p>
+            </div>
+            <a href="https://github.com/Prinzhorn/skrollr" title="Skrollr documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                Skrollr external documentation
+            </a>
+        </div>
+    </div>
+
+    <div class="example-box-wrapper">
+
+        <style type="text/css">
+            #thing {
+                width:32px;
+                height:32px;
+                border-radius:16px;
+                background: #bc2800;
+            }
+
+            .skrollable {
+                position:fixed;
+                z-index:100;
+            }
+
+            .skrollr-mobile .skrollable {
+                position:absolute;
+            }
+
+            .skrollable .skrollable {
+                position:absolute;
+            }
+
+            .skrollable .skrollable .skrollable {
+                position:static;
+            }
+
+        </style>
+
+        <div id="thing" data-0="left[cos]:10%;top[sin]:10%;" data-10000="left:90%;top:90%;"></div>
+
+        <script type="text/javascript">
+            skrollr.init({
+                easing: {
+                    sin: function(p) {
+                        return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+                    },
+                    cos: function(p) {
+                        return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+                    },
+                },
+                render: function(data) {
+                    //Loop
+                    if(data.curTop === data.maxTop) {
+                        this.setScrollTop(0, true);
+                    }
+                }
+            });
+        </script>
+
+        {{> docs-buttons  }}
+    </div>

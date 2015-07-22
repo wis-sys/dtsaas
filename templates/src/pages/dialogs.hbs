@@ -1,0 +1,212 @@
+---
+title: Dialogs
+
+categories: Framework
+tags: Widgets
+---
+
+<!-- JS Interactions -->
+
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/resizable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/draggable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/sortable.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/interactions-ui/selectable.js"></script>
+
+<!-- jQueryUI Dialog -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/dialog/dialog.css">-->
+<script type="text/javascript" src="assets-minified/widgets/dialog/dialog.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/dialog/dialog-demo.js"></script>
+
+<h2 class="title-hero">
+        Dialogs
+    </h2>
+    <p class="title-lead">Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery Core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Core - <b>/assets/js-core/jquery-ui-core.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Draggable - <b>/assets/widgets/interactions-ui/draggable.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Resizable - <b>/assets/widgets/interactions-ui/resizable.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Widget - <b>/assets/js-core/jquery-ui-widget.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Position - <b>/assets/js-core/jquery-ui-position.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Button - <b>/assets/widgets/button-ui/button.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Dialog - <b>/assets/widgets/dialog/dialog.js</b>
+                        </li>
+                        <li>
+                            jQueryUI Dialog demos - <b>/assets/widgets/dialog/dialog-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/dialog/dialog.css - Contains the CSS needed for the dialog structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://jqueryui.com/dialog/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Use the markup below to create an inline modal box with title, content and button actions toolbar. To create an inline modal add the <code>.display-block</code> CSS class to the <code>.modal</code> element.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-primary basic-dialog">
+            Open dialog
+        </a>
+         
+        <div class="hide" id="basic-dialog" title="Basic dialog title">
+            <div class="pad10A">
+                Dialog content here
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-primary basic-dialog">
+                        Open dialog
+                    </a>
+
+                    <div class="hide" id="basic-dialog" title="Basic dialog title">
+                        <div class="pad10A">
+                            Dialog content here
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+
+                            $(".basic-dialog").click(function () {
+
+                                $("#basic-dialog").dialog({
+                                    resizable: true,
+                                    minWidth: 400,
+                                    minHeight: 350,
+                                    modal: false,
+                                    closeOnEscape: true,
+                                    position: 'center',
+                                    buttons: {
+                                        "OK": function () {
+                                            $(this).dialog("close");
+                                        }
+                                    },
+                                    position: "center"
+                                });
+
+                            });
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Overlays
+    </h3>
+    <p class="title-lead">Use the <code>$('.ui-widget-overlay').addClass('bg-green');</code> snippet when creating dialogs via Javascript to modify the overlay background colors.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-default white-dialog">
+            White overlay
+        </a>
+        <a href="#" class="btn btn-default black-dialog">
+            Black overlay
+        </a>
+        <a href="#" class="btn btn-default green-dialog">
+            Green overlay
+        </a>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-default white-dialog">
+                        White overlay
+                    </a>
+                    <a href="#" class="btn btn-default black-dialog">
+                        Black overlay
+                    </a>
+                    <a href="#" class="btn btn-default green-dialog">
+                        Green overlay
+                    </a>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Opacity
+    </h3>
+    <p class="title-lead">Use the <code>$('.ui-widget-overlay').addClass('opacity-60');</code> snippet when creating dialogs via Javascript to modify the overlay opacity. Available options are <code>.opacity-30</code>, <code>.opacity-60</code>, <code>.opacity-80</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-default opacity-dialog-30">
+            30% opacity
+        </a>
+        <a href="#" class="btn btn-default opacity-dialog-60">
+            60% opacity
+        </a>
+        <a href="#" class="btn btn-default opacity-dialog-80">
+            80% opacity
+        </a>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-default opacity-dialog-30">
+                        30% opacity
+                    </a>
+                    <a href="#" class="btn btn-default opacity-dialog-60">
+                        60% opacity
+                    </a>
+                    <a href="#" class="btn btn-default opacity-dialog-80">
+                        80% opacity
+                    </a>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

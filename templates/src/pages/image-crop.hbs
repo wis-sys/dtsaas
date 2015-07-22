@@ -1,0 +1,481 @@
+---
+title: Image crop
+external_docs: http://deepliquid.com/content/Jcrop_Manual.html
+categories: Framework
+tags: Widgets
+---
+
+<!-- jCrop -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/jcrop/jcrop.css">-->
+<script type="text/javascript" src="assets-minified/widgets/jcrop/jcrop.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/jcrop/jcrop-demo.js"></script>
+
+    <h2 class="title-hero">
+        Image crop
+    </h2>
+    <p class="title-lead">Use the markup below to add image cropping functionality to your app.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            jCrop core - <b>/assets/widgets/jcrop/jcrop.js</b>
+                        </li>
+                        <li>
+                            jCrop demos - <b>/assets/widgets/jcrop/jcrop-demo.js</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                    <ul>
+                        <li>
+                            /assets/widgets/jcrop/jcrop.css - Contains the CSS needed for the jcrop structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="http://deepliquid.com/content/Jcrop_Manual.html" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">This is a basic image cropping example. To select a cropping zone, drag the mouse over the image.</p>
+
+    <div class="example-box-wrapper">
+
+        <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-basic" alt="Example image" />
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-basic" alt="Example image" />
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $('.jcrop-basic').Jcrop();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Event handler
+    </h3>
+    <p class="title-lead">In this example, the form values are updated in real-time as the selection is changed.</p>
+
+    <div class="example-box-wrapper">
+
+        <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-handler" alt="Example" />
+
+        <form id="coords" class="coords" onsubmit="return false;" action="http://example.com/post.php">
+
+            <div class="inline-labels">
+                <div class="float-left mrg10R mrg10T">
+                    <label>X1</label>
+                    <input type="text" size="4" id="x1" name="x1" class="input" />
+                </div>
+                
+                <div class="float-left mrg10R mrg10T">
+                    <label>Y1</label>
+                    <input type="text" size="4" id="y1" name="y1" class="input" />
+                </div>
+                
+                <div class="float-left mrg10R mrg10T">
+                    <label>X2</label>
+                    <input type="text" size="4" id="x2" name="x2" class="input" />
+                </div>
+                
+                <div class="float-left mrg10R mrg10T">
+                    <label>Y2</label>
+                    <input type="text" size="4" id="y2" name="y2" class="input" />
+                </div>
+                
+                <div class="float-left mrg10R mrg10T">
+                    <label>W </label>
+                    <input type="text" size="4" id="w" name="w" class="input" />
+                </div>
+                
+                <div class="float-left mrg10R mrg10T">
+                    <label>H </label>
+                    <input type="text" size="4" id="h" name="h" class="input" />
+                </div>
+            </div>
+        </form>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-handler" alt="Example" />
+
+                    <form id="coords" class="coords" onsubmit="return false;" action="http://example.com/post.php">
+
+                        <div class="inline-labels">
+                            <div class="float-left mrg10R mrg10T">
+                                <label>X1</label>
+                                <input type="text" size="4" id="x1" name="x1" class="input" />
+                            </div>
+
+                            <div class="float-left mrg10R mrg10T">
+                                <label>Y1</label>
+                                <input type="text" size="4" id="y1" name="y1" class="input" />
+                            </div>
+
+                            <div class="float-left mrg10R mrg10T">
+                                <label>X2</label>
+                                <input type="text" size="4" id="x2" name="x2" class="input" />
+                            </div>
+
+                            <div class="float-left mrg10R mrg10T">
+                                <label>Y2</label>
+                                <input type="text" size="4" id="y2" name="y2" class="input" />
+                            </div>
+
+                            <div class="float-left mrg10R mrg10T">
+                                <label>W </label>
+                                <input type="text" size="4" id="w" name="w" class="input" />
+                            </div>
+
+                            <div class="float-left mrg10R mrg10T">
+                                <label>H </label>
+                                <input type="text" size="4" id="h" name="h" class="input" />
+                            </div>
+                        </div>
+                    </form>
+
+                    <script type="text/javascript">
+                        $(function($){
+
+                            var jcrop_api;
+
+                            $('.jcrop-handler').Jcrop({
+                                onChange:   showCoords,
+                                onSelect:   showCoords,
+                                onRelease:  clearCoords
+                            },function(){
+                                jcrop_api = this;
+                            });
+
+                            $('#coords').on('change','input',function(e){
+                                var x1 = $('#x1').val(),
+                                        x2 = $('#x2').val(),
+                                        y1 = $('#y1').val(),
+                                        y2 = $('#y2').val();
+                                jcrop_api.setSelect([x1,y1,x2,y2]);
+                            });
+
+                        });
+
+                        function showCoords(c)
+                        {
+                            $('#x1').val(c.x);
+                            $('#y1').val(c.y);
+                            $('#x2').val(c.x2);
+                            $('#y2').val(c.y2);
+                            $('#w').val(c.w);
+                            $('#h').val(c.h);
+                        };
+
+                        function clearCoords()
+                        {
+                            $('#coords input').val('');
+                        };
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Preview pane
+    </h3>
+    <p class="title-lead">An example implementing a preview pane.</p>
+
+    <div class="example-box-wrapper">
+
+        <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-preview-big" alt="Example" />
+
+        <div id="preview-pane">
+            <div class="preview-container">
+                <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-preview" alt="Preview" />
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-preview-big" alt="Example" />
+
+                    <div id="preview-pane">
+                        <div class="preview-container">
+                            <img src="assets-minified/dummy-images/image1.jpg" class="jcrop-preview" alt="Preview" />
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        jQuery(function($){
+
+                            // Create variables (in this scope) to hold the API and image size
+                            var jcrop_api,
+                                    boundx,
+                                    boundy,
+
+                            // Grab some information about the preview pane
+                                    $preview = $('#preview-pane'),
+                                    $pcnt = $('#preview-pane .preview-container'),
+                                    $pimg = $('#preview-pane .preview-container img'),
+
+                                    xsize = $pcnt.width(),
+                                    ysize = $pcnt.height();
+
+                            $('.jcrop-preview-big').Jcrop({
+                                onChange: updatePreview,
+                                onSelect: updatePreview,
+                                aspectRatio: xsize / ysize
+                            },function(){
+                                // Use the API to get the real image size
+                                var bounds = this.getBounds();
+                                boundx = bounds[0];
+                                boundy = bounds[1];
+                                // Store the API in the jcrop_api variable
+                                jcrop_api = this;
+
+                                // Move the preview into the jcrop container for css positioning
+                                $preview.appendTo(jcrop_api.ui.holder);
+                            });
+
+                            function updatePreview(c)
+                            {
+                                if (parseInt(c.w) > 0)
+                                {
+                                    var rx = xsize / c.w;
+                                    var ry = ysize / c.h;
+
+                                    $pimg.css({
+                                        width: Math.round(rx * boundx) + 'px',
+                                        height: Math.round(ry * boundy) + 'px',
+                                        marginLeft: '-' + Math.round(rx * c.x) + 'px',
+                                        marginTop: '-' + Math.round(ry * c.y) + 'px'
+                                    });
+                                }
+                            };
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Animations and transitions
+    </h3>
+    <p class="title-lead">Demonstration of animateTo API method and transitions for <code>bgColor</code> and <code>bgOpacity</code> options.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <img src="assets-minified/dummy-images/image1.jpg" id="target" alt="Jcrop Image" />
+
+            </div>
+            <div class="col-md-6" id="interface">
+                <label class="mrg10T">
+                    Enable fading (bgFade: true)
+                </label>
+                <input type="checkbox" id="fadetog" />
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <img src="assets-minified/dummy-images/image1.jpg" id="target" alt="Jcrop Image" />
+
+                        </div>
+                        <div class="col-md-6" id="interface">
+                            <label class="mrg10T">
+                                Enable fading (bgFade: true)
+                            </label>
+                            <input type="checkbox" id="fadetog" />
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        jQuery(function($){
+
+                            var jcrop_api;
+
+                            $('#target').Jcrop({
+                                bgFade:     true,
+                                bgOpacity: .2,
+                                setSelect: [ 60, 70, 540, 330 ]
+                            },function(){
+                                jcrop_api = this;
+                            });
+
+                            $('#fadetog').change(function(){
+                                jcrop_api.setOptions({
+                                    bgFade: this.checked
+                                });
+                            }).attr('checked','checked');
+
+                            $('#shadetog').change(function(){
+                                if (this.checked) $('#shadetxt').slideDown();
+                                else $('#shadetxt').slideUp();
+                                jcrop_api.setOptions({
+                                    shade: this.checked
+                                });
+                            }).attr('checked',false);
+
+                            // Define page sections
+                            var sections = {
+                                bgc_buttons: 'Change bgColor',
+                                bgo_buttons: 'Change bgOpacity',
+                                anim_buttons: 'Animate Selection'
+                            };
+                            // Define animation buttons
+                            var ac = {
+                                anim1: [217,122,382,284],
+                                anim2: [20,20,580,380],
+                                anim3: [24,24,176,376],
+                                anim4: [347,165,550,355],
+                                anim5: [136,55,472,183]
+                            };
+                            // Define bgOpacity buttons
+                            var bgo = {
+                                Low: .2,
+                                Mid: .5,
+                                High: .8,
+                                Full: 1
+                            };
+                            // Define bgColor buttons
+                            var bgc = {
+                                R: '#900',
+                                B: '#4BB6F0',
+                                Y: '#F0B207',
+                                G: '#46B81C',
+                                W: 'white',
+                                K: 'black'
+                            };
+                            // Create fieldset targets for buttons
+                            for(i in sections)
+                                insertSection(i,sections[i]);
+
+                            function create_btn(c) {
+                                var $o = $('<button />').addClass('btn btn-blue-alt');
+                                if (c) $o.append(c);
+                                return $o;
+                            }
+
+                            var a_count = 1;
+                            // Create animation buttons
+                            for(i in ac) {
+                                $('#anim_buttons .btn-group')
+                                        .append(
+                                        create_btn(a_count++).click(animHandler(ac[i])),
+                                        ' '
+                                );
+                            }
+
+                            $('#anim_buttons .btn-group').append(
+                                    create_btn('Bye!').click(function(e){
+                                        $(e.target).addClass('active');
+                                        jcrop_api.animateTo(
+                                                [300,200,300,200],
+                                                function(){
+                                                    this.release();
+                                                    $(e.target).closest('.btn-group').find('.active').removeClass('active');
+                                                }
+                                        );
+                                        return false;
+                                    })
+                            );
+
+                            // Create bgOpacity buttons
+                            for(i in bgo) {
+                                $('#bgo_buttons .btn-group').append(
+                                        create_btn(i).click(setoptHandler('bgOpacity',bgo[i])),
+                                        ' '
+                                );
+                            }
+                            // Create bgColor buttons
+                            for(i in bgc) {
+                                $('#bgc_buttons .btn-group').append(
+                                        create_btn(i).css({
+                                            background: bgc[i],
+                                            color: ((i == 'K') || (i == 'R'))?'white':'black'
+                                        }).click(setoptHandler('bgColor',bgc[i])), ' '
+                                );
+                            }
+                            // Function to insert named sections into interface
+                            function insertSection(k,v) {
+                                $('#interface').prepend(
+                                        $('<fieldset></fieldset>').attr('id',k).append(
+                                                $('<legend></legend>').append(v),
+                                                '<div class="btn-toolbar"><div class="btn-group"></div></div>'
+                                        )
+                                );
+                            };
+                            // Handler for option-setting buttons
+                            function setoptHandler(k,v) {
+                                return function(e) {
+                                    $(e.target).closest('.btn-group').find('.active').removeClass('active');
+                                    $(e.target).addClass('active');
+                                    var opt = { };
+                                    opt[k] = v;
+                                    jcrop_api.setOptions(opt);
+                                    return false;
+                                };
+                            };
+                            // Handler for animation buttons
+                            function animHandler(v) {
+                                return function(e) {
+                                    $(e.target).addClass('active');
+                                    jcrop_api.animateTo(v,function(){
+                                        $(e.target).closest('.btn-group').find('.active').removeClass('active');
+                                    });
+                                    return false;
+                                };
+                            };
+
+                            $('#bgo_buttons .btn:first,#bgc_buttons .btn:last').addClass('active');
+                            $('#interface').show();
+
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

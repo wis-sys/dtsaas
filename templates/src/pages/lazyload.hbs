@@ -1,0 +1,241 @@
+---
+title: Images preloader
+categories: Framework
+tags: Widgets
+---
+
+<!-- Lazyload -->
+
+<script type="text/javascript" src="assets-minified/widgets/lazyload/lazyload.js"></script>
+<script type="text/javascript">
+    /* Lazyload */
+
+    $(function() { "use strict";
+        $("img.lazy").lazyload({
+            effect: "fadeIn",
+            threshold: 100
+        });
+    });
+</script>
+<h2 class="title-hero">
+    Images preloader
+</h2>
+<p class="title-lead">Use the markup below to make images load only when they are in the viewport.</p>
+
+<div class="divider"></div>
+
+<div class="row mrg20T remove-production">
+    <div class="col-md-6">
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-code-fork"></i>
+                Dependencies
+            </h3>
+            <div class="content-box-wrapper">
+                <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                <ul>
+                    <li>
+                        jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                    </li>
+                    <li>
+                        PrettyPhoto core - <b>/assets/widgets/lazyload/lazyload.js</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="alert alert-warning mrg15B">
+            <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+        </div>
+        <a href="http://www.appelsiini.net/projects/lazyload" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+            <i class="glyph-icon icon-external-link"></i>
+            {{title}} external documentation
+        </a>
+    </div>
+</div>
+
+<h3 class="title-hero">
+    Basic
+</h3>
+<p class="title-lead">You need to add the <code>.lazy</code> CSS class to the images that you want to load only when they are in the viewport.</p>
+
+<div class="example-box-wrapper">
+
+    <div class="container row">
+        <div class="col-md-8">
+
+            <a href="#" class="thumbnail-box" title="">
+                <div class="thumbnail-content">
+                    <div class="center-vertical">
+                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                    </div>
+                </div>
+                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                <img data-original="../assets/dummy-images/fullscreen/1.jpg" class="lazy img-responsive" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-8">
+
+            <a href="#" class="thumbnail-box" title="">
+                <div class="thumbnail-content">
+                    <div class="center-vertical">
+                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                    </div>
+                </div>
+                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                <img data-original="../assets/dummy-images/fullscreen/2.jpg" class="lazy img-responsive" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-8">
+
+            <a href="#" class="thumbnail-box" title="">
+                <div class="thumbnail-content">
+                    <div class="center-vertical">
+                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                    </div>
+                </div>
+                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                <img data-original="../assets/dummy-images/fullscreen/3.jpg" class="lazy img-responsive" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-8">
+
+            <a href="#" class="thumbnail-box" title="">
+                <div class="thumbnail-content">
+                    <div class="center-vertical">
+                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                    </div>
+                </div>
+                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                <img data-original="../assets/dummy-images/fullscreen/4.jpg" class="lazy img-responsive" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-8">
+
+            <a href="#" class="thumbnail-box" title="">
+                <div class="thumbnail-content">
+                    <div class="center-vertical">
+                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                    </div>
+                </div>
+                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                <img data-original="../assets/dummy-images/fullscreen/5.jpg" class="lazy img-responsive" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-8">
+
+            <a href="#" class="thumbnail-box" title="">
+                <div class="thumbnail-content">
+                    <div class="center-vertical">
+                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                    </div>
+                </div>
+                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                <img data-original="../assets/dummy-images/fullscreen/7.jpg" class="lazy img-responsive" alt="">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="container row">
+                        <div class="col-md-8">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img data-original="../assets/dummy-images/fullscreen/1.jpg" class="lazy img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img data-original="../assets/dummy-images/fullscreen/2.jpg" class="lazy img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img data-original="../assets/dummy-images/fullscreen/3.jpg" class="lazy img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img data-original="../assets/dummy-images/fullscreen/4.jpg" class="lazy img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img data-original="../assets/dummy-images/fullscreen/5.jpg" class="lazy img-responsive" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <a href="#" class="thumbnail-box" title="">
+                                <div class="thumbnail-content">
+                                    <div class="center-vertical">
+                                        <i class="icon-helper icon-center font-white glyph-icon icon-plus-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-overlay opacity-80 bg-black"></div>
+                                <img data-original="../assets/dummy-images/fullscreen/7.jpg" class="lazy img-responsive" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() { "use strict";
+                            $("img.lazy").lazyload({
+                                effect : "fadeIn"
+                            });
+                        });
+                    </script>
+                </code>
+			</pre>
+    </div>
+    {{> docs-buttons  }}
+</div>

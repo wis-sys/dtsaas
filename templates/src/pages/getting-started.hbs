@@ -1,0 +1,125 @@
+---
+title: Getting started
+categories: Admin templates
+---
+
+    <h2 class="title-hero">
+        Getting started
+    </h2>
+    <p class="title-lead">Below you will find a quick getting started guide. The left side menu contains the documentation for each page, widget, element or component presented in the demo.</p>
+
+    <div class="divider"></div>
+
+    <h3 class="title-hero">
+        What is Bratilius?
+    </h3>
+    <p class="title-lead">Bratilius is a HTML/CSS/JS framework that helps you quickly build modern, beautiful and accessible user interfaces for interactive web applications. It is powered by jQuery, Twitter Bootstrap and a bunch of other curated widgets &amp; plugins. Bratilius includes a lot of UI interactions, effects, elements, components and themes. These featured make it a very powerful companion when it comes to solving all kinds of use cases. Read through the documentation to get an idea of how many widgets and elements are available.</p>
+
+    <div class="divider"></div>
+
+    <h3>Who is it for?</h3>
+    <p class="font-gray-dark">Bratilius can be used by designers and developers alike. Designers will find the theming and assets separation very useful and easy to modify. Because, in general, developers do not have an eye for design, the AUI framework helps them by removing the design-related issues and lets them concentrate on the app programming part.</p>
+
+    <div class="divider"></div>
+
+    <h3>Technologies used</h3>
+    <p class="font-gray-dark">Bratilius uses modern CSS3 solutions, jQuery, jQueryUI, Bootstrap, RaphaelJS, Handebars templates and other jQuery plugins.</p>
+
+    <div class="divider"></div>
+
+    <h2>Installing and Getting Started</h2>
+
+    <p class="font-gray-dark">First you need to download and uzip the Bratilius package archive.</p>
+    <p class="font-gray-dark">The package contains the following:</p>
+    <ul>
+        <li><b>assets</b> - contains all the source code CSS, JS, fonts and images uncompressed, development versions.</li>
+        <li><b>assets-minified</b> - contains all the css, js files, minified, ready for production.</li>
+        <li><b>src</b> - contains all the handlebars templating files used in the generation of the demonstation &amp; documentation files.</li>
+        <li><b>documentation</b> - contains the documentation files</li>
+        <li><b>production</b> - contains example HTML files with all widgets &amp; elements in action</li>
+        <li><b>changelog.txt</b> - changelog between version</li>
+        <li><b>Gruntfile.js</b> - contains Grunt tasks that can be used to generate the production-ready, minified assets and compile template</li>
+        <li><b>Readme.md</b> - General informations about the template</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h3>Assets</h3>
+    <p class="font-gray-dark">The assets directory (/assets/) contains the development (uncompressed) files that are used in the site. For production ready enviroments we suggest using the files from the /assets-minified/ directory because they take a lot less space.</p>
+    <p class="font-gray-dark">The assets directory structure:</p>
+    <ul>
+        <li><b>applications</b> - contains the CSS files for different applications embedded in Bratilius, for example, the Mailbox page.</li>
+        <li><b>elements</b> - contains all CSS files used for creating different types of elements, for example, ribbons.css, buttons.css, etc. They are used for both the admin backend template and for the frontend presentation website.</li>
+        <li><b>snippets</b> - contains all CSS files for different snippets used through out the template, like todo lists, notification boxes, chat, etc.</li>
+        <li><b>frontend-elements</b> - contains the CSS files specific for the frontend presentation template, for example, pricing-tables.css, portfolio-navigation.css, etc.</li>
+        <li><b>helpers</b> - contains all CSS files used for resets, or recurring tasks, for example, grid.css, page-transitions.css, typography.css, spacing.css, etc.</li>
+        <li><b>icons</b> - contains all directories with files specific to an icon category. For example, the FontAwesome icon fonts and CSS file are located in /icons/fontawesome/.</li>
+        <li><b>dummy-images</b> - contains images that are used for demonstation purposes only in our presentation.</li>
+        <li><b>images</b> - contains all images that are used by other elements, for example, /images/spinner/loader-light.gif - which is used by the loading overlay element.</li>
+        <li><b>js-core</b> - contains all Javascript core plugins, like jquery-core.js, raphael.js, etc.</li>
+        <li><b>widgets</b> - contains all widgets used in the Bratilius template. Each widget has its own directory containing the javascript core, css core and javascript demo initialization.</li>
+        <li><b>themes</b> - contains the files needed for the color and style customisations.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h3>Themes</h3>
+    <p class="font-gray-dark">The Bratilius themes can be found in the /assets/themes/ directory. If you open the /themes/ directory right now, you will see the /bratilius/ sub-directory which contains all the CSS files used for applying style and color for the template layout, widgets and elements.</p>
+
+    <h4>layout.css</h4>
+    <p class="font-gray-dark">This file contains the structural classes used for the main template layout. If you were to change the width of the sidebar element, this is the file that you need to edit.</p>
+
+    <h4>layout-color.css</h4>
+    <p class="font-gray-dark">This file contains the styling classes used for the main template layout. For example, this is the file where the sidebar background color and sidebar links colors are defined.</p>
+
+    <h4>framework-color.css</h4>
+    <p class="font-gray-dark">This file contains the styling classes used for widgets and elements. Each widget and element has its own CSS file that handles their structure, like how much spacing should a button have, how tall should it be or similar stuff. To add color &amp; style to that structure you need to edit the framework-color.css file. It contains multiple CSS classes with the same styling based on their role.</p>
+
+    <h4>/js/layout.js</h4>
+    <p class="font-gray-dark">This file contains the jQuery scripts used to build the layout template, for example, it contains a function that sets the sidebar height to 100% of the viewport height. This is included in the themes sub-directory because the layout parameters may vary from a theme to another.</p>
+
+    <div class="divider"></div>
+
+    <h2>Minified assets</h2>
+    <p class="font-gray-dark">You can find the CSS, JS, image files minified in the /assets-minified/ directory.</p>
+
+    <div class="divider"></div>
+
+    <h2>Core files</h2>
+    <p class="font-gray-dark">The files below should be removed from templates only in special cases that require to.</p>
+    <b>Javascript core:</b>
+    <ul>
+        <li>/assets/js-core/*.js</li>
+        <li>/assets/themes/bratilius/*.js</li>
+    </ul>
+    <b>CSS core:</b>
+    <ul>
+        <li>/assets/helpers/*.css</li>
+        <li>/assets/elements/*.css</li>
+        <li>/assets/themes/bratilius/*.css</li>
+    </ul>
+
+    <h2>Automations</h2>
+    <p class="font-gray-dark">To generate the demonstration and documentation files we use Grunt - the javascript task runner. To find out more about it read the <a href="http://gruntjs.com/getting-started" target="_blank" title="Grunt.js documentation">Grunt.js documentation</a>.</p>
+    <p class="font-gray-dark">We also use grunt to automate the minification and concatenation of the assets.</p>
+    <b>Install dependencies:</b>
+    <ol>
+        <li><b>Install NodeJS</b> - brew install nodejs npm</li>
+        <li><b>Install GruntJS</b> - sudo npm install -g grunt</li>
+        <li><b>Install NPM packages</b> - sudo npm install</li>
+    </ol>
+
+    <b>Grunt tasks aliases:</b>
+    <p class="font-gray-dark">You can find all the available grunt tasks in Gruntfile.js</p>
+    <ul>
+        <li><b>"all"</b> - builds the complete solution for documentation & production. It also create the /assets-minified/ production-ready directory.</li>
+        <li><b>"server"</b> - creates a server on http://localhost:8585 that points to the build files. This way you don't have to install WAMP,XAMPP or MAMP on your local environment.</li>
+        <li><b>Install NPM packages</b> - sudo npm install</li>
+    </ul>
+
+    <h2>Help &amp; Support</h2>
+    <p class="font-gray-dark">If you encounter bugs or problems with Bratilius feel free to email us at support@agileui.com or to write in the comments area on the marketplace. Send your suggestions and feature requests at office@agileui.com</p>
+
+
+    <h2>Custom services</h2>
+    <p class="font-gray-dark">You can hire us to create custom application user interfaces based on Bratilius or to integrate Bratilius in your existing projects. Drop us a line at contact@agileui.com describing your requirements and we'll send you a quotation. View our portfolio at http://horiasimon.com</p>

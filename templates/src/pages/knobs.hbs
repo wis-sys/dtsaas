@@ -1,0 +1,168 @@
+---
+title: Knobs
+categories: Framework
+tags: Charts
+---
+
+<!-- Knobs -->
+
+<script type="text/javascript" src="assets-minified/widgets/knobs/knob.js"></script>
+
+<script type="text/javascript">
+
+    /* Knobs inputs */
+
+    $(function () {
+        $(".input-knob").knob();
+    });
+
+</script>
+
+<h2 class="title-hero">
+        Knobs
+    </h2>
+    <p class="title-lead">Create dial knobs from inputs.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-6">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Knobs core - <b>/assets/widgets/knobs/knobs.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning mrg15B">
+                <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+            </div>
+            <a href="https://github.com/aterrien/jQuery-Knob" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+                <i class="glyph-icon icon-external-link"></i>
+                {{title}} external documentation
+            </a>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Basic input knob dials examples created using the input attributes fields.</p>
+
+    <div class="example-box-wrapper">
+
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Without label</h3>
+                <input type="text" class="input-knob" value="127" data-width="100" data-displayInput="false" data-fgColor="#212121" data-height="100" data-thickness=".10">
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Rounded corners</h3>
+                <input type="text" class="input-knob" data-linecap="round" value="93" data-width="100" data-fgColor="#5BCCF6" data-height="100" data-thickness=".10">
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Cursor</h3>
+                <input type="text" class="input-knob" data-cursor=true value="5" data-width="100" data-fgColor="#984DFF" data-height="100" data-thickness=".10">
+            </div>
+        </div>
+        <div class="divider mrg25T mrg25B"></div>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Angle arc</h3>
+                <input type="text" class="input-knob" value="21" data-angleOffset="-125" data-angleArc="250" data-width="100" data-fgColor="#FA7753" data-height="100" data-thickness=".10">
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Previous values</h3>
+                <input type="text" class="input-knob" value="23" data-width="100" data-fgColor="#9CD159" data-displayPrevious="true" data-height="100" data-thickness="0.40">
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Multiple steps</h3>
+                <input type="text" class="input-knob" value="2796" data-width="100" data-fgColor="#FFCC00" data-step="1000" data-min="-15000" data-max="8000" data-height="100" data-thickness="0.40">
+            </div>
+        </div>
+        <div class="divider mrg25T mrg25B"></div>
+        <div class="row demo-margin">
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Thicker</h3>
+                <input type="text" class="input-knob" data-cursor=true value="5" data-width="100" data-fgColor="#2381E9" data-height="100" data-thickness="0.40">
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Multisteps</h3>
+                <input type="text" class="input-knob" value="1895" data-width="100" data-fgColor="#FF5757" data-step="1000" data-min="-15000" data-max="15000" data-height="100" data-thickness="0.40">
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Another example</h3>
+                <input type="text" class="input-knob" value="23" data-width="100" data-fgColor="#333333" data-displayPrevious="true" data-height="100" data-thickness="0.40">
+            </div>
+        </div>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Without label</h3>
+                            <input type="text" class="input-knob" value="127" data-width="100" data-displayInput="false" data-fgColor="#212121" data-height="100" data-thickness=".10">
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Rounded corners</h3>
+                            <input type="text" class="input-knob" data-linecap="round" value="93" data-width="100" data-fgColor="#5BCCF6" data-height="100" data-thickness=".10">
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Cursor</h3>
+                            <input type="text" class="input-knob" data-cursor=true value="5" data-width="100" data-fgColor="#984DFF" data-height="100" data-thickness=".10">
+                        </div>
+                    </div>
+                    <div class="divider mrg25T mrg25B"></div>
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Angle arc</h3>
+                            <input type="text" class="input-knob" value="21" data-angleOffset="-125" data-angleArc="250" data-width="100" data-fgColor="#FA7753" data-height="100" data-thickness=".10">
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Previous values</h3>
+                            <input type="text" class="input-knob" value="23" data-width="100" data-fgColor="#9CD159" data-displayPrevious="true" data-height="100" data-thickness="0.40">
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Multiple steps</h3>
+                            <input type="text" class="input-knob" value="2796" data-width="100" data-fgColor="#FFCC00" data-step="1000" data-min="-15000" data-max="8000" data-height="100" data-thickness="0.40">
+                        </div>
+                    </div>
+                    <div class="divider mrg25T mrg25B"></div>
+                    <div class="row demo-margin">
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Thicker</h3>
+                            <input type="text" class="input-knob" data-cursor=true value="5" data-width="100" data-fgColor="#2381E9" data-height="100" data-thickness="0.40">
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Multisteps</h3>
+                            <input type="text" class="input-knob" value="1895" data-width="100" data-fgColor="#FF5757" data-step="1000" data-min="-15000" data-max="15000" data-height="100" data-thickness="0.40">
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Another example</h3>
+                            <input type="text" class="input-knob" value="23" data-width="100" data-fgColor="#333333" data-displayPrevious="true" data-height="100" data-thickness="0.40">
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function () {
+                            $(".input-knob").knob();
+                        });
+                    </script>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

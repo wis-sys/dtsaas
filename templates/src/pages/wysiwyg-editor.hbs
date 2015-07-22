@@ -1,0 +1,138 @@
+---
+title: WYSIWYG Editors
+categories: Framework
+tags: Forms
+---
+
+<!-- Bootstrap Summernote WYSIWYG editor -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/summernote-wysiwyg/summernote-wysiwyg.css">-->
+<script type="text/javascript" src="assets-minified/widgets/summernote-wysiwyg/summernote-wysiwyg.js"></script>
+<script type="text/javascript">
+    /* WYSIWYG editor */
+
+    $(function() { "use strict";
+        $('.wysiwyg-editor').summernote({
+            height: 350
+        });
+    });
+    $(function() { "use strict";
+        $('.wysiwyg-editor-air').summernote({
+            airMode: true
+        });
+    });
+</script>
+
+<h2 class="title-hero">
+    WYSIWYG Editors
+</h2>
+<p class="title-lead">Use the markup below to create modern Bootstrap WYSIWYG Editors.</p>
+
+<div class="divider"></div>
+
+<div class="row mrg20T remove-production">
+    <div class="col-md-6">
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-code-fork"></i>
+                Dependencies
+            </h3>
+            <div class="content-box-wrapper">
+                <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                <ul>
+                    <li>
+                        jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                    </li>
+                    <li>
+                        Editor core - <b>/assets/widgets/summernote-wysiwyg/summernote-wysiwyg.js/summernote-wysiwyg.js</b>
+                    </li>
+                </ul>
+                <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                <ul>
+                    <li>
+                        /assets/widgets/summernote-wysiwyg/summernote-wysiwyg.css - Contains the CSS needed for the WYSIWYG editor structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="alert alert-warning mrg15B">
+            <p>To see all the available options &amp; configurations, we suggest reading the WYSIWYG editor documentation accessible through the link below.</p>
+        </div>
+        <a href="http://hackerwins.github.io/summernote/" title="WYSIWYG editor documentation" target="_blank" class="btn display-inline btn-success">
+            <i class="glyph-icon icon-external-link"></i>
+            WYSIWYG editor documentation
+        </a>
+    </div>
+</div>
+
+<h3 class="title-hero">
+    Basic
+</h3>
+<p class="title-lead">Create Bootstrap WYSIWYG editors by adding the <code>.wysiwyg-editor</code> CSS class to a textarea element.</p>
+
+<div class="example-box-wrapper">
+
+    <div class="wysiwyg-editor"></div>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+                    <div class="wysiwyg-editor"></div>
+
+                    <script type="text/javascript">
+
+                        $(function(){
+                            $('.wysiwyg-editor').summernote({
+                                height: 350
+                            });
+                        });
+
+                    </script>
+
+                </code>
+			</pre>
+    </div>
+    {{> docs-buttons  }}
+</div>
+
+<h3 class="title-hero">
+    Inline editor
+</h3>
+<p class="title-lead">Add the <code>airMode: true</code> parameter to the JS init function to edit text you select.</p>
+
+<div class="example-box-wrapper">
+
+    <div class="wysiwyg-editor-air">
+        <h3>This is an Air-mode editable area.</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    </div>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <div class="wysiwyg-editor-air">
+                        <h3>This is an Air-mode editable area.</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        $(function(){
+                            $('.wysiwyg-editor-air').summernote({
+                                airMode: true
+                            });
+                        });
+
+                    </script>
+                </code>
+			</pre>
+    </div>
+    {{> docs-buttons  }}
+</div>

@@ -1,0 +1,121 @@
+---
+title: Image lightbox modal
+categories: Framework
+tags: Widgets
+---
+
+<!-- PrettyPhoto modals -->
+
+<!--<link rel="stylesheet" type="text/css" href="assets-minified/widgets/pretty-photo/prettyphoto.css">-->
+<script type="text/javascript" src="assets-minified/widgets/pretty-photo/prettyphoto.js"></script>
+<script type="text/javascript">
+    /* PrettyPhoto */
+
+    $(document).ready(function() {
+        $(".prettyphoto").prettyPhoto();
+    });
+</script>
+<h2 class="title-hero">
+    Image lightbox modal
+</h2>
+<p class="title-lead">Use the markup below to create images lightbox modal windows.</p>
+
+<div class="divider"></div>
+
+<div class="row mrg20T remove-production">
+    <div class="col-md-6">
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-code-fork"></i>
+                Dependencies
+            </h3>
+            <div class="content-box-wrapper">
+                <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                <ul>
+                    <li>
+                        jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                    </li>
+                    <li>
+                        PrettyPhoto core - <b>/assets/widgets/pretty-photo/prettyphoto.js</b>
+                    </li>
+                </ul>
+                <h4 class="text-transform-upr font-gray font-size-16">CSS</h4>
+                <ul>
+                    <li>
+                        /assets/widgets/pretty-photo/prettyphoto.css - Contains the CSS needed for the image lightboxes structure. Styling is achieved from the color theme CSS file (/assets/themes/../*.css).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="alert alert-warning mrg15B">
+            <p>To see all the available options &amp; configurations, we suggest reading the {{title}} external documentation accessible through the link below.</p>
+        </div>
+        <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" title="{{title}} documentation" target="_blank" class="btn display-inline btn-success">
+            <i class="glyph-icon icon-external-link"></i>
+            {{title}} external documentation
+        </a>
+    </div>
+</div>
+
+<h3 class="title-hero">
+    Image gallery
+</h3>
+<p class="title-lead">Use the markup below to create image galleries with the PrettyPhoto lightbox plugin.</p>
+
+<div class="example-box-wrapper">
+
+    <a href="assets-minified/dummy-images/fullscreen/1.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="assets-minified/dummy-images/thumbnails/t_1.jpg" width="60" height="60" alt="Red round shape" /></a>
+    <a href="assets-minified/dummy-images/fullscreen/2.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_2.jpg" width="60" height="60" alt="Nice building" /></a>
+    <a href="assets-minified/dummy-images/fullscreen/3.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_3.jpg" width="60" height="60" alt="Fire!" /></a>
+    <a href="assets-minified/dummy-images/fullscreen/4.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_4.jpg" width="60" height="60" alt="Rock climbing" /></a>
+    <a href="assets-minified/dummy-images/fullscreen/5.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_5.jpg" width="60" height="60" alt="Fly kite, fly!" /></a>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="assets-minified/dummy-images/fullscreen/1.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="assets-minified/dummy-images/thumbnails/t_1.jpg" width="60" height="60" alt="Red round shape" /></a>
+                    <a href="assets-minified/dummy-images/fullscreen/2.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_2.jpg" width="60" height="60" alt="Nice building" /></a>
+                    <a href="assets-minified/dummy-images/fullscreen/3.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_3.jpg" width="60" height="60" alt="Fire!" /></a>
+                    <a href="assets-minified/dummy-images/fullscreen/4.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_4.jpg" width="60" height="60" alt="Rock climbing" /></a>
+                    <a href="assets-minified/dummy-images/fullscreen/5.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]"><img src="assets-minified/dummy-images/thumbnails/t_5.jpg" width="60" height="60" alt="Fly kite, fly!" /></a>
+
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $(".prettyPhoto").prettyPhoto()
+                        });
+                    </script>
+                </code>
+			</pre>
+    </div>
+    {{> docs-buttons  }}
+</div>
+
+
+<h3 class="title-hero">
+    Video content
+</h3>
+<p class="title-lead">Use the markup below to create lightbox modals with videos from YouTune, Vimeo, etc.</p>
+
+<div class="example-box-wrapper">
+
+    <a href="http://www.youtube.com/watch?v=qqXi8WmQ_WM" class="prettyphoto" rel="prettyPhoto" title=""><img src="assets-minified/dummy-images/thumbnails/t_2.jpg" alt="YouTube" width="60" /></a>
+    <a href="http://vimeo.com/8245346" class="prettyphoto" rel="prettyPhoto" title=""><img src="assets-minified/dummy-images/thumbnails/flash-logo.jpg" alt="YouTube" width="60" /></a>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="http://www.youtube.com/watch?v=qqXi8WmQ_WM" class="prettyphoto" rel="prettyPhoto" title=""><img src="assets-minified/dummy-images/thumbnails/t_2.jpg" alt="YouTube" width="60" /></a>
+                    <a href="http://vimeo.com/8245346" class="prettyphoto" rel="prettyPhoto" title=""><img src="assets-minified/dummy-images/thumbnails/flash-logo.jpg" alt="YouTube" width="60" /></a>
+
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $(".prettyPhoto").prettyPhoto()
+                        });
+                    </script>
+                </code>
+			</pre>
+    </div>
+    {{> docs-buttons  }}
+</div>

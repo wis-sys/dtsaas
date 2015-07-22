@@ -1,0 +1,104 @@
+---
+title: Overlays
+
+categories: Framework
+tags: Elements
+---
+    <h2 class="title-hero">
+        Overlays
+    </h2>
+    <p class="title-lead">You can create all kind of overlay styles using the CSS helper classes.</p>
+
+    <div class="divider"></div>
+
+    <div class="row mrg20T remove-production">
+        <div class="col-md-12">
+            <div class="content-box">
+                <h3 class="content-box-header bg-default">
+                    <i class="glyph-icon icon-code-fork"></i>
+                    Dependencies
+                </h3>
+                <div class="content-box-wrapper">
+                    <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                    <ul>
+                        <li>
+                            jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                        </li>
+                        <li>
+                            Overlay - <b>/assets/widgets/overlay/overlay.js</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Basic
+    </h3>
+    <p class="title-lead">Add <code>.overlay-button</code> CSS class to the element that you want to trigger the window overlay. You can control the overlay color using the <code>data-theme="bg-green"></code> parameter. For lighter color data-theme parameter use <code>data-style="light"</code> and for darker ones, use <code>data-style="dark"</code>.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-sm btn-black overlay-button" data-style="light" data-theme="bg-black" data-opacity="60">
+            Black background overlay
+        </a>
+        <a href="#" class="btn btn-sm btn-default overlay-button" data-style="dark" data-theme="bg-default" data-opacity="60">
+            Default background overlay
+        </a>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-sm btn-black overlay-button" data-style="light" data-theme="bg-black" data-opacity="60">
+                        Black background overlay
+                    </a>
+                    <a href="#" class="btn btn-sm btn-default overlay-button" data-style="dark" data-theme="bg-default" data-opacity="60">
+                        Default background overlay
+                    </a>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>
+
+    <h3 class="title-hero">
+        Opacity
+    </h3>
+    <p class="title-lead">Opacity can be controlled using the <code>data-opacity="80"></code> parameter. Accepted values are: 30, 60, 80, 100.</p>
+
+    <div class="example-box-wrapper">
+
+        <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="30">
+            Opacity 30%
+        </a>
+        <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="60">
+            Opacity 60%
+        </a>
+        <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="80">
+            Opacity 80%
+        </a>
+        <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="100">
+            Opacity 100%
+        </a>
+
+		<div class="example-html">
+			<pre>
+				<code class="language-markup">
+                    <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="30">
+                        Opacity 30%
+                    </a>
+                    <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="60">
+                        Opacity 60%
+                    </a>
+                    <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="80">
+                        Opacity 80%
+                    </a>
+                    <a href="#" class="btn btn-sm btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="100">
+                        Opacity 100%
+                    </a>
+				</code>
+			</pre>
+		</div>
+        {{> docs-buttons  }}
+    </div>

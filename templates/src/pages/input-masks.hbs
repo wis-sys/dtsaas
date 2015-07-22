@@ -1,0 +1,194 @@
+---
+title: Input masks
+categories: Framework
+tags: Forms
+---
+
+<!-- Input masks -->
+
+<script type="text/javascript" src="assets-minified/widgets/input-mask/inputmask.js"></script>
+
+<script type="text/javascript">
+    /* Input masks */
+
+    $(function() { "use strict";
+        $(".input-mask").inputmask();
+    });
+
+</script>
+
+<h2 class="title-hero">
+    Input masks
+</h2>
+<p class="title-lead">Use the markup below to add inputs masks to form elements.</p>
+
+<div class="divider"></div>
+
+<div class="row mrg20T remove-production">
+    <div class="col-md-6">
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                <i class="glyph-icon icon-code-fork"></i>
+                Dependencies
+            </h3>
+            <div class="content-box-wrapper">
+                <h4 class="text-transform-upr font-gray font-size-16">Javascript</h4>
+                <ul>
+                    <li>
+                        jQuery core - <b>/assets/js-core/jquery-core.js</b>
+                    </li>
+                    <li>
+                        Input masks core - <b>/assets/widgets/input-mask/inputmask.js</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="alert alert-warning mrg15B">
+            <p>To see all the available options &amp; configurations, we suggest reading the input masks documentation accessible through the link below.</p>
+        </div>
+        <a href="http://github.com/RobinHerbots/jquery.inputmask" title="Input masks documentation" target="_blank" class="btn display-inline btn-success">
+            <i class="glyph-icon icon-external-link"></i>
+            Input masks documentation
+        </a>
+    </div>
+</div>
+
+<h3 class="title-hero">
+    Basic
+</h3>
+<p class="title-lead">To create input masks you need to add the <code>.input-mask</code> CSS class to an input element. To create the mask rule, use the <code>.data-inputmask=""</code> input parameter. The input mask helpers are shown on hover.</p>
+
+<div class="example-box-wrapper">
+
+    <form>
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label for="">Phone:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'(999) 999-9999'">
+                    <div class="help-block">(999) 999-9999</div>
+                </div>
+                <div class="form-group">
+                    <label for="">Phone + Ext:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'(999) 999-9999 x99999'">
+                    <div class="help-block">(999) 999-9999 x99999</div>
+                </div>
+                <div class="form-group">
+                    <label for="">International Phone:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'+33 999 999 999'">
+                    <div class="help-block">+41 999 999 999</div>
+                </div>
+                <div class="form-group">
+                    <label for="">TaxID:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'99-9999999'">
+                    <div class="help-block">99-9999999</div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label for="">Product Key:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'a*-999-a999'">
+                    <div class="help-block">a*-999-a999</div>
+                </div>
+                <div class="form-group">
+                    <label for="">Purchase Order:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'PO: aaa-999-***'">
+                    <div class="help-block">PO: aaa-999-***</div>
+                </div>
+                <div class="form-group">
+                    <label for="">Percent:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'99%'">
+                    <div class="help-block">99%</div>
+                </div>
+                <div class="form-group">
+                    <label for="">SSN:</label>
+                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'999-99-9999'">
+                    <div class="help-block">999-99-9999</div>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+    <div class="example-html">
+			<pre>
+				<code class="language-markup">
+
+
+                    <form>
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="">Phone:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'(999) 999-9999'">
+                                    <div class="help-block">(999) 999-9999</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Phone + Ext:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'(999) 999-9999 x99999'">
+                                    <div class="help-block">(999) 999-9999 x99999</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">International Phone:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'+33 999 999 999'">
+                                    <div class="help-block">+41 999 999 999</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">TaxID:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'99-9999999'">
+                                    <div class="help-block">99-9999999</div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="">Product Key:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'a*-999-a999'">
+                                    <div class="help-block">a*-999-a999</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Purchase Order:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'PO: aaa-999-***'">
+                                    <div class="help-block">PO: aaa-999-***</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Percent:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'99%'">
+                                    <div class="help-block">99%</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">SSN:</label>
+                                    <input type="text" class="input-mask form-control" data-inputmask="'mask':'999-99-9999'">
+                                    <div class="help-block">999-99-9999</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <script type="text/javascript">
+
+                        $(function() { "use strict";
+                            $(".input-mask").inputmask();
+                        });
+
+                    </script>
+
+                </code>
+			</pre>
+    </div>
+    {{> docs-buttons  }}
+</div>

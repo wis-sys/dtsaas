@@ -1,0 +1,612 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+    <meta charset="UTF-8">
+<!--[if gte IE 9]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<!--[if IE 8]><meta http-equiv="X-UA-Compatible" content="IE=8"><![endif]-->
+<title> 云应用 </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Favicons -->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/icons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/images/icons/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/images/icons/favicon.png">
+
+
+
+    <!-- JS Core -->
+
+    <script type="text/javascript" src="assets-minified/js-core.js"></script>
+
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+        setTimeout(function() {
+            $('#loading').fadeOut( 400, "linear" );
+        }, 300);
+    });
+</script>
+<style>
+    #loading {position: fixed;width: 100%;height: 100%;left: 0;top: 0;right: 0;bottom: 0;display: block;background: #fff;z-index: 10000;}
+    #loading img {position: absolute;top: 50%;left: 50%;margin: -23px 0 0 -23px;}
+</style>
+
+
+
+        
+
+        <link rel="stylesheet" type="text/css" href="assets-minified/all-demo.css">
+
+    
+
+
+
+    <!-- Frontend Theme -->
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/themes/bratilius/default/framework-color.css">
+    <link rel="stylesheet" type="text/css" href="assets-minified/themes/bratilius/border-radius.css">
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/themes/bratilius/frontend/color.css">
+
+    <!-- Color Helpers CSS -->
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/helpers/colors.css">
+
+</head> 
+<body class="frontend-layout"> 
+
+<script type="text/javascript" src="assets-minified/widgets/mixitup/mixitup.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/mixitup/isotope.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/mixitup/portfolio-demo.js"></script>
+  
+<div class="featured-area featured-box dummy-poly-3" data-0="background-position: 50% 0px;" data-350="background-position: 50% -250px;">
+    <div class="main-header bg-black-opacity header-fixed wow fadeInDown" data-0="padding: 23px 0;" data-250="padding: 8px 0;">
+        <div class="container clearfix">
+            <a href="#" class="hidden-desktop" id="responsive-menu" title="">
+               <i class="glyph-icon icon-align-justify"></i>
+            </a>
+            <a href="home.html" class="logo" title="Bratilius">
+                DT SaaS
+            </a>
+            <ul class="main-nav nav-alt">
+                <li>
+                    <a href="#" title="Headers" class="active">
+                        云开发
+                        <i class="glyph-icon icon-chevron-down"></i>
+                    </a>
+                    <ul>
+                        <li><a href="featured-area-1.html" title="Hero area 1"><span>Web前端</span></a></li>
+                        <li><a href="featured-area-2.html" title="Hero area 2"><span>iOS／Android</span></a></li>
+                        <li><a href="featured-area-3.html" title="Hero area 3"><span>服务器端</span></a></li>
+                        <li><a href="featured-area-4.html" title="Hero area 4"><span>云架构</span></a></li>
+                        <li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" title="Widgets">
+                        云应用
+                        <i class="glyph-icon icon-chevron-down"></i>
+                    </a>
+                    <ul>
+                        <li><a href="carousels.html" title="Carousels"><span>客户管理</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>供应链管理</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>项目管理</span></a></li>
+                        <li><a href="monitor.html" title="Slideshows"><span>实时监控</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>商业智能</span></a></li>                      
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" title="Training">
+                        云培训
+                        <i class="glyph-icon icon-chevron-down"></i>
+                    </a>
+                    <ul>
+                        <li><a href="http://qwiklab.com" title="Carousels"><span>qwiklab</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>云智实验室</span></a></li>                    
+                    </ul>
+                </li>            
+
+                <li>
+                    <a href="#" title="SignIn">
+                        登录
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- .main-header -->
+
+
+    <div class="video-background-2 center-vertical" style="width: 100%; min-height: 600px;">
+        <h2 class="center-content title-box title-big title-heading">
+            <div class="container  wow bounceInDown">
+                莲雾科技
+                <small>Best &amp; Most Popular of Our Works</small>
+                <span>
+                    Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas lorem. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis egestas!
+                </span>
+                <a href="#" class="btn-outline-inverse title-button" title="Example">
+                    ＋ 添加
+                </a>
+            </div>
+        </h2>
+    </div>    
+
+</div>
+
+
+
+
+    <ul class="list-group mrg20T list-group-separator list-group-centered row list-group-icons">
+        <li class="col-md-2 active">
+            <a href="#description" class="list-group-item" data-toggle="tab">
+                描述
+            </a>
+        </li>
+        <li class="col-md-2">
+            <a href="#review" class="list-group-item" data-toggle="tab">
+                评价
+            </a>
+        </li>
+        <li class="col-md-2">
+            <a href="#recommendation" class="list-group-item" data-toggle="tab">
+                相关推荐
+            </a>
+        </li>
+    </ul>
+
+
+<div class="tab-content">
+    <div class="tab-pane small-padding dummy-light-bg active" id="description">
+
+        <div class="container">
+            <div class="feature-box small-padding clearfix">
+
+                <div class="feature-img float-right">
+                    <div class="iphone-wrapper">
+                        <div class="iphone-screen"></div>
+                        <div class="iphone-content">
+                            <div class="owl-slider-3 slider-wrapper">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                                <img src="http://placehold.it/310x541/42bdc2/FFFFFF">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <div class="feature-heading">
+                        <h2>Which of us ever to take a trivial </h2>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="glyph-icon icon-camera"></i>
+                            <span>
+                                <b>Wonderful serenity has taken</b>
+                                <p>Alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of.</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-anchor"></i>
+                            <span>
+                                <b>Steal into the inner sanctuary recently</b>
+                                <p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman and above it there.?</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-bolt"></i>
+                            <span>
+                                <b>Little too small, lay peacefully between its</b>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss.</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="glyph-icon icon-bullhorn"></i>
+                            <span>
+                                <b>Bratilius Developer API</b>
+                                <p>Lorem ipsum dolor sic amet dixit tu? Access Bratilius's human room although a little too small.</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="tab-pane medium-padding" id="review">
+
+        <div class="owl-carousel-1 slider-wrapper carousel-wrapper carousel-wrapper-alt carousel-container review">
+
+            <div>
+                <div class="testimonial-box mrg15A">
+                    <div class="popover top">
+                        <div class="arrow float-right"></div>
+                        <div class="popover-content">
+                            <i class="glyph-icon icon-quote-left"></i>
+                            <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The regular than the existing European languages.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-author-wrapper">
+                        <img class="img-rounded float-right" src="../assets/dummy-images/people/testimonial1.jpg" alt="">
+                        <div class="testimonial-author text-right">
+                            <b>Horia Simon</b>
+                            <span>UI Designer, Bratilius.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial-box mrg15A">
+                    <div class="popover top">
+                        <div class="arrow float-right"></div>
+                        <div class="popover-content">
+                            <i class="glyph-icon icon-quote-left"></i>
+                            <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The regular than the existing European languages.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-author-wrapper">
+                        <img class="img-rounded float-right" src="../assets/dummy-images/people/testimonial2.jpg" alt="">
+                        <div class="testimonial-author text-right">
+                            <b>Horia Simon</b>
+                            <span>UI Designer, Bratilius.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial-box mrg15A">
+                    <div class="popover top">
+                        <div class="arrow float-right"></div>
+                        <div class="popover-content">
+                            <i class="glyph-icon icon-quote-left"></i>
+                            <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The regular than the existing European languages.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-author-wrapper">
+                        <img class="img-rounded float-right" src="../assets/dummy-images/people/testimonial3.jpg" alt="">
+                        <div class="testimonial-author text-right">
+                            <b>Horia Simon</b>
+                            <span>UI Designer, Bratilius.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial-box mrg15A">
+                    <div class="popover top">
+                        <div class="arrow float-right"></div>
+                        <div class="popover-content">
+                            <i class="glyph-icon icon-quote-left"></i>
+                            <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The regular than the existing European languages.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-author-wrapper">
+                        <img class="img-rounded float-right" src="../assets/dummy-images/people/testimonial4.jpg" alt="">
+                        <div class="testimonial-author text-right">
+                            <b>Horia Simon</b>
+                            <span>UI Designer, Bratilius.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial-box mrg15A">
+                    <div class="popover top">
+                        <div class="arrow float-right"></div>
+                        <div class="popover-content">
+                            <i class="glyph-icon icon-quote-left"></i>
+                            <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The regular than the existing European languages.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-author-wrapper">
+                        <img class="img-rounded float-right" src="../assets/dummy-images/people/testimonial5.jpg" alt="">
+                        <div class="testimonial-author text-right">
+                            <b>Horia Simon</b>
+                            <span>UI Designer, Bratilius.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial-box mrg15A">
+                    <div class="popover top">
+                        <div class="arrow float-right"></div>
+                        <div class="popover-content">
+                            <i class="glyph-icon icon-quote-left"></i>
+                            <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The regular than the existing European languages.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-author-wrapper">
+                        <img class="img-rounded float-right" src="../assets/dummy-images/people/testimonial6.jpg" alt="">
+                        <div class="testimonial-author text-right">
+                            <b>Horia Simon</b>
+                            <span>UI Designer, Bratilius.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="tab-pane container" id="recommendation">
+
+        <div class="owl-carousel-1 slider-wrapper carousel-wrapper inverse carousel-container recommendation">
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" class="thumbnail-box mrg10A" title="">
+                    <div class="thumbnail-content">
+                        <div class="center-vertical">
+                            <i class="icon-helper icon-center font-white font-size-28 glyph-icon icon-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-overlay opacity-80 bg-black animated flipInX radius-all-4"></div>
+                    <img src="http://placehold.it/300x180/42bdc2/FFFFFF" class="img-full radius-all-4">
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <div class="main-footer inverse clearfix bg-black">
+        <div class="container clearfix">
+            <div class="col-md-4">
+                <div class="footer-desc">
+                    <a class="logo" href="#" title="">DT SaaS</a>
+                    <p>
+                        大数据（Data Technology）时代企业云服务交易平台
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h3 class="footer-header">云开发</h3>
+                <ul>
+                    <li>
+                        <a href="#" title="">Web前端</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">iOS/Android</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">服务器端</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">云架构</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="footer-header">云应用</h3>
+                <ul>
+                        <li><a href="carousels.html" title="Carousels"><span>客户管理</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>供应链管理</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>项目管理</span></a></li>
+                        <li><a href="monitor.html" title="Slideshows"><span>实时监控</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>商业智能</span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="footer-header">云培训</h3>
+                <ul>
+                        <li><a href="http://qwiklab.com" title="Carousels"><span>qwiklab</span></a></li>
+                        <li><a href="slideshows.html" title="Slideshows"><span>云智实验室</span></a></li>  
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-pane">
+            <div class="container clearfix">
+                <div class="logo">&copy; 2015 DT SaaS. All Rights Reserved.</div>
+
+<!--                 <ul class="footer-nav">
+                    <li><a href="#" title="Portfolio">Widgets</a></li>
+                    <li><a href="#" title="Layout">Layout</a></li>
+                    <li><a href="#" title="Elements">Elements</a></li>
+                    <li><a href="#" title="">Pricing tables</a></li>
+                    <li><a href="#" title="Portfolio">Portfolio</a></li>
+                </ul> -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <script type="text/javascript" src="assets-minified/all-demo.js"></script>
+    <!--[if !(IE 8)]><!-->
+    <script type="text/javascript" src="assets-minified/widgets/skycons/skycons.js"></script>
+    <script type="text/javascript" src="assets-minified/widgets/charts/piegage/piegage.js"></script>
+    <script type="text/javascript" src="assets-minified/widgets/charts/piegage/piegage-demo.js"></script>
+    <script type="text/javascript" src="assets-minified/widgets/charts/sparklines/sparklines.js"></script>
+    <script type="text/javascript" src="assets-minified/widgets/charts/sparklines/sparklines-demo.js"></script>
+    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="assets-minified/js-core/html5shiv.js"></script>
+  <![endif]-->
+
+
+
+    <!-- FRONTEND ELEMENTS -->
+
+<link rel="stylesheet" type="text/css" href="assets-minified/frontend-elements/frontend-elements-all.css">
+<link rel="stylesheet" type="text/css" href="assets-minified/frontend-elements/frontend-responsive.css">
+
+<!-- Skrollr -->
+
+<script type="text/javascript" src="assets-minified/widgets/skrollr/skrollr.js"></script>
+
+<!-- Owl carousel -->
+
+<link rel="stylesheet" type="text/css" href="assets-minified/widgets/owlcarousel/owlcarousel.css">
+<script type="text/javascript" src="assets-minified/widgets/owlcarousel/owlcarousel.js"></script>
+<script type="text/javascript" src="assets-minified/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+<!-- HG sticky -->
+
+<script type="text/javascript" src="assets-minified/widgets/sticky/sticky.js"></script>
+
+<!-- WOW -->
+
+<script type="text/javascript" src="assets-minified/widgets/wow/wow.js"></script>
+
+<!-- Theme layout -->
+
+<script type="text/javascript" src="assets-minified/themes/bratilius/frontend/js/frontend-init.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init([
+            smoothScrolling=true
+        ]);
+    </script>
+
+    </body>
+</html>
